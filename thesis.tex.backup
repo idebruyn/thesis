@@ -1,0 +1,226 @@
+% \documentclass[9pt,a5paper,twoside,dutch,english]{book}                % options used for 'Hoofdstuk' or 'Chapter'
+ \documentclass[10pt,a4paper,twoside,dutch,english]{book}
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PACKAGE LOADING TIME %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\usepackage{lscape}
+\usepackage{pseudocode}
+\usepackage{times}      % use Times New Roman Type 1 fonts  (redefines sfdefault,rmdefault,ttdefault)
+%\usepackage[T1]{fontenc}
+%\usepackage{pslatex}
+\usepackage[times]{quotchap}   % fancy chapter beginning
+\usepackage{fancyhdr}
+\usepackage[sectionbib]{chapterbib2} % bibliography per chapter
+%\usepackage[sectionbib]{chapterbib2} % bibliography per chapter
+% (sectionbib -> bibliography is \section* instead of \chapter*), should come before babel chapterbib2 
+%because local version is 1.9 and solves bug that header was 'References' instead of Chaptername
+\usepackage[dutch,english]{babel}
+%\usepackage[sectionbib,numbers,sort&compress]{natbib}  %for citations a la 'Vermeulen et al.' instead of [1]
+%\usepackage{tocbibind} % automatically add bibliography, list of figures, ... to table of contents
+% \usepackage[a5paper,verbose, asymmetric, centering, top=2.2cm, bottom=1.5cm]{geometry}  % better control over margins
+\usepackage[a4paper,verbose, asymmetric, centering, top=3cm, bottom=2.5cm]{geometry}  % better control over margins
+%\usepackage[hang]{caption}     %better control over captions (sideways, font, ...)  hang -> 2nd line of caption is indented (caption2 is deprecated and beta)
+\usepackage[justification=centering]{caption}     %better control over captions (sideways, font, ...)  
+\usepackage{subfigure}  % with scriptsize or so, one can adapt the size
+\usepackage{cite}
+
+\usepackage{enumerate}  % to make it possible to define the numbers (A,a, ...)
+\usepackage{verbatim}   % extra support for verbatim environments
+\usepackage{float}      % you can define 'H' so that floats are forced to be putted 'here'
+\usepackage{multirow}   % multirow{nrows}[bigstruts]{width}[fixup]{text} multirow cells
+\ifx\pdftexversion\undefined
+\usepackage[dvips]{graphicx}
+\else
+\usepackage[pdftex]{graphicx}
+\fi
+%\usepackage{psfrag}
+%\usepackage{chappg}     % page numbering (chapno-pageno), for ToC
+\usepackage{url}        % for better url typesetting
+\usepackage{expdlist}   % Expanded description (e.g. better alignement) -> needed for acronym_expdlist package
+\usepackage{acronym_expdlist}   % for list of acronyms
+\usepackage{hhline}     % generates nicer table lines (without missing pixels) + more flexible
+%\usepackage{colortbl}  % for coloured columns
+%\usepackage{threeparttable}     % adds the possibility to add footnotes in tables
+\usepackage{afterpage}  % adds \afterpage command, which makes it possible to issue \afterpage{\clearpage} which flushes all floats after this page
+%\usepackage{amsmath}    % adds extra commands, ao. \text within math environment
+\usepackage{amsmath,amsfonts,amsthm}
+\usepackage{marvosym}   % for Euro symbol
+\usepackage{ifthen}     % ifthenelse command
+%\usepackage{mathenv}	% better eqnarray
+\usepackage{listings}
+\usepackage{setspace}
+\usepackage{booktabs}
+\def\hrulefill{\leavevmode\leaders\hrule height 1.5pt\hfill\kern 0pt \\}
+
+
+%%%%%%%%%%%%%%%%%
+%% PAGE LAYOUT %%
+%%%%%%%%%%%%%%%%%
+
+\input{page_layout_definition.tex}
+% \setlength{\parindent}{0cm}             % Inspringen van eerste lijn van paragrafen is niet gewenst.
+
+%%%%%%%%%%%%%%%%%
+%% HYPHENATION %%
+%%%%%%%%%%%%%%%%%
+
+\hyphenation{} % to have a separate file with hyphenations
+
+%%%%%%%%%%%%%%%%%%%%
+%%  START BOOK    %%
+%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[pagewise]{lineno}
+\linenumbers
+
+\begin{document}
+\graphicspath{{fig/}}
+\restylefloat{figure}
+\restylefloat{table}
+\newfloat{algorithm}{ht}{alg}
+
+%%   FRONT PAGE       %%
+%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+ \thispagestyle{empty}   % no headings for this page
+% 
+% % Header
+ \noindent
+ \begin{minipage}{3cm}%
+   \includegraphics*[width=6cm]{/home/isa/ownCloud/DOCTORAAT/info/logos/VUBlogo}
+ \end{minipage}\hfill
+ \begin{minipage}{8cm}
+ \raggedleft
+ \textsf{Vrije Universiteit Brussel\\ \vspace{.15cm}
+ Faculteit Wetenschappen en\\
+ Bio-ingenieurswetenschappen\\  \vspace{.15cm}
+ Departement Natuurkunde}
+ \end{minipage}
+% 
+% % Title
+\begin{center}
+% \vspace{1.3cm}
+\vspace{5cm}
+\bigskip
+ \hrulefill \vspace{.2cm}
+ \onehalfspacing
+     \LARGE \noindent \textsf{Search for Dark Matter in the Monojet\\ and Trackless Jets Final States with \\the CMS Detector at the LHC}\\ 
+ \hrulefill 
+% \vspace{.5cm}
+\vspace{1cm}
+ \bigskip
+   \Large\noindent \textsf{Isabelle De Bruyn} \\
+ \bigskip
+ \large
+% \vspace{1.8cm}
+\vspace{2.5cm}
+\textsf{Promotor\\ \vspace{.1cm}
+Prof. Dr. Steven Lowette}
+ \normalsize
+% % Footer
+ \vfill
+ \textsf{Proefschrift ingediend met het oog op het behalen van de\\ academische graad van Doctor in de Wetenschappen\\ \vspace{.3cm}
+ September 2017}\
+ 
+ \end{center}
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+%% ACKNOWLEDGMENT   %%
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\selectlanguage{dutch}
+\hyphenation{bu-reau-ge-no-ten}
+\frontmatter
+\chapter{Acknowledgements}
+\vspace{0.35in}
+
+% dankwoord...
+
+% \begin{flushright}{\emph{Brussel, maand 2017\\
+% Isabelle De Bruyn}}
+% \end{flushright}
+% \selectlanguage{english}
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+%%   TOC, LIST OF FIGURES, LIST OF TABLES, ACRONYMS     %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewcommand{\contentsname}{Table of Contents} % original name = Contents
+
+\tableofcontents
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+% 	%% SUMMARY IN DUTCH       %%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \selectlanguage{dutch}
+% \include{chapt_dutch/chapt_dutch}
+% \selectlanguage{english}
+% \include{chapt_english/chapt_english}
+
+%% THE BOOK ITSELF   %%
+%%%%%%%%%%%%%%%%%%%%%%%
+\mainmatter     % related to chappg numbering
+\selectlanguage{english}
+\renewcommand*{\thesection}{\thechapter.\arabic{section}}
+
+\newcommand\fdtsvrightmarktmp{{\scshape\small Chapter }}
+\renewcommand\evenpagerightmark{{\scshape\small\chaptername\ \thechapter}}
+\renewcommand\oddpageleftmark{{\scshape\small\leftmark}}
+
+%\addtolength{\headwidth}{\marginparsep}
+%\addtolength{\headwidth}{\marginparwidth}
+
+%\newcommand{\tm}[1]{$\mbox{#1}^{\mbox{\emph{\scriptsize TM}}}$}
+
+\baselineskip 13.0pt
+
+\include{chapt1/intro}
+\include{chapt2/chapt2}
+\include{chapt3/chapt3}
+\include{chapt4/chapt4}
+\include{chapt6/chapt6}
+\include{chapt5/chapt5}
+\include{chapt7/chapt7}
+
+\clearpage
+
+\bibliographystyle{phdbib}
+\bibliography{PhD}
+
+
+%\addcontentsline{toc}{section}{}
+
+% \appendix
+% \include{app1/app1}
+% \include{app2/app2}
+% \include{app3/app3}
+
+%\renewcommand\fdtsvrightmarktmp{{\scshape\small Appendix }}
+\renewcommand\evenpagerightmark{{\scshape\small Appendix \thechapter}}
+\renewcommand\oddpageleftmark{{\scshape\small\leftmark}}
+
+
+% \listoffigures
+% \clearpage{\pagestyle{empty}\cleardoublepage}
+% 
+% \listoftables
+% \clearpage{\pagestyle{empty}\cleardoublepage}
+
+\include{phdacronyms}
+
+\clearpage      % clear the current page
+\thispagestyle{empty}   % prevent header on this (empty -> next line) page
+\mbox{}         % to insert a not empty page, so that there is min. 1 blank page before next chapter
+\clearpage{\pagestyle{empty}\cleardoublepage}   % clear the current page and start on the right side
+
+%\renewcommand{\tablename}{Table}
+
+\renewcommand{\bibname}{Bibliography}     % instead of Bibliography
+%\renewcommand\citeform{\thechapter.}
+%\addcontentsline{toc}{section}{\listfigurename}   % not really sure
+
+\end{document}

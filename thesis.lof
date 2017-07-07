@@ -1,0 +1,33 @@
+\select@language {english}
+\select@language {dutch}
+\addvspace {10\p@ }
+\gdef \the@ipfilectr {@-1}
+\addvspace {10\p@ }
+\select@language {english}
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-2}
+\addvspace {10\p@ }
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-3}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Schematic view of the various linear and circular accelerators of the CERN accelerator complex, including the LHC injection chain.\relax }}{6}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces The CMS detector, consisting of the pixel and strip tracker, the \acf {ECAL} with preshower, the \acf {HCAL} and its forward component, and the muon systems.\relax }}{7}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces A transverse view of the pixel and strip tracker detectors.\relax }}{8}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces A 3D view of the pixel detector.\relax }}{8}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces The CMS electromagnetic calorimeter.}}{9}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces \relax }}{10}
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-4}
+\addvspace {10\p@ }
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-5}
+\addvspace {10\p@ }
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-6}
+\addvspace {10\p@ }
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-7}
+\addvspace {10\p@ }
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-8}
+\gdef \the@ipfilectr {}

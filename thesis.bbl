@@ -1,0 +1,43 @@
+\begin{thebibliography}{1}
+
+\bibitem{Chatrchyan:2014fea}
+Serguei Chatrchyan et~al.
+\newblock {\em {Description and performance of track and primary-vertex
+  reconstruction with the CMS tracker}}.
+\newblock JINST, 9(10):P10009, 2014.
+
+\bibitem{Chatrchyan:2013dga}
+Serguei Chatrchyan et~al.
+\newblock {\em {Energy Calibration and Resolution of the CMS Electromagnetic
+  Calorimeter in $pp$ Collisions at $\sqrt{s} = 7$ TeV}}.
+\newblock JINST, 8:P09009, 2013.
+\newblock [JINST8,9009(2013)].
+
+\bibitem{Chatrchyan:2008aa}
+S.~Chatrchyan et~al.
+\newblock {\em {The CMS Experiment at the CERN LHC}}.
+\newblock JINST, 3:S08004, 2008.
+
+\bibitem{Tapper:2013yva}
+A.~Tapper and Darin Acosta.
+\newblock {\em {CMS Technical Design Report for the Level-1 Trigger Upgrade}}.
+\newblock 2013.
+
+\bibitem{Andre:2252634}
+Jean-marc~Olivier Andre, Ulf Behrens, James Branson, Philipp~Maximilian
+  Brummer, Olivier Chaze, Sergio Cittolin, Cristian Contescu, Benjamin~Gordon
+  Craigs, Georgiana~Lavinia Darlea, Christian Deldicque, Zeynep Demiragli, Marc
+  Dobson, Nicolas Doualot, Samim Erhan, Jonathan~Richard Fulcher, Dominique
+  Gigi, Maciej~Szymon Gladki, Frank Glege, Guillelmo Gomez~Ceballos,
+  Jeroen~Guido Hegeman, Andre~Georg Holzner, Mindaugas Janulis, Raul
+  Jimenez~Estupinan, Lorenzo Masetti, Franciscus Meijers, Emilio Meschi,
+  Remigius Mommsen, Srecko Morovic, Vivian O'Dell, Luciano Orsini, Christoph
+  Maria~Ernst Paus, Petia Petrova, Marco Pieri, Attila Racz, Thomas Reis,
+  Hannes Sakulin, Christoph Schwick, Dainius Simelevicius, Petr Zejdl, Hamburg,
+  California, San Diego, California, Chicago, Illinois, Massachusetts~Institute
+  of~Technology, Cambridge, Massachusetts, also~at Vilnius~University, Vilnius,
+  Lithuania, and also at.
+\newblock {\em {Performance of the CMS Event Builder}}.
+\newblock Technical Report CMS-CR-2017-034, CERN, Geneva, Feb 2017.
+
+\end{thebibliography}
