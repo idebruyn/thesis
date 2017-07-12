@@ -128,38 +128,38 @@ In the \ac{TOB} and the 3 outermost rings of the \ac{TEC} two silicon sensors ar
 The strip sensors are single sided p-on-n type silicon. The signals from the sensors are amplified, shaped, and stored by 4 or 6 custom APV25 chips per module. When the trigger has made a positive decision, the analog signals from two APV25 chips are multiplexed and sent to the \ac{FED} boards in the service cavern via optical fibers, where they are converted to digital signals. The \acp{FED} then perform pedestal and common mode subtraction as well as cluster finding. Additionally, the data is sparsified in these off-detector electronics, before being sent to the CMS central \ac{DAQ}. Due to charge sharing, this analog read-out scheme also results in an improved spatial resolution of 15 to 40 $\mu$m, depending on the position of the modules and the strip pitch. 
 
 %Different strip pitch/width because
-
-\subsubsection{Tracking}
-
-The tracks of charged particles going through the \ac{CMS} tracker are reconstructed with an iterative tracking approach. This is used to cope with the high occupancy and consequently high combinatorics. Additionally, the first iterations search for tracks with less possible combinations, such as tracks with many pixel hits or a high momentum. After every iteration, the hits associated with the found track are removed to reduce the combinatorics. Each iteration consists of four steps:
-\begin{enumerate}
- \item \textbf{Seed generation.} In this first step hits are combined into seeds for the subsequent track finding. In the initial iterations pixel triplets are used, then pixel pairs, in order to take gaps or non-working modules into account. Next, mixed pixel/strip triplets are taken, and finally strip-only seeds are used. These additional iterations improve the acceptance in $p_T$ and in displacement with respect to the primary vertex.
- \item \textbf{Track finding}. The seeds are used as starting point for a Kalman filter algorithm. This method extrapolates the seed trajectory outward to the next layer, taking into account potential energy loss and multiple scattering. If compatible hits are found in the next layer, the parameters of the trajectory are updated. This process continues until the outermost layer of the tracking system. Using this method, a given seed can generate multiple tracks, or different tracks can share hits. A trajectory cleaner therefore determines the fraction of hits the tracks have in common and discards the track with the lowest number of hits when there are too many shared hits. If both tracks have the same number of hits, the track with the largest $\chi^2$ value is removed.
- \item \textbf{Track fitting.} The track parameters are then refitted using a Kalman filter and smoother, taking all hits determined in the track finding step into account.
- \item \textbf{Track selection.} Finally, the tracks are selected based on quality requirements, such as the number of layers that have hits, the $\chi^2/$dof, and the distance to a primary vertex. This greatly reduces the fraction of reconstructed tracks that are fake.
-\end{enumerate}
-
-The performance of the track reconstruction is excellent, and a high track-finding efficiency is obtained~\cite{Chatrchyan:2014fea} while keeping the rate of fake tracks negligible. The highest tracking efficiency is obtained for muons, which traverse the full detector volume and have an improved momentum resolution due to tracking information from the muon detectors giving a long lever arm. For isolated muons with $p_T$ between 1 and \SI{100}{GeV} the tracking efficiency is higher than 99\% for the entire $\eta$ coverage of the tracker, as can be seen from the left plot in Figure~\ref{fig:eff_eta}. The $p_T$ resolution is about 2-3\% for a muon with $p_T = $ \SI{100}{GeV} up to $|\eta| < 1.6$, but worsens for higher pseudorapidities. Different types of particles interact differently with the detector material. Charged hadrons, for example, are also subject to elastic and inelastic nuclear interactions and have a tracking efficiency of 80-95\% depending on pseudorapidity and transverse momentum, as shown in the right plot of Figure~\ref{fig:eff_eta}.
-
-\begin{figure}[ht]
-  \centering
-\includegraphics[width=.4\textwidth]{muon_eff_eta}\hspace{1cm}
- \includegraphics[width=.4\textwidth]{pion_eff_eta} 
- \caption{The muon efficiency (left) and pion efficiency (right) as a function of pseudorapidity, for multiple transverse momenta.~\cite{Chatrchyan:2014fea}}
- \label{fig:eff_eta}
-\end{figure}
-
-Finally, the primary vertex is reconstructed from the tracks. Since the collisions happen between bunches of protons, multiple protons will be colliding at the same time. The extra collisions, next to the potentially interesting collision, are referred to as pile-up interactions. The particles generated in these collisions are all detected simultaneously and form a challenge to disentangle them from the particles coming from the to be studied interaction.
-
-The reconstruction is done in 2 steps: first the tracks that appear to originate from the same interaction vertex are clustered, then a fitting procedure computes the vertex parameters and assigns a weight to each associated track, reflecting the probability that it corresponds to the considered vertex. Figure~\ref{fig:PV} shows the reconstruction efficiency and the resolution of the primary vertex. The more tracks, the better the vertex is constrained and thus the better the resolution.
-
-\begin{figure}[ht]
-  \centering
-\includegraphics[width=.4\textwidth]{PV_eff}\hspace{1cm}
- \includegraphics[width=.4\textwidth]{PV_res} 
- \caption{The primary vertex reconstruction efficiency (left) and resolution (right) as a function of the number of tracks associated to it.~\cite{Chatrchyan:2014fea}}
- \label{fig:PV}
-\end{figure}
+% 
+% \subsubsection{Tracking}
+% 
+% The tracks of charged particles going through the \ac{CMS} tracker are reconstructed with an iterative tracking approach. This is used to cope with the high occupancy and consequently high combinatorics. Additionally, the first iterations search for tracks with less possible combinations, such as tracks with many pixel hits or a high momentum. After every iteration, the hits associated with the found track are removed to reduce the combinatorics. Each iteration consists of four steps:
+% \begin{enumerate}
+%  \item \textbf{Seed generation.} In this first step hits are combined into seeds for the subsequent track finding. In the initial iterations pixel triplets are used, then pixel pairs, in order to take gaps or non-working modules into account. Next, mixed pixel/strip triplets are taken, and finally strip-only seeds are used. These additional iterations improve the acceptance in $p_T$ and in displacement with respect to the primary vertex.
+%  \item \textbf{Track finding}. The seeds are used as starting point for a Kalman filter algorithm. This method extrapolates the seed trajectory outward to the next layer, taking into account potential energy loss and multiple scattering. If compatible hits are found in the next layer, the parameters of the trajectory are updated. This process continues until the outermost layer of the tracking system. Using this method, a given seed can generate multiple tracks, or different tracks can share hits. A trajectory cleaner therefore determines the fraction of hits the tracks have in common and discards the track with the lowest number of hits when there are too many shared hits. If both tracks have the same number of hits, the track with the largest $\chi^2$ value is removed.
+%  \item \textbf{Track fitting.} The track parameters are then refitted using a Kalman filter and smoother, taking all hits determined in the track finding step into account.
+%  \item \textbf{Track selection.} Finally, the tracks are selected based on quality requirements, such as the number of layers that have hits, the $\chi^2/$dof, and the distance to a primary vertex. This greatly reduces the fraction of reconstructed tracks that are fake.
+% \end{enumerate}
+% 
+% The performance of the track reconstruction is excellent, and a high track-finding efficiency is obtained~\cite{Chatrchyan:2014fea} while keeping the rate of fake tracks negligible. The highest tracking efficiency is obtained for muons, which traverse the full detector volume and have an improved momentum resolution due to tracking information from the muon detectors giving a long lever arm. For isolated muons with $p_T$ between 1 and \SI{100}{GeV} the tracking efficiency is higher than 99\% for the entire $\eta$ coverage of the tracker, as can be seen from the left plot in Figure~\ref{fig:eff_eta}. The $p_T$ resolution is about 2-3\% for a muon with $p_T = $ \SI{100}{GeV} up to $|\eta| < 1.6$, but worsens for higher pseudorapidities. Different types of particles interact differently with the detector material. Charged hadrons, for example, are also subject to elastic and inelastic nuclear interactions and have a tracking efficiency of 80-95\% depending on pseudorapidity and transverse momentum, as shown in the right plot of Figure~\ref{fig:eff_eta}.
+% 
+% \begin{figure}[ht]
+%   \centering
+% \includegraphics[width=.4\textwidth]{muon_eff_eta}\hspace{1cm}
+%  \includegraphics[width=.4\textwidth]{pion_eff_eta} 
+%  \caption{The muon efficiency (left) and pion efficiency (right) as a function of pseudorapidity, for multiple transverse momenta.~\cite{Chatrchyan:2014fea}}
+%  \label{fig:eff_eta}
+% \end{figure}
+% 
+% Finally, the primary vertex is reconstructed from the tracks. Since the collisions happen between bunches of protons, multiple protons will be colliding at the same time. The extra collisions, next to the potentially interesting collision, are referred to as pile-up interactions. The particles generated in these collisions are all detected simultaneously and form a challenge to disentangle them from the particles coming from the to be studied interaction.
+% 
+% The reconstruction is done in 2 steps: first the tracks that appear to originate from the same interaction vertex are clustered, then a fitting procedure computes the vertex parameters and assigns a weight to each associated track, reflecting the probability that it corresponds to the considered vertex. Figure~\ref{fig:PV} shows the reconstruction efficiency and the resolution of the primary vertex. The more tracks, the better the vertex is constrained and thus the better the resolution.
+% 
+% \begin{figure}[ht]
+%   \centering
+% \includegraphics[width=.4\textwidth]{PV_eff}\hspace{1cm}
+%  \includegraphics[width=.4\textwidth]{PV_res} 
+%  \caption{The primary vertex reconstruction efficiency (left) and resolution (right) as a function of the number of tracks associated to it.~\cite{Chatrchyan:2014fea}}
+%  \label{fig:PV}
+% \end{figure}
 
 \subsection{The electromagnetic calorimeter}
 
@@ -221,14 +221,14 @@ The expected transverse energy resolution for jets is shown in Figure~\ref{fig:J
 
 The outermost detector, located entirely on the outside of the solenoid, is a dedicated muon detection system. The purpose of this subsystem is muon identification, momentum measurement, and triggering. As illustrated in Figure~\ref{fig:muons}, the layers of muon chambers are embedded in the iron yoke constraining the magnetic field lines. The strong magnetic field completely saturates the return yoke with a field of about \SI{2}{T}, in opposite direction with respect to the field inside the magnet.
 
-Three different types of gaseous detectors are used. In the barrel, 4 layers of \ac{DT} are installed, covering the pseudorapidity range up to $|\eta| < 1.2$. Due the higher flux and the larger and non-uniform magnetic field at larger pseudorapidities, \ac{CSC} are used in the endcap region ($0.9 < |\eta| < 2.4$). The \acp{DT} are designed for the low muon rates that are expected in the barrel and thus have a slower response time than the \acp{CSC}. \acp{RPC} complement the \ac{DT} and \ac{CSC} systems in the pseudorapidity region up to $|\eta| < 1.8$. They provide a fast response, with a good time resolution but a worse spatial resolution than the \acp{DT} or \acp{CSC}. The \acp{RPC} are therefore very well suited to trigger on muons.
-
 \begin{figure}[ht]
   \centering
  \includegraphics[width=.9\textwidth]{muon_system_new}
  \caption{A transverse view of one quarter of \ac{CMS} showing the position of the 3 types of muon detectors. The \protect\acf{DT} are located in the barrel, the \protect\acf{CSC} in the endcaps, and the \protect\acf{RPC} in both regions up to $|\eta| < 1.8$.}
  \label{fig:muons}
 \end{figure}
+
+Three different types of gaseous detectors are used. In the barrel, 4 layers of \ac{DT} are installed, covering the pseudorapidity range up to $|\eta| < 1.2$. Due the higher flux and the larger and non-uniform magnetic field at larger pseudorapidities, \ac{CSC} are used in the endcap region ($0.9 < |\eta| < 2.4$). The \acp{DT} are designed for the low muon rates that are expected in the barrel and thus have a slower response time than the \acp{CSC}. \acp{RPC} complement the \ac{DT} and \ac{CSC} systems in the pseudorapidity region up to $|\eta| < 1.8$. They provide a fast response, with a good time resolution but a worse spatial resolution than the \acp{DT} or \acp{CSC}. The \acp{RPC} are therefore very well suited to trigger on muons.
 
 The offline reconstruction efficiency of simulated events containing one muon is typically between 95\% and 99\%, except for the regions between 2 \ac{DT} wheels ($|\eta| = 0.25$ and $|\eta| = 0.8$) and the transition region between the \acp{DT} and \acp{CSC} ($|\eta| = 1.2$), where the efficiency drops to 92\%. The reconstruction of muons using the information from the tracker and the muon detectors will be detailed in Section~\ref{sec:muon_reconstruction}. For low pseudorapidities and small momenta, the offline momentum resolution of the standalone muon system is about 9\%. At momenta around \SI{1}{TeV}, the resolution varies from 15\% to 40\%, depending on the pseudorapidity. As demonstrated in Figure~\ref{fig:muon_res}, performing a global momentum fit using the tracker as well improves the resolution by an order of magnitude at low muon momenta. At high momenta the resolution of the full system is about 5\%.
 

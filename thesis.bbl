@@ -1,11 +1,5 @@
 \begin{thebibliography}{1}
 
-\bibitem{Chatrchyan:2014fea}
-Serguei Chatrchyan et~al.
-\newblock {\em {Description and performance of track and primary-vertex
-  reconstruction with the CMS tracker}}.
-\newblock JINST, 9(10):P10009, 2014.
-
 \bibitem{Chatrchyan:2013dga}
 Serguei Chatrchyan et~al.
 \newblock {\em {Energy Calibration and Resolution of the CMS Electromagnetic
@@ -39,5 +33,11 @@ Jean-marc~Olivier Andre, Ulf Behrens, James Branson, Philipp~Maximilian
   Lithuania, and also at.
 \newblock {\em {Performance of the CMS Event Builder}}.
 \newblock Technical Report CMS-CR-2017-034, CERN, Geneva, Feb 2017.
+
+\bibitem{Chatrchyan:2014fea}
+Serguei Chatrchyan et~al.
+\newblock {\em {Description and performance of track and primary-vertex
+  reconstruction with the CMS tracker}}.
+\newblock JINST, 9(10):P10009, 2014.
 
 \end{thebibliography}

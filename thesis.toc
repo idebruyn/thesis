@@ -23,26 +23,26 @@
 \contentsline {subsection}{\numberline {3.2.1}The tracker}{8}
 \contentsline {subsubsection}{\numberline {3.2.1.1}The pixel tracker}{9}
 \contentsline {subsubsection}{\numberline {3.2.1.2}The strip tracker}{10}
-\contentsline {subsubsection}{\numberline {3.2.1.3}Tracking}{10}
-\contentsline {subsection}{\numberline {3.2.2}The electromagnetic calorimeter}{12}
-\contentsline {subsection}{\numberline {3.2.3}The hadronic calorimeter}{13}
-\contentsline {subsection}{\numberline {3.2.4}The muon system}{14}
-\contentsline {subsection}{\numberline {3.2.5}Trigger and data acquisition}{15}
-\contentsline {subsection}{\numberline {3.2.6}CMS performance in Run 2}{17}
-\contentsline {subsubsection}{\numberline {3.2.6.1}Pre-amplifier saturation in the APV25 chip}{17}
-\contentsline {chapter}{\numberline {4}Event Simulation and Reconstruction}{21}
-\contentsline {section}{\numberline {4.1}Event generation}{21}
-\contentsline {section}{\numberline {4.2}Detector simulation}{21}
-\contentsline {subsection}{\numberline {4.2.1}Delphes}{21}
-\contentsline {subsection}{\numberline {4.2.2}GEANT4}{21}
-\contentsline {section}{\numberline {4.3}Event reconstruction}{21}
-\contentsline {subsection}{\numberline {4.3.1}Electron reconstruction}{21}
-\contentsline {subsection}{\numberline {4.3.2}Muon reconstruction}{21}
-\contentsline {subsection}{\numberline {4.3.3}Jet reconstruction}{21}
-\contentsline {subsection}{\numberline {4.3.4}B-tagging}{21}
-\contentsline {subsection}{\numberline {4.3.5}Missing transverse energy reconstruction}{21}
-\contentsline {subsection}{\numberline {4.3.6}Particle flow}{21}
-\contentsline {section}{\numberline {4.4}Simulation of the SIMP signal}{21}
+\contentsline {subsection}{\numberline {3.2.2}The electromagnetic calorimeter}{10}
+\contentsline {subsection}{\numberline {3.2.3}The hadronic calorimeter}{11}
+\contentsline {subsection}{\numberline {3.2.4}The muon system}{13}
+\contentsline {subsection}{\numberline {3.2.5}Trigger and data acquisition}{14}
+\contentsline {subsection}{\numberline {3.2.6}CMS performance in Run 2}{15}
+\contentsline {subsubsection}{\numberline {3.2.6.1}Pre-amplifier saturation in the APV25 chip}{16}
+\contentsline {chapter}{\numberline {4}Event Simulation and Reconstruction}{19}
+\contentsline {section}{\numberline {4.1}Event generation}{19}
+\contentsline {section}{\numberline {4.2}Detector simulation}{19}
+\contentsline {subsection}{\numberline {4.2.1}Delphes}{19}
+\contentsline {subsection}{\numberline {4.2.2}GEANT4}{19}
+\contentsline {section}{\numberline {4.3}Event reconstruction}{19}
+\contentsline {subsection}{\numberline {4.3.1}Track reconstruction}{19}
+\contentsline {subsection}{\numberline {4.3.2}Electron reconstruction}{20}
+\contentsline {subsection}{\numberline {4.3.3}Muon reconstruction}{20}
+\contentsline {subsection}{\numberline {4.3.4}Jet reconstruction}{20}
+\contentsline {subsection}{\numberline {4.3.5}B-tagging}{20}
+\contentsline {subsection}{\numberline {4.3.6}Missing transverse energy reconstruction}{20}
+\contentsline {subsection}{\numberline {4.3.7}Particle flow}{20}
+\contentsline {section}{\numberline {4.4}Simulation of the SIMP signal}{20}
 \contentsline {chapter}{\numberline {5}The Monojet Analysis}{23}
 \contentsline {section}{\numberline {5.1}Introduction}{23}
 \contentsline {section}{\numberline {5.2}Event selection}{23}
