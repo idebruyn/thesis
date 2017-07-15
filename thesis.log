@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.23)  11 JUL 2017 15:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.23)  13 JUL 2017 20:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -929,129 +929,136 @@ Chapter 3.
 File: chapt3/lhc_complex.jpg Graphic file (type jpg)
 
 <use chapt3/lhc_complex.jpg>
-Package pdftex.def Info: chapt3/lhc_complex.jpg used on input line 31.
+Package pdftex.def Info: chapt3/lhc_complex.jpg used on input line 32.
 (pdftex.def)             Requested size: 313.69025pt x 213.31926pt.
  [6 <./chapt3/lhc_complex.jpg>]
 <chapt3/CMS_lumi_allyears.png, id=53, 578.16pt x 433.62pt>
 File: chapt3/CMS_lumi_allyears.png Graphic file (type png)
 
 <use chapt3/CMS_lumi_allyears.png>
-Package pdftex.def Info: chapt3/CMS_lumi_allyears.png used on input line 60.
+Package pdftex.def Info: chapt3/CMS_lumi_allyears.png used on input line 61.
 (pdftex.def)             Requested size: 313.69025pt x 235.26288pt.
 
 
-Package acronym Warning: Acronym `ALICE' is not defined on input line 67.
+Package acronym Warning: Acronym `ALICE' is not defined on input line 68.
 
 
-Package acronym Warning: Acronym `LHCb' is not defined on input line 67.
+Package acronym Warning: Acronym `LHCb' is not defined on input line 68.
 
-[7 <./chapt3/CMS_lumi_allyears.png>]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7 <./chapt3/CMS_lumi_allyears.png>]
 <chapt3/cms_complete_labelled.pdf, id=60, 807.015pt x 583.17876pt>
 File: chapt3/cms_complete_labelled.pdf Graphic file (type pdf)
 
 <use chapt3/cms_complete_labelled.pdf>
-Package pdftex.def Info: chapt3/cms_complete_labelled.pdf used on input line 76
+Package pdftex.def Info: chapt3/cms_complete_labelled.pdf used on input line 77
 .
 (pdftex.def)             Requested size: 376.42575pt x 272.02069pt.
- [8 <./chapt3/cms_complete_labelled.pdf>] <chapt3/fig_cmstracker.png, id=218, 1
-111.15125pt x 522.95375pt>
+
+Underfull \vbox (badness 1043) has occurred while \output is active []
+
+ [8 <./chapt3/cms_complete_labelled.pdf>]
+<chapt3/fig_cmstracker.png, id=218, 1111.15125pt x 522.95375pt>
 File: chapt3/fig_cmstracker.png Graphic file (type png)
 
 <use chapt3/fig_cmstracker.png>
-Package pdftex.def Info: chapt3/fig_cmstracker.png used on input line 99.
+Package pdftex.def Info: chapt3/fig_cmstracker.png used on input line 100.
 (pdftex.def)             Requested size: 376.42575pt x 177.16354pt.
 
 <chapt3/pixel.pdf, id=219, 602.65152pt x 361.95226pt>
 File: chapt3/pixel.pdf Graphic file (type pdf)
  <use chapt3/pixel.pdf>
-Package pdftex.def Info: chapt3/pixel.pdf used on input line 115.
+Package pdftex.def Info: chapt3/pixel.pdf used on input line 116.
 (pdftex.def)             Requested size: 250.95476pt x 150.72101pt.
 
-Underfull \vbox (badness 4036) has occurred while \output is active []
-
- [9 <./chapt3/fig_cmstracker.png (PNG copy)>] [10 <./chapt3/pixel.pdf>]
+[9 <./chapt3/fig_cmstracker.png (PNG copy)>] [10 <./chapt3/pixel.pdf>]
 <chapt3/Transverse_section.pdf, id=230, 585.60579pt x 365.04005pt>
 File: chapt3/Transverse_section.pdf Graphic file (type pdf)
 
 <use chapt3/Transverse_section.pdf>
-Package pdftex.def Info: chapt3/Transverse_section.pdf used on input line 174.
+Package pdftex.def Info: chapt3/Transverse_section.pdf used on input line 175.
 (pdftex.def)             Requested size: 334.60422pt x 208.5763pt.
 
 <chapt3/ecal_res.png, id=231, 505.13719pt x 484.05844pt>
 File: chapt3/ecal_res.png Graphic file (type png)
 
 <use chapt3/ecal_res.png>
-Package pdftex.def Info: chapt3/ecal_res.png used on input line 188.
+Package pdftex.def Info: chapt3/ecal_res.png used on input line 189.
 (pdftex.def)             Requested size: 250.95476pt x 240.48492pt.
  [11 <./chapt3/Transverse_section.pdf>]
 <chapt3/hcal.png, id=249, 1218.05063pt x 649.67719pt>
 File: chapt3/hcal.png Graphic file (type png)
  <use chapt3/hcal.png>
-Package pdftex.def Info: chapt3/hcal.png used on input line 204.
+Package pdftex.def Info: chapt3/hcal.png used on input line 205.
 (pdftex.def)             Requested size: 334.60422pt x 178.46846pt.
 
 [12 <./chapt3/ecal_res.png (PNG copy)> <./chapt3/hcal.png (PNG copy)>]
 <chapt3/JER.png, id=254, 791.95876pt x 536.0025pt>
 File: chapt3/JER.png Graphic file (type png)
  <use chapt3/JER.png>
-Package pdftex.def Info: chapt3/JER.png used on input line 215.
+Package pdftex.def Info: chapt3/JER.png used on input line 216.
 (pdftex.def)             Requested size: 250.95476pt x 169.84766pt.
 
 <chapt3/muon_system_new.png, id=255, 1013.28563pt x 660.96938pt>
 File: chapt3/muon_system_new.png Graphic file (type png)
 
 <use chapt3/muon_system_new.png>
-Package pdftex.def Info: chapt3/muon_system_new.png used on input line 226.
+Package pdftex.def Info: chapt3/muon_system_new.png used on input line 227.
 (pdftex.def)             Requested size: 376.42575pt x 245.54323pt.
  [13 <./chapt3/JER.png (PNG copy)> <./chapt3/muon_system_new.png (PNG copy)>]
 <chapt3/muon_res.png, id=262, 990.70125pt x 661.72218pt>
 File: chapt3/muon_res.png Graphic file (type png)
 
 <use chapt3/muon_res.png>
-Package pdftex.def Info: chapt3/muon_res.png used on input line 237.
+Package pdftex.def Info: chapt3/muon_res.png used on input line 238.
 (pdftex.def)             Requested size: 376.42575pt x 251.42674pt.
  [14 <./chapt3/muon_res.png (PNG copy)>]
 <chapt3/trigger.png, id=266, 897.3525pt x 630.10406pt>
 File: chapt3/trigger.png Graphic file (type png)
 
 <use chapt3/trigger.png>
-Package pdftex.def Info: chapt3/trigger.png used on input line 250.
+Package pdftex.def Info: chapt3/trigger.png used on input line 251.
 (pdftex.def)             Requested size: 376.42575pt x 264.315pt.
  <chapt3/DAQ.png, id=267, 641.39626pt x 265.74281pt>
 File: chapt3/DAQ.png Graphic file (type png)
 
 <use chapt3/DAQ.png>
-Package pdftex.def Info: chapt3/DAQ.png used on input line 260.
+Package pdftex.def Info: chapt3/DAQ.png used on input line 261.
 (pdftex.def)             Requested size: 376.42575pt x 155.96375pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [15 <./chapt3/trigger.png (PNG copy)>]
 <chapt3/CMS_recorded_lumi.png, id=271, 578.16pt x 433.62pt>
 File: chapt3/CMS_recorded_lumi.png Graphic file (type png)
 
 <use chapt3/CMS_recorded_lumi.png>
-Package pdftex.def Info: chapt3/CMS_recorded_lumi.png used on input line 273.
+Package pdftex.def Info: chapt3/CMS_recorded_lumi.png used on input line 274.
 (pdftex.def)             Requested size: 313.69025pt x 235.26288pt.
-
-<chapt3/APVsaturation_SOverN.png, id=272, 1190.4475pt x 560.0925pt>
+ [16 <./chapt3/DAQ.png (PNG copy)> <./chapt3/CMS_recorded_lumi.png>]
+<chapt3/APVsaturation_SOverN.png, id=276, 1190.4475pt x 560.0925pt>
 File: chapt3/APVsaturation_SOverN.png Graphic file (type png)
 
 <use chapt3/APVsaturation_SOverN.png>
-Package pdftex.def Info: chapt3/APVsaturation_SOverN.png used on input line 284
+Package pdftex.def Info: chapt3/APVsaturation_SOverN.png used on input line 285
 .
 (pdftex.def)             Requested size: 376.42575pt x 177.10522pt.
 
-<chapt3/nhits_perRunPeriod.pdf, id=273, 569.12625pt x 444.66125pt>
+<chapt3/nhits_perRunPeriod.pdf, id=277, 569.12625pt x 444.66125pt>
 File: chapt3/nhits_perRunPeriod.pdf Graphic file (type pdf)
 
 <use chapt3/nhits_perRunPeriod.pdf>
-Package pdftex.def Info: chapt3/nhits_perRunPeriod.pdf used on input line 291.
+Package pdftex.def Info: chapt3/nhits_perRunPeriod.pdf used on input line 292.
 (pdftex.def)             Requested size: 250.95476pt x 196.07222pt.
- [16 <./chapt3/DAQ.png (PNG copy)> <./chapt3/CMS_recorded_lumi.png>]
+
 <chapt3/APVsaturation_muoneff.png, id=278, 600.2425pt x 577.15625pt>
 File: chapt3/APVsaturation_muoneff.png Graphic file (type png)
 
 <use chapt3/APVsaturation_muoneff.png>
 Package pdftex.def Info: chapt3/APVsaturation_muoneff.png used on input line 30
-1.
+2.
 (pdftex.def)             Requested size: 250.95476pt x 241.30313pt.
  [17 <./chapt3/APVsaturation_SOverN.png> <./chapt3/nhits_perRunPeriod.pdf, page
  is rotated 90 degrees>] [18 <./chapt3/APVsaturation_muoneff.png>])
@@ -1070,38 +1077,41 @@ Chapter 4.
 File: chapt3/muon_eff_eta.png Graphic file (type png)
 
 <use chapt3/muon_eff_eta.png>
-Package pdftex.def Info: chapt3/muon_eff_eta.png used on input line 36.
+Package pdftex.def Info: chapt3/muon_eff_eta.png used on input line 38.
 (pdftex.def)             Requested size: 167.2989pt x 161.36319pt.
 
 <chapt3/pion_eff_eta.png, id=334, 691.83469pt x 660.21657pt>
 File: chapt3/pion_eff_eta.png Graphic file (type png)
 
 <use chapt3/pion_eff_eta.png>
-Package pdftex.def Info: chapt3/pion_eff_eta.png used on input line 37.
+Package pdftex.def Info: chapt3/pion_eff_eta.png used on input line 39.
 (pdftex.def)             Requested size: 167.2989pt x 159.65402pt.
 
 <chapt3/PV_eff.png, id=335, 569.12625pt x 546.04pt>
 File: chapt3/PV_eff.png Graphic file (type png)
  <use chapt3/PV_eff.png>
-Package pdftex.def Info: chapt3/PV_eff.png used on input line 48.
+Package pdftex.def Info: chapt3/PV_eff.png used on input line 50.
 (pdftex.def)             Requested size: 167.2989pt x 160.51382pt.
 
 <chapt3/PV_res.png, id=336, 569.12625pt x 546.04pt>
 File: chapt3/PV_res.png Graphic file (type png)
  <use chapt3/PV_res.png>
-Package pdftex.def Info: chapt3/PV_res.png used on input line 49.
+Package pdftex.def Info: chapt3/PV_res.png used on input line 51.
 (pdftex.def)             Requested size: 167.2989pt x 160.51382pt.
 
-[20 <./chapt3/muon_eff_eta.png (PNG copy)> <./chapt3/pion_eff_eta.png (PNG copy
-)>] [21 <./chapt3/PV_eff.png (PNG copy)> <./chapt3/PV_res.png (PNG copy)>]
-[22
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [20 <./chapt3/muon_eff_eta.png (PNG copy)> <./chapt3/pion_eff_eta.png (PNG cop
+y)>]
+[21 <./chapt3/PV_eff.png (PNG copy)> <./chapt3/PV_res.png (PNG copy)>] [22
 
 
 
 ])
 \openout2 = `chapt6/chapt6.aux'.
 
- (./chapt6/chapt6.tex
+
+(./chapt6/chapt6.tex
 Chapter 5.
 [23
 
@@ -1285,10 +1295,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 112--113
 (./chapt3/chapt3.aux) (./chapt4/chapt4.aux) (./chapt6/chapt6.aux)
 (./chapt5/chapt5.aux) (./chapt7/chapt7.aux) (./phdacronyms.aux)) ) 
 Here is how much of TeX's memory you used:
- 16876 strings out of 493029
- 318760 string characters out of 6136234
- 346314 words of memory out of 5000000
- 20081 multiletter control sequences out of 15000+600000
+ 16879 strings out of 493029
+ 318788 string characters out of 6136234
+ 346351 words of memory out of 5000000
+ 20084 multiletter control sequences out of 15000+600000
  41996 words of font info for 81 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
  38i,11n,47p,10377b,555s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1307,7 +1317,7 @@ mf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/tim
 es/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
 
-Output written on thesis.pdf (40 pages, 4077796 bytes).
+Output written on thesis.pdf (40 pages, 4078421 bytes).
 PDF statistics:
  433 PDF objects out of 1000 (max. 8388607)
  245 compressed objects within 3 object streams
