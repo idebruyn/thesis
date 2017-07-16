@@ -67,22 +67,34 @@ Additionally, the electron and photon candidates must satisfy identification cri
 \subsection{Muon reconstruction}
 \label{sec:muon_reconstruction}
 
+Muon tracking is performed using 2 complementary approaches. The first method starts from standalone muons which are reconstructed from hits in the muon detectors using pattern recognition. The standalone muons are then matched to tracks in the tracker, and the hits are combined to form a global muon track. This global muon fit improves the momentum resolution compared to the tracker-only fit at muon momenta larger than \SI{200}{GeV}.
+
+For momenta below \SI{10}{GeV}, muons often fail the global muon conditions which require the muon to penetrate through more than one muon detector plane, due to the large multiple scattering in the return yoke. In this case, tracker muon reconstruction is more efficient since it only requires one muon segment. Each track in the tracker with a transverse momentum larger than \SI{0.5}{GeV} and a total momentum larger than \SI{2.5}{GeV} is therefore extrapolated to the muon system and if at least one matching track segment it found, it is retained as muon track.
+
+Within the geometrical acceptance of the muon system about 99\% of the muons are reconstructed, either as global muon or as tracker muon and frequently as both. Global and tracker muons that share the same track inside the tracker are merged into a single candidate. Some muons are only reconstructed as standalone muons, in which case they have a worse momentum resolution compared to the global and tracker muons.
+
+Charged hadrons can be misreconstructed as muons if e.g. a part of the hadron shower reaches the muon system. In order to improve the muon identification, the \ac{PF} muon identification algorithm described in Section~\ref{sec:PF} also matches energy deposits in the \ac{ECAL} and \ac{HCAL} with the muon track.
+
 \subsection{Jet reconstruction}
 \label{sec:jet_reconstruction}
 
+
+
 \subsection{B-tagging}
+
+
 
 \subsection{Missing transverse energy reconstruction}
 
+
+
 \subsection{Particle flow}
+\label{sec:PF}
+
+
 
 \section{Simulation of the SIMP signal}
 
 
 \clearpage
-%\footnotesize
-%\bibliographystyle{ieeetr}
-%\bibliography{chapt8}
-%\normalsize
-
 \clearpage{\pagestyle{empty}\cleardoublepage}

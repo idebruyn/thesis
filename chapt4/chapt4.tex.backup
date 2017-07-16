@@ -56,22 +56,31 @@ The reconstruction is done in 2 steps: first the tracks that appear to originate
 \subsection{Electron and isolated photon reconstruction}
 \label{sec:electron_reconstruction}
 
-% A photon candidate is seeded from an ECAL supercluster with ET larger than 10 GeV, with no link to a GSF track.
-% The total energy of the collected ECAL clusters is corrected for the energy missed in the process,
-% with analytical functions of E and η. These corrections can be as large as 25\% at |η|≈1.5 where the tracker thickness is largest, and at low pT. This corrected energy is assigned to the photons, and the photon direction is taken to be that of the supercluster. The final energy assignment for electrons is obtained from a combination of the corrected ECAL energy with the momentum of the GSF track and the electron direction is chosen to be that of the GSF track. 
-% lectron candidates must satisfy additional identification criteria.  Specifically, up to fourteen variables—including the amount of energy radiated off the GSF track, the distance between the GSF track extrapolation to the ECAL entrance and the position of the ECAL seeding cluster, the ratio between the energies gathered in HCAL and ECAL by the track-cluster association process, and the KF and GSF track χ2 and numbers of hits—are combined in BDTs trained separately in the ECAL barrel and endcaps acceptance, and for isolated and nonisolated electrons.
-% Photon candidates are retained if they are isolated from other tracks and calorimeter clusters in the event, and if the ECAL cell energy distribution and the ratio between the HCAL and ECAL energies are compatible with those expected from a photon shower.
-
 Electrons are reconstructed using information from both the tracker and the calorimeters. Due to the large amount of material present in the tracker, electrons will emit bremsstrahlung photons, and photons will often convert into $e^+e^-$ pairs, which can again radiate bremsstrahlung photons. The electron and photon reconstruction is therefore very similar.
 
-For electrons, a \ac{GSF} candidate is taken as starting point. This candidate is obtained using 2 different methods to reconstruct the electron track from the hits in the tracker. This track reconstruction should gather all radiated energy from the electron. First, the ECAL-based approach is used, grouping \ac{ECAL} clusters into superclusters. These superclusters collect the energy of the electron and the bremsstrahlung photons in a small $\eta$ window and a large $\phi$ window, taking the bending of the electron in the magnetic field into account. The supercluster energy and position is then used to determine the position of the corresponding hits in the tracker layers. Next, the tracker-based approach is used to reconstruct electrons missed by the ECAL-based method. In this case, all the tracks from the iterative tracking with transverse momentum larger than \SI{2}{GeV} are used. The obtained electron seeds are then used in the specific electron tracking, done by a \ac{GSF} fit, which is more adapted to electrons than the Kalman filter used in the iterative tracking, as it describes the energy loss in each tracker layer. 
+For electrons, a \ac{GSF} candidate is taken as starting point. This candidate is obtained using 2 different methods to reconstruct the electron track from the hits in the tracker. This track reconstruction should gather all radiated energy from the electron. First, the ECAL-based approach is used, grouping \ac{ECAL} clusters into superclusters. These superclusters collect the energy of the electron and the bremsstrahlung photons in a small $\eta$ window and a large $\phi$ window, taking the bending of the electron in the magnetic field into account. The supercluster energy and position is then used to determine the position of the corresponding hits in the tracker layers. Next, the tracker-based approach is used to reconstruct electrons missed by the ECAL-based method. In this case, all the tracks from the iterative tracking with transverse momentum larger than \SI{2}{GeV} are used. The obtained electron seeds are then used in the specific electron tracking, done by a \ac{GSF} fit, which is more adapted to electrons than the Kalman filter used in the iterative tracking, as it describes the energy loss in each tracker layer. In the case of isolated photons, a candidate is seeded from an \ac{ECAL} supercluster with transverse energy larger than \SI{10}{GeV} which is not linked to a \ac{GSF} track.
 
-The total energy of the accumulated \ac{ECAL} clusters is corrected for the energy that was lost in the process, using analytical functions of the energy and pseudorapidity. The applied corrections can be as large as 25\%, at low transverse momentum and at $|\eta| = 1.5$, where the material density in the tracker is largest. The energy of the electron is then obtained from the energy deposited in the \ac{ECAL} and the momentum of the \ac{GSF} track, while the direction of the electron
+The total energy of the accumulated \ac{ECAL} clusters is corrected for the energy that was lost in the process, using analytical functions of the energy and pseudorapidity. The applied corrections can be as large as 25\%, at low transverse momentum and at $|\eta| = 1.5$, where the material density in the tracker is largest. The energy of the electron is then obtained from a combination of the corrected energy and the momentum of the \ac{GSF} track, while the direction of the electron is taken from the \ac{GSF} track. For photons, the corrected energy and the direction of the supercluster are used.
 
-A photon
+Additionally, the electron and photon candidates must satisfy identification criteria to be retained. In the case of electrons a boosted decision tree is used, combining fourteen variables including the amount of energy radiated and the ratio between the energies gathered in HCAL and ECAL, while for photons the candidates must be isolated from other tracks and calorimeter clusters, and the energy distribution in the \ac{ECAL} and the ratio between the \ac{HCAL} and \ac{ECAL} energies must be compatible with the expectation from a photon shower.
 
 \subsection{Muon reconstruction}
 \label{sec:muon_reconstruction}
+
+% high efficiency of the inner track and muon segment reconstruction, about 99% of
+% the muons produced within the geometrical acceptance of the muon system are reconstructed
+% either as a global muon or a tracker muon and very often as both.  Global muons and tracker
+% muons that share the same inner track are merged into a single candidate. Muons reconstructed
+% only as standalone-muon tracks have worse momentum resolution
+% 
+% Charged hadrons may be misreconstructed as muons e.g. if some of the hadron shower rem-
+% nants reach the muon system.In the PF muon identification algorithm (Section 4.2), muon energy deposits in ECAL,
+% HCAL, and HO are associated with the muon track and this information is used to improve
+% the muon identification performance.
+
+Muon tracking is performed using 2 complementary approaches. The first method starts from standalone muons which are reconstructed from hits in the muon detectors using pattern recognition. The standalone muons are then matched to tracks in the tracker, and the hits are combined to form a global muon track. This global muon fit improves the momentum resolution compared to the tracker-only fit at muon momenta larger than \SI{200\}{GeV}.
+
+For momenta below \SI{10}{GeV}, muons often fail the global muon conditions which require the muon to penetrate through more than one muon detector plane, due to the large multiple scattering in the return yoke. In this case, tracker muon reconstruction is more efficient since it only requires one muon segment. Each track in the tracker with a transverse momentum larger than \SI{0.5}{GeV} and a total momentum larger than \SI{2.5}{GeV} is therefore extrapolated to the muon system and if at least one matching track segment it found, it is retained as muon track.
 
 \subsection{Jet reconstruction}
 \label{sec:jet_reconstruction}
@@ -81,6 +90,7 @@ A photon
 \subsection{Missing transverse energy reconstruction}
 
 \subsection{Particle flow}
+\label{sec:PF}
 
 \section{Simulation of the SIMP signal}
 

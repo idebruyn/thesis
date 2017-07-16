@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.23)  15 JUL 2017 22:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.23)  16 JUL 2017 18:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1101,16 +1101,15 @@ Package pdftex.def Info: chapt3/PV_res.png used on input line 51.
 
 [20 <./chapt3/muon_eff_eta.png (PNG copy)> <./chapt3/pion_eff_eta.png (PNG copy
 )>] [21 <./chapt3/PV_eff.png (PNG copy)> <./chapt3/PV_res.png (PNG copy)>]
-[22
-
-
-
-])
+[22])
 \openout2 = `chapt6/chapt6.aux'.
 
  (./chapt6/chapt6.tex
 Chapter 5.
 [23
+
+
+
 
 
 
@@ -1263,36 +1262,41 @@ Underfull \hbox (badness 10000) in paragraph at lines 90--91
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--101
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--101
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--114
+Underfull \hbox (badness 10000) in paragraph at lines 114--115
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--114
+Underfull \hbox (badness 10000) in paragraph at lines 114--115
 
  []
 
-) [32] [33
+) [32]
+
+Package lineno Warning: Linenumber reference failed, 
+(lineno)                rerun to get it right.
+
+[33
 
 
 ] [34
@@ -1302,10 +1306,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 113--114
 (./chapt3/chapt3.aux) (./chapt4/chapt4.aux) (./chapt6/chapt6.aux)
 (./chapt5/chapt5.aux) (./chapt7/chapt7.aux) (./phdacronyms.aux)) ) 
 Here is how much of TeX's memory you used:
- 16881 strings out of 493029
- 318800 string characters out of 6136234
- 346374 words of memory out of 5000000
- 20086 multiletter control sequences out of 15000+600000
+ 16886 strings out of 493029
+ 318833 string characters out of 6136234
+ 346438 words of memory out of 5000000
+ 20091 multiletter control sequences out of 15000+600000
  41996 words of font info for 81 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
  38i,11n,47p,10377b,555s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1324,7 +1328,7 @@ mf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/tim
 es/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
 
-Output written on thesis.pdf (40 pages, 4081180 bytes).
+Output written on thesis.pdf (40 pages, 4082897 bytes).
 PDF statistics:
  433 PDF objects out of 1000 (max. 8388607)
  245 compressed objects within 3 object streams
