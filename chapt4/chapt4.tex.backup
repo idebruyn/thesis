@@ -22,6 +22,7 @@ In order to 2 addditional tools? are needed.
 \section{Event reconstruction}
 
 \subsection{Track reconstruction}
+\label{sec:tracking}
 
 The tracks of charged particles going through the \ac{CMS} tracker are reconstructed with an iterative tracking approach. This is used to cope with the high occupancy and consequently high combinatorics. Additionally, the first iterations search for tracks with less possible combinations, such as tracks with many pixel hits or a high momentum. After every iteration, the hits associated with the found track are removed to reduce the combinatorics. Each iteration consists of four steps:
 \begin{enumerate}
@@ -67,38 +68,42 @@ Additionally, the electron and photon candidates must satisfy identification cri
 \subsection{Muon reconstruction}
 \label{sec:muon_reconstruction}
 
-% high efficiency of the inner track and muon segment reconstruction, about 99% of
-% the muons produced within the geometrical acceptance of the muon system are reconstructed
-% either as a global muon or a tracker muon and very often as both.  Global muons and tracker
-% muons that share the same inner track are merged into a single candidate. Muons reconstructed
-% only as standalone-muon tracks have worse momentum resolution
-% 
-% Charged hadrons may be misreconstructed as muons e.g. if some of the hadron shower rem-
-% nants reach the muon system.In the PF muon identification algorithm (Section 4.2), muon energy deposits in ECAL,
-% HCAL, and HO are associated with the muon track and this information is used to improve
-% the muon identification performance.
-
-Muon tracking is performed using 2 complementary approaches. The first method starts from standalone muons which are reconstructed from hits in the muon detectors using pattern recognition. The standalone muons are then matched to tracks in the tracker, and the hits are combined to form a global muon track. This global muon fit improves the momentum resolution compared to the tracker-only fit at muon momenta larger than \SI{200\}{GeV}.
+Muon tracking is performed using 2 complementary approaches. The first method starts from standalone muons which are reconstructed from hits in the muon detectors using pattern recognition. The standalone muons are then matched to tracks in the tracker, and the hits are combined to form a global muon track. This global muon fit improves the momentum resolution compared to the tracker-only fit at muon momenta larger than \SI{200}{GeV}.
 
 For momenta below \SI{10}{GeV}, muons often fail the global muon conditions which require the muon to penetrate through more than one muon detector plane, due to the large multiple scattering in the return yoke. In this case, tracker muon reconstruction is more efficient since it only requires one muon segment. Each track in the tracker with a transverse momentum larger than \SI{0.5}{GeV} and a total momentum larger than \SI{2.5}{GeV} is therefore extrapolated to the muon system and if at least one matching track segment it found, it is retained as muon track.
+
+Within the geometrical acceptance of the muon system about 99\% of the muons are reconstructed, either as global muon or as tracker muon and frequently as both. Global and tracker muons that share the same track inside the tracker are merged into a single candidate. Some muons are only reconstructed as standalone muons, in which case they have a worse momentum resolution compared to the global and tracker muons.
+
+Charged hadrons can be misreconstructed as muons if e.g. a part of the hadron shower reaches the muon system. In order to improve the muon identification, the \ac{PF} muon identification algorithm described in Section~\ref{sec:PF} also matches energy deposits in the \ac{ECAL} and \ac{HCAL} with the muon track.
+
+\subsection{Particle flow}
+\label{sec:PF}
+
+The \acf{PF} algorithm reconstructs particles by combining information from all different \ac{CMS} subdetectors, linking different elements, such as tracks in the tracker, calorimeter clusters, and muon tracks. The obtained collection of particles is then used to reconstruct jets and to determine the missing transverse energy.
+
+In a first step, the \ac{PF} algorithm identifies charged particle tracks, as defined in Section~\ref{sec:tracking}, and Sections~\ref{sec:electron_reconstruction} and \ref{sec:muon_reconstruction} for electron and muon tracks, respectively. At the same time, the calorimeter clusters are reconstructed with a clustering algorithm designed specifically for the \ac{PF} event reconstruction. In this algorithm, cluster seeds are first identified as local energy maxima above a given seed threshold, and with respect to the four or eight closest cells. The clusters are then formed by accumulating neighboring cells with an energy above a given cell threshold, in order to suppress noise.
+
+The \ac{PF} elements in the different subdetectors are then connected by a link algorithm which excludes any double counting. The link algorithm produces blocks of associated elements, quantifying the quality of the link by defining a distance between the elements. When an element is linked to multiple other elements, only the link with the shortest distance is kept.
+
+More precisely, a link between a track in the tracker and a calorimeter cluster is made by extrapolating it from the last hit in the tracker to the calorimeters. The distance between the position of the extrapolated track and the cluster in the ($\eta$, $\phi$) plane is then used to define the link distance. At the interaction points between the track and the tracker layers, tangents to the \ac{GSF} tracks are extrapolated to the \ac{ECAL} in order to collect the energy of photons radiated by electron bremsstrahlung. A dedicated conversion finder was also developed to identify bremsstrahlung and prompt photon conversions into $e^+e^-$ pairs. Links between calorimeter clusters are established outside of the tracker acceptance, or between the preshower and \ac{ECAL} clusters in the preshower acceptance. In this case the link distance is also defined as the distance between the position of the clusters. Charged particle tracks can also be linked by a common secondary vertex. Finally, links between tracks in the tracker and in the muon detectors are established as explained in Section~\ref{sec:muon_reconstruction}.
+
+In a next step, the \ac{PF} blocks are identified as muons, electrons, or isolated photons. The corresponding elements are then excluded from further consideration. Once electrons, muons, and isolated photons have been identified, the remaining elements are identified as charged hadrons, neutral hadrons, or photons produced in jets. Within the tracker acceptance, the \ac{ECAL} clusters not linked to any track are classified as photons, while the clusters in the \ac{HCAL} without a matched track are labeled as neutral hadrons. Outside of the tracker acceptance, charged and neutral hadrons can not be distinguished. \ac{ECAL} clusters linked to an \ac{HCAL} cluster are then assumed to arise from the same hadron shower, and the estimated energy for these particles is the sum of the energy deposited in the \ac{ECAL} and the \ac{HCAL}. The remaining clusters are then linked to one or several tracks in order to reconstruct the charged hadrons.
 
 \subsection{Jet reconstruction}
 \label{sec:jet_reconstruction}
 
+
+
 \subsection{B-tagging}
+
+
 
 \subsection{Missing transverse energy reconstruction}
 
-\subsection{Particle flow}
-\label{sec:PF}
+
 
 \section{Simulation of the SIMP signal}
 
 
 \clearpage
-%\footnotesize
-%\bibliographystyle{ieeetr}
-%\bibliography{chapt8}
-%\normalsize
-
 \clearpage{\pagestyle{empty}\cleardoublepage}

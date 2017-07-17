@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.23)  16 JUL 2017 18:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.23)  17 JUL 2017 22:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1077,43 +1077,47 @@ Chapter 4.
 File: chapt3/muon_eff_eta.png Graphic file (type png)
 
 <use chapt3/muon_eff_eta.png>
-Package pdftex.def Info: chapt3/muon_eff_eta.png used on input line 38.
+Package pdftex.def Info: chapt3/muon_eff_eta.png used on input line 39.
 (pdftex.def)             Requested size: 167.2989pt x 161.36319pt.
 
 <chapt3/pion_eff_eta.png, id=334, 691.83469pt x 660.21657pt>
 File: chapt3/pion_eff_eta.png Graphic file (type png)
 
 <use chapt3/pion_eff_eta.png>
-Package pdftex.def Info: chapt3/pion_eff_eta.png used on input line 39.
+Package pdftex.def Info: chapt3/pion_eff_eta.png used on input line 40.
 (pdftex.def)             Requested size: 167.2989pt x 159.65402pt.
 
 <chapt3/PV_eff.png, id=335, 569.12625pt x 546.04pt>
 File: chapt3/PV_eff.png Graphic file (type png)
  <use chapt3/PV_eff.png>
-Package pdftex.def Info: chapt3/PV_eff.png used on input line 50.
+Package pdftex.def Info: chapt3/PV_eff.png used on input line 51.
 (pdftex.def)             Requested size: 167.2989pt x 160.51382pt.
 
 <chapt3/PV_res.png, id=336, 569.12625pt x 546.04pt>
 File: chapt3/PV_res.png Graphic file (type png)
  <use chapt3/PV_res.png>
-Package pdftex.def Info: chapt3/PV_res.png used on input line 51.
+Package pdftex.def Info: chapt3/PV_res.png used on input line 52.
 (pdftex.def)             Requested size: 167.2989pt x 160.51382pt.
 
 [20 <./chapt3/muon_eff_eta.png (PNG copy)> <./chapt3/pion_eff_eta.png (PNG copy
 )>] [21 <./chapt3/PV_eff.png (PNG copy)> <./chapt3/PV_res.png (PNG copy)>]
-[22])
+Underfull \vbox (badness 1496) has occurred while \output is active []
+
+ [22]
+[23] [24
+
+
+
+])
 \openout2 = `chapt6/chapt6.aux'.
 
  (./chapt6/chapt6.tex
 Chapter 5.
-[23
+[25
 
 
 
-
-
-
-] [24
+] [26
 
 
 ])
@@ -1121,11 +1125,11 @@ Chapter 5.
 
  (./chapt5/chapt5.tex
 Chapter 6.
-[25
+[27
 
 
 
-] [26
+] [28
 
 
 
@@ -1134,21 +1138,21 @@ Chapter 6.
 
  (./chapt7/chapt7.tex
 Chapter 7.
-[27
+[29
 
 
 
-] [28
+] [30
 
 
-]) (./thesis.bbl) [29
+]) (./thesis.bbl) [31
 
 
 
 ]
 \openout2 = `phdacronyms.aux'.
 
- (./phdacronyms.tex [30
+ (./phdacronyms.tex [32
 
 
 ]
@@ -1231,7 +1235,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 51--52
 
  []
 
-[31]
+[33]
 Underfull \hbox (badness 10000) in paragraph at lines 57--58
 
  []
@@ -1291,25 +1295,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 114--115
 
  []
 
-) [32]
-
-Package lineno Warning: Linenumber reference failed, 
-(lineno)                rerun to get it right.
-
-[33
+) [34] [35
 
 
-] [34
+] [36
 
 
 ] (./thesis.aux (./chapt1/intro.aux) (./chapt2/chapt2.aux)
 (./chapt3/chapt3.aux) (./chapt4/chapt4.aux) (./chapt6/chapt6.aux)
 (./chapt5/chapt5.aux) (./chapt7/chapt7.aux) (./phdacronyms.aux)) ) 
 Here is how much of TeX's memory you used:
- 16886 strings out of 493029
- 318833 string characters out of 6136234
- 346438 words of memory out of 5000000
- 20091 multiletter control sequences out of 15000+600000
+ 16890 strings out of 493029
+ 318885 string characters out of 6136234
+ 346488 words of memory out of 5000000
+ 20095 multiletter control sequences out of 15000+600000
  41996 words of font info for 81 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
  38i,11n,47p,10377b,555s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1328,10 +1327,10 @@ mf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/tim
 es/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
 
-Output written on thesis.pdf (40 pages, 4082897 bytes).
+Output written on thesis.pdf (42 pages, 4086479 bytes).
 PDF statistics:
- 433 PDF objects out of 1000 (max. 8388607)
- 245 compressed objects within 3 object streams
+ 439 PDF objects out of 1000 (max. 8388607)
+ 249 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  117 words of extra memory for PDF output out of 10000 (max. 10000000)
 

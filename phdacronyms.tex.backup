@@ -12,18 +12,24 @@
 \begin{acronym_expdlist}
 \acro{ATLAS}{A Toroidal LHC ApparatuS}
 \end{acronym_expdlist}
+
+\textbf{\newline\newline\Large B} \newline
+\begin{acronym_expdlist}
+\acro{BU}{Builder Unit}
+\end{acronym_expdlist}
 % 
 \textbf{\newline\newline\Large C} \newline
 \begin{acronym_expdlist}
 \acro{CERN}{European Organization for Nuclear Research}
 \acro{CMS}{Compact Muon Solenoid}
-\acro{CSC}{Cathode Strip Chamber}
+\acro{CSC}{Cathode Strip Chambers}
 \end{acronym_expdlist}
 % 
 \textbf{\newline\newline\Large D} \newline
 \begin{acronym_expdlist}
 \acro{DAQ}{data acquisition}
-\acro{DT}{Drift Tube}
+\acro{DQM}{Data Quality Monitoring}
+\acro{DT}{Drift Tubes}
 \end{acronym_expdlist}
 % 
 \textbf{\newline\newline\Large E} \newline
@@ -34,15 +40,18 @@
 \textbf{\newline\newline\Large F} \newline
 \begin{acronym_expdlist}
 \acro{FED}{Front End Driver}
+\acro{FU}{Filter Unit}
 \end{acronym_expdlist}
-% 
-% \textbf{\newline\newline\Large G} \newline
-% \begin{acronym_expdlist}
-% \end{acronym_expdlist}
-% 
+
+\textbf{\newline\newline\Large G} \newline
+\begin{acronym_expdlist}
+\acro{GSF}{Gaussian-sum filter}
+\end{acronym_expdlist}
+
 \textbf{\newline\newline\Large H} \newline
 \begin{acronym_expdlist}
 \acro{HCAL}{hadronic calorimeter}
+\acro{HLT}{High-Level Trigger}
 \end{acronym_expdlist}
 % 
 \textbf{\newline\newline\Large I} \newline
@@ -60,6 +69,7 @@
 
 \textbf{\newline\newline\Large L} \newline
 \begin{acronym_expdlist}
+\acro{L1}{Level-1}
 \acro{LEIR}{Low Energy Ion Ring}
 \acro{LEP}{Large Electron Positron}
 \acro{LHC}{Large Hadron Collider}
@@ -79,6 +89,7 @@
 % 
 \textbf{\newline\newline\Large P} \newline
 \begin{acronym_expdlist}
+\acro{PF}{Particle Flow}
 \acro{PS}{Proton Synchrotron}
 \acro{PSB}{Proton Synchrotron Booster}
 \end{acronym_expdlist}
@@ -91,7 +102,8 @@
 \begin{acronym_expdlist}
 \acro{RF}{radio-frequency}
 \acro{ROC}{read-out chip}
-\acro{RPC}{Resistive Plate Chamber}
+\acro{RPC}{Resistive Plate Chambers}
+\acro{RU}{Readout Unit}
 \end{acronym_expdlist}
 % 
 \textbf{\newline\newline\Large S} \newline
