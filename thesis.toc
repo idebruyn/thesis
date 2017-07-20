@@ -31,15 +31,15 @@
 \contentsline {subsubsection}{\numberline {3.2.6.1}Pre-amplifier saturation in the APV25 chip}{16}
 \contentsline {chapter}{\numberline {4}Event Simulation and Reconstruction}{19}
 \contentsline {section}{\numberline {4.1}Event generation}{19}
-\contentsline {section}{\numberline {4.2}Detector simulation}{19}
-\contentsline {subsection}{\numberline {4.2.1}Delphes}{19}
-\contentsline {subsection}{\numberline {4.2.2}GEANT4}{19}
-\contentsline {section}{\numberline {4.3}Event reconstruction}{19}
-\contentsline {subsection}{\numberline {4.3.1}Track reconstruction}{19}
-\contentsline {subsection}{\numberline {4.3.2}Electron and isolated photon reconstruction}{20}
-\contentsline {subsection}{\numberline {4.3.3}Muon reconstruction}{21}
-\contentsline {subsection}{\numberline {4.3.4}Particle flow}{22}
-\contentsline {subsection}{\numberline {4.3.5}Jet reconstruction}{22}
+\contentsline {section}{\numberline {4.2}Detector simulation}{20}
+\contentsline {subsection}{\numberline {4.2.1}Delphes}{20}
+\contentsline {subsection}{\numberline {4.2.2}GEANT4}{20}
+\contentsline {section}{\numberline {4.3}Event reconstruction}{20}
+\contentsline {subsection}{\numberline {4.3.1}Track reconstruction}{20}
+\contentsline {subsection}{\numberline {4.3.2}Electron and isolated photon reconstruction}{22}
+\contentsline {subsection}{\numberline {4.3.3}Muon reconstruction}{22}
+\contentsline {subsection}{\numberline {4.3.4}Particle flow}{23}
+\contentsline {subsection}{\numberline {4.3.5}Jet reconstruction}{23}
 \contentsline {subsection}{\numberline {4.3.6}B-tagging}{23}
 \contentsline {subsection}{\numberline {4.3.7}Missing transverse energy reconstruction}{23}
 \contentsline {section}{\numberline {4.4}Simulation of the SIMP signal}{23}

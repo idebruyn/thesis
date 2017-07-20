@@ -9,17 +9,34 @@
 \chapter{Event Simulation and Reconstruction}
 \label{ch4}
 
-In order to 2 addditional tools? are needed.
+In order to use the recorded data, the obtained signals coming from various parts of the detector must be reconstructed to be able to identify the particles in the event. This event reconstruction is detailed in Section~\ref{sec:reconstruction}. Additionally, to compare the experimental results with theory, events are generated and the resulting signals in the detector are simulated, as detailed in Sections~\ref{sec:generation} and \ref{sec:sim}, respectively. Finally, some details about the simulation of \acp{SIMP} are given in Section~\ref{sec:SIMPs}.
 
 \section{Event generation}
+\label{sec:generation}
+
+% simps -> feynrules -> madgraph
+% matching?
+% meer detail? Fabio, MCnet school
+
+The event structure at the \ac{LHC} is complicated by the composite nature of protons, as well as the attainable high momentum transfers. A number of aspects must therefore be taken into account when generating simulated events, such as \acp{PDF}, hard scattering, the parton shower, hadronization, and additional activity in the event.
+
+Two partons, meaning the quark or gluon constituents of the colliding protons, will interact with a certain probability for a given momentum transfer. This is parametrized by the \acp{PDF} $f(x, Q^2)$, were $x$ is the momentum fraction of the partons and $Q^2$ is the momentum transfer scale. Experimentally determined \acp{PDF} are available from various groups, including e.g. CTEQ~\cite{Pumplin:2002vw}, MRST/MSTW~\cite{}, and NNPDF~\cite{}. These \acp{PDF} are then used to calculate the matrix element of the hard scattering, which is the process of interest where the two colliding partons create high-energetic final state particles. This is done using an event generator, such as MadGraph5\_aMC@NLO~\cite{Alwall:2014hca} and POWHEG~\cite{}. With MadGraph5\_aMC@NLO the matrix element can be calculated analytically at tree-level or \ac{LO}, and now at \ac{NLO} as well. This generator was used to generate most of the background processes for the Monojet analysis detailed in Chapter~\ref{ch:monojet} and for the \ac{SIMP} signal used in Chapter~\ref{ch:SIMPs}. POWHEG is able to generate events using \ac{NLO} computations, but only for a relatively limited number of physics processes. The simulated single top quark samples used in Chapter~\ref{ch:monojet} were generated with this program. Since \ac{NLO} calculations are more time-consuming, one can also scale a \ac{LO} cross section to the \ac{NLO} level by using a so-called k-factor, defined as the ratio of the \ac{NLO} and \ac{LO} cross sections. However, these k-factors often need to be determined as a function of the relevant kinematic variables as they can depend on the kinematic phase space and the probed energy scale.
+
+Since the colliding partons have a color charge, the hard scattering will be accompanied by a cascade of radiation from \acs{QCD} processes. This radiation can originate from the incoming partons, which is referred to as \ac{ISR}, or the outgoing partons in the final state, the so-called \ac{FSR}. The perturbative evolution of the cascade can be modeled using the DGLAP (Dokshitzer-Gribov-Lipatov-Altarelli-Parisi) equations~\cite{}. These equations describe the time evolution of the probability of a `mother' parton to split into `daughter' partons at an energy scale $Q^2$. The momentum of the mother is then divided among the daughter partons, which can in turn split into other partons at a lower $Q^2$ scale. The cascade continues down to an energy scale $\Lambda_{QCD}$ where the strong coupling constant becomes unity. Below this scale hadronization models are required. 
+
+
 
 \section{Detector simulation}
+\label{sec:sim}
 
 \subsection{Delphes}
 
 \subsection{GEANT4}
 
 \section{Event reconstruction}
+\label{sec:reconstruction}
+
+Once the detector response has been simulated, the obtained events can be reconstructed. The same method is applied for these simulated events and for data coming from the detector. A fundamental component of this procedure is the so-called \acf{PF} algorithm, which greatly improves the performance for jet and hadronic $\tau$ decay reconstruction, missing transverse energy momentum determination, and electron and muon identification.
 
 \subsection{Track reconstruction}
 \label{sec:tracking}
@@ -92,7 +109,7 @@ In a next step, the \ac{PF} blocks are identified as muons, electrons, or isolat
 \subsection{Jet reconstruction}
 \label{sec:jet_reconstruction}
 
-
+Jets are reconstructed with the anti-$k_T$ algorithm~\cite{1126-6708-2008-04-063}, which clusters either the particles reconstructed by the \ac{PF} algorithm (\ac{PF} jets) or the energy deposits in the calorimeters (Calo jets). 
 
 \subsection{B-tagging}
 
@@ -103,7 +120,7 @@ In a next step, the \ac{PF} blocks are identified as muons, electrons, or isolat
 
 
 \section{Simulation of the SIMP signal}
-
+\label{sec:SIMPs}
 
 \clearpage
 \clearpage{\pagestyle{empty}\cleardoublepage}

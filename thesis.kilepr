@@ -118,10 +118,10 @@ order=0
 
 [item:chapt4/chapt4.tex]
 archive=true
-column=0
+column=261
 encoding=UTF-8
 highlight=LaTeX
-line=73
+line=24
 mode=LaTeX
 open=true
 order=3
@@ -178,10 +178,10 @@ order=3
 
 [item:phdacronyms.tex]
 archive=true
-column=31
+column=30
 encoding=UTF-8
 highlight=LaTeX
-line=47
+line=91
 mode=LaTeX
 open=true
 order=1
@@ -215,10 +215,10 @@ JumpList=
 ViMarks=.,130,48,[,130,46,],130,48
 
 [view-settings,view=0,item:chapt4/chapt4.tex]
-CursorColumn=0
-CursorLine=73
+CursorColumn=261
+CursorLine=24
 JumpList=
-ViMarks=.,72,0,[,71,46,],-1,-1
+ViMarks=.,25,1,[,25,0,],25,49
 
 [view-settings,view=0,item:chapt5/chapt5.tex]
 CursorColumn=15
@@ -245,10 +245,10 @@ JumpList=
 ViMarks=.,24,0,[,24,0,],24,0
 
 [view-settings,view=0,item:phdacronyms.tex]
-CursorColumn=31
-CursorLine=47
+CursorColumn=30
+CursorLine=91
 JumpList=
-ViMarks=.,47,30,[,47,0,],47,30
+ViMarks=.,91,29,[,91,12,],91,29
 
 [view-settings,view=0,item:thesis.tex]
 CursorColumn=0

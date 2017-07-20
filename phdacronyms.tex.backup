@@ -73,15 +73,17 @@
 \acro{LEIR}{Low Energy Ion Ring}
 \acro{LEP}{Large Electron Positron}
 \acro{LHC}{Large Hadron Collider}
+\acro{LO}{leading order}
 \end{acronym_expdlist}
 
 % \textbf{\newline\newline\Large M} \newline
 % \begin{acronym_expdlist}
 % \end{acronym_expdlist}
 % 
-% \textbf{\newline\newline\Large N} \newline
-% \begin{acronym_expdlist}
-% \end{acronym_expdlist}
+\textbf{\newline\newline\Large N} \newline
+\begin{acronym_expdlist}
+\acro{NLO}{next-to-leading order}
+\end{acronym_expdlist}
 % 
 % \textbf{\newline\newline\Large O} \newline
 % \begin{acronym_expdlist}
@@ -89,7 +91,8 @@
 % 
 \textbf{\newline\newline\Large P} \newline
 \begin{acronym_expdlist}
-\acro{PF}{Particle Flow}
+\acro{PDF}{parton distribution function}
+\acro{PF}{particle flow}
 \acro{PS}{Proton Synchrotron}
 \acro{PSB}{Proton Synchrotron Booster}
 \end{acronym_expdlist}
@@ -108,6 +111,7 @@
 % 
 \textbf{\newline\newline\Large S} \newline
 \begin{acronym_expdlist}
+\acro{SIMP}{strongly interacting massive particle}
 \acro{SPS}{Super Proton Synchrotron}
 \end{acronym_expdlist}
 % 
