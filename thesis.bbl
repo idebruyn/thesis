@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{CMS:2012sda}
 David~Aaron Matzner~Dominguez, D.~Abbaneo, K.~Arndt, N.~Bacchetta, A.~Ball,
@@ -55,6 +55,11 @@ J.~Alwall, R.~Frederix, S.~Frixione, V.~Hirschi, F.~Maltoni, O.~Mattelaer,
   simulations}}.
 \newblock JHEP, 07:079, 2014.
 
+\bibitem{Sjostrand:2006za}
+Torbj{\"o}rn Sj{\"o}strand, Stephen Mrenna, and Peter Skands.
+\newblock {\em {{PYTHIA} 6.4 physics and manual}}.
+\newblock JHEP, 05:026, 2006.
+
 \bibitem{Chatrchyan:2014fea}
 Serguei Chatrchyan et~al.
 \newblock {\em {Description and performance of track and primary-vertex
@@ -65,5 +70,12 @@ Serguei Chatrchyan et~al.
 Matteo Cacciari, Gavin~P. Salam, and Gregory Soyez.
 \newblock {\em {The anti- k t jet clustering algorithm}}.
 \newblock Journal of High Energy Physics, 2008(04):063, 2008.
+
+\bibitem{Alloul:2013bka}
+Adam Alloul, Neil~D. Christensen, C{\'e}line Degrande, Claude Duhr, and
+  Benjamin Fuks.
+\newblock {\em {FeynRules 2.0 - A complete toolbox for tree-level
+  phenomenology}}.
+\newblock Comput.Phys.Commun., 185:2250--2300, 2014.
 
 \end{thebibliography}

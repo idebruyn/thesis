@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.23)  20 JUL 2017 13:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.23)  20 JUL 2017 16:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1101,20 +1101,83 @@ Package pdftex.def Info: chapt3/PV_res.png used on input line 69.
 
 [21 <./chapt3/muon_eff_eta.png (PNG copy)> <./chapt3/pion_eff_eta.png (PNG copy
 )> <./chapt3/PV_eff.png (PNG copy)> <./chapt3/PV_res.png (PNG copy)>] [22]
-[23] [24
 
+LaTeX Warning: Reference `' on page 23 undefined on input line 127.
 
+[23]
+<chapt4/pt_neutron_gun_th2f_JECs_GetRandom2.pdf, id=349, 569.12625pt x 549.0512
+5pt>
+File: chapt4/pt_neutron_gun_th2f_JECs_GetRandom2.pdf Graphic file (type pdf)
+ <use chapt4/pt_neutron_gun_th2f_JECs_GetRandom2.pdf>
+Package pdftex.def Info: chapt4/pt_neutron_gun_th2f_JECs_GetRandom2.pdf used on
+ input line 135.
+(pdftex.def)             Requested size: 200.75996pt x 193.67882pt.
 
-])
+<chapt4/pt_neutron_gun_p2pf_th2f_NoSmearing.pdf, id=350, 569.12625pt x 549.0512
+5pt>
+File: chapt4/pt_neutron_gun_p2pf_th2f_NoSmearing.pdf Graphic file (type pdf)
+ <use chapt4/pt_neutron_gun_p2pf_th2f_NoSmearing.pdf>
+Package pdftex.def Info: chapt4/pt_neutron_gun_p2pf_th2f_NoSmearing.pdf used on
+ input line 136.
+(pdftex.def)             Requested size: 200.75996pt x 193.67882pt.
+
+<chapt4/pt_res_ptbin_0.pdf, id=351, 569.12625pt x 549.05125pt>
+File: chapt4/pt_res_ptbin_0.pdf Graphic file (type pdf)
+
+<use chapt4/pt_res_ptbin_0.pdf>
+Package pdftex.def Info: chapt4/pt_res_ptbin_0.pdf used on input line 143.
+(pdftex.def)             Requested size: 200.75996pt x 193.67882pt.
+
+<chapt4/pt_res_ptbin_5.pdf, id=352, 569.12625pt x 549.05125pt>
+File: chapt4/pt_res_ptbin_5.pdf Graphic file (type pdf)
+
+<use chapt4/pt_res_ptbin_5.pdf>
+Package pdftex.def Info: chapt4/pt_res_ptbin_5.pdf used on input line 144.
+(pdftex.def)             Requested size: 200.75996pt x 193.67882pt.
+
+<chapt4/pt_neutron_gun_th2f_005.pdf, id=353, 569.12625pt x 549.05125pt>
+File: chapt4/pt_neutron_gun_th2f_005.pdf Graphic file (type pdf)
+
+<use chapt4/pt_neutron_gun_th2f_005.pdf>
+Package pdftex.def Info: chapt4/pt_neutron_gun_th2f_005.pdf used on input line 
+153.
+(pdftex.def)             Requested size: 200.75996pt x 193.67882pt.
+
+<chapt4/pt_neutron_gun_p2pf_th2f_005.pdf, id=354, 569.12625pt x 549.05125pt>
+File: chapt4/pt_neutron_gun_p2pf_th2f_005.pdf Graphic file (type pdf)
+
+<use chapt4/pt_neutron_gun_p2pf_th2f_005.pdf>
+Package pdftex.def Info: chapt4/pt_neutron_gun_p2pf_th2f_005.pdf used on input 
+line 154.
+(pdftex.def)             Requested size: 200.75996pt x 193.67882pt.
+
+<chapt4/pt_neutron_gun_res_fit_005.pdf, id=355, 569.12625pt x 549.05125pt>
+File: chapt4/pt_neutron_gun_res_fit_005.pdf Graphic file (type pdf)
+
+<use chapt4/pt_neutron_gun_res_fit_005.pdf>
+Package pdftex.def Info: chapt4/pt_neutron_gun_res_fit_005.pdf used on input li
+ne 161.
+(pdftex.def)             Requested size: 313.69025pt x 302.64098pt.
+ [24 <./chapt4/pt_neutron_gun_th2f_JECs_GetRandom2.pdf, page is rotated 90 degr
+ees> <./chapt4/pt_neutron_gun_p2pf_th2f_NoSmearing.pdf, page is rotated 90 degr
+ees>] [25 <./chapt4/pt_res_ptbin_0.pdf, page is rotated 90 degrees> <./chapt4/p
+t_res_ptbin_5.pdf, page is rotated 90 degrees> <./chapt4/pt_neutron_gun_th2f_00
+5.pdf, page is rotated 90 degrees> <./chapt4/pt_neutron_gun_p2pf_th2f_005.pdf, 
+page is rotated 90 degrees>]
+[26 <./chapt4/pt_neutron_gun_res_fit_005.pdf, page is rotated 90 degrees>])
 \openout2 = `chapt6/chapt6.aux'.
 
- (./chapt6/chapt6.tex
+
+(./chapt6/chapt6.tex
 Chapter 5.
-[25
+[27
 
 
 
-] [26
+
+
+
+] [28
 
 
 ])
@@ -1122,11 +1185,11 @@ Chapter 5.
 
  (./chapt5/chapt5.tex
 Chapter 6.
-[27
+[29
 
 
 
-] [28
+] [30
 
 
 
@@ -1135,21 +1198,27 @@ Chapter 6.
 
  (./chapt7/chapt7.tex
 Chapter 7.
-[29
+[31
 
 
 
-] [30
+] [32
 
 
-]) (./thesis.bbl) [31
+]) (./thesis.bbl
+Underfull \hbox (badness 1014) in paragraph at lines 27--42
+\OT1/ptm/m/n/10 Gomez Ce-bal-los, Jeroen Guido Hege-man, An-dre Georg Holzner, 
+Min-dau-gas Jan-ulis, Raul
+ []
+
+) [33
 
 
 
 ]
 \openout2 = `phdacronyms.aux'.
 
- (./phdacronyms.tex [32
+ (./phdacronyms.tex [34
 
 
 ]
@@ -1222,7 +1291,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 47--48
 
  []
 
-[33]
+[35]
 Underfull \hbox (badness 10000) in paragraph at lines 52--53
 
  []
@@ -1243,108 +1312,122 @@ Underfull \hbox (badness 10000) in paragraph at lines 58--59
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--73
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--73
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--86
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--86
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--95
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--95
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--103
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--103
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--108
+Underfull \hbox (badness 10000) in paragraph at lines 103--104
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--108
+Underfull \hbox (badness 10000) in paragraph at lines 103--104
 
  []
 
-[34]
-Underfull \hbox (badness 10000) in paragraph at lines 115--116
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 115--116
+[36]
+Underfull \hbox (badness 10000) in paragraph at lines 108--109
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--122
+Underfull \hbox (badness 10000) in paragraph at lines 108--109
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--122
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
 
  []
 
-) [35] [36
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--123
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--123
+
+ []
+
+) [37] [38
 
 
 ] (./thesis.aux (./chapt1/intro.aux) (./chapt2/chapt2.aux)
 (./chapt3/chapt3.aux) (./chapt4/chapt4.aux) (./chapt6/chapt6.aux)
-(./chapt5/chapt5.aux) (./chapt7/chapt7.aux) (./phdacronyms.aux)) ) 
-Here is how much of TeX's memory you used:
- 16913 strings out of 493029
- 319101 string characters out of 6136234
- 346774 words of memory out of 5000000
- 20118 multiletter control sequences out of 15000+600000
- 41996 words of font info for 81 fonts, out of 8000000 for 9000
- 1142 hyphenation exceptions out of 8191
- 38i,11n,47p,10377b,555s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/t
-exlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/font
-s/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/tim
-es/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+(./chapt5/chapt5.aux) (./chapt7/chapt7.aux) (./phdacronyms.aux))
 
-Output written on thesis.pdf (42 pages, 4093224 bytes).
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 16960 strings out of 493029
+ 320584 string characters out of 6136234
+ 346886 words of memory out of 5000000
+ 20157 multiletter control sequences out of 15000+600000
+ 43074 words of font info for 82 fonts, out of 8000000 for 9000
+ 1142 hyphenation exceptions out of 8191
+ 39i,11n,50p,10377b,825s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr
+i8a.pfb>
+Output written on thesis.pdf (44 pages, 4230372 bytes).
 PDF statistics:
- 439 PDF objects out of 1000 (max. 8388607)
- 249 compressed objects within 3 object streams
+ 759 PDF objects out of 1000 (max. 8388607)
+ 383 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
- 117 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 152 words of extra memory for PDF output out of 10000 (max. 10000000)
 

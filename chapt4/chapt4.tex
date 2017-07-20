@@ -20,11 +20,11 @@ In order to use the recorded data, the obtained signals coming from various part
 
 The event structure at the \ac{LHC} is complicated by the composite nature of protons, as well as the attainable high momentum transfers. A number of aspects must therefore be taken into account when generating simulated events, such as \acp{PDF}, hard scattering, the parton shower, hadronization, and additional activity in the event.
 
-Two partons, meaning the quark or gluon constituents of the colliding protons, will interact with a certain probability for a given momentum transfer. This is parametrized by the \acp{PDF} $f(x, Q^2)$, were $x$ is the momentum fraction of the partons and $Q^2$ is the momentum transfer scale. Experimentally determined \acp{PDF} are available from various groups, including e.g. CTEQ~\cite{Pumplin:2002vw}, MRST/MSTW~\cite{}, and NNPDF~\cite{}. These \acp{PDF} are then used to calculate the matrix element of the hard scattering, which is the process of interest where the two colliding partons create high-energetic final state particles. This is done using an event generator, such as MadGraph5\_aMC@NLO~\cite{Alwall:2014hca} and POWHEG~\cite{}. With MadGraph5\_aMC@NLO the matrix element can be calculated analytically at tree-level or \ac{LO}, and now at \ac{NLO} as well. This generator was used to generate most of the background processes for the Monojet analysis detailed in Chapter~\ref{ch:monojet} and for the \ac{SIMP} signal used in Chapter~\ref{ch:SIMPs}. POWHEG is able to generate events using \ac{NLO} computations, but only for a relatively limited number of physics processes. The simulated single top quark samples used in Chapter~\ref{ch:monojet} were generated with this program. Since \ac{NLO} calculations are more time-consuming, one can also scale a \ac{LO} cross section to the \ac{NLO} level by using a so-called k-factor, defined as the ratio of the \ac{NLO} and \ac{LO} cross sections. However, these k-factors often need to be determined as a function of the relevant kinematic variables as they can depend on the kinematic phase space and the probed energy scale.
+Two partons, meaning the quark or gluon constituents of the colliding protons, will interact with a certain probability for a given momentum transfer. This is parametrized by the \acp{PDF} $f(x, Q^2)$, were $x$ is the momentum fraction of the partons and $Q^2$ is the momentum transfer scale. Experimentally determined \acp{PDF} are available from various groups, including e.g. CTEQ~\cite{Pumplin:2002vw}, MRST/MSTW~\cite{}, and NNPDF~\cite{}. These \acp{PDF} are then used to calculate the matrix element of the hard scattering, which is the process of interest where the two colliding partons create high-energetic final state particles. This is done using an event generator, such as \textsc{MadGraph5\_}a\textsc{MC@NLO} ~\cite{Alwall:2014hca} and \textsc{PowHeg}~\cite{}. With \textsc{MadGraph5\_}a\textsc{MC@NLO} the matrix element can be calculated analytically at tree-level or \ac{LO}, and now at \ac{NLO} as well. This generator was used to generate most of the background processes for the Monojet analysis detailed in Chapter~\ref{ch:monojet} and for the \ac{SIMP} signal used in Chapter~\ref{ch:SIMPs}. \textsc{PowHeg} is able to generate events using \ac{NLO} computations, but only for a relatively limited number of physics processes. The simulated single top quark samples used in Chapter~\ref{ch:monojet} were generated with this program. Since \ac{NLO} calculations are more time-consuming, one can also scale a \ac{LO} cross section to the \ac{NLO} level by using a so-called k-factor, defined as the ratio of the \ac{NLO} and \ac{LO} cross sections. However, these k-factors often need to be determined as a function of the relevant kinematic variables as they can depend on the kinematic phase space and the probed energy scale.
 
 Since the colliding partons have a color charge, the hard scattering will be accompanied by a cascade of radiation from \acs{QCD} processes. This radiation can originate from the incoming partons, which is referred to as \ac{ISR}, or the outgoing partons in the final state, the so-called \ac{FSR}. The perturbative evolution of the cascade can be modeled using the DGLAP (Dokshitzer-Gribov-Lipatov-Altarelli-Parisi) equations~\cite{}. These equations describe the time evolution of the probability of a `mother' parton to split into `daughter' partons at an energy scale $Q^2$. The momentum of the mother is then divided among the daughter partons, which can in turn split into other partons at a lower $Q^2$ scale. The cascade continues down to an energy scale $\Lambda_{QCD}$ where the strong coupling constant becomes unity. Below this scale hadronization models are required. 
 
-The next step after the showering is the hadronization of the colored particles produced in the parton shower, transforming them into color-neutral hadrons. Since this happens at low scales where the perturbative approach of \acs{QCD} is not valid, phenomenological models have to be used. For most of the processes considered in this thesis, the showering and hadronization is done with Pythia 8~\cite{}, using parameters tuned to reproduce the experimental data. 
+The next step after the showering is the hadronization of the colored particles produced in the parton shower, transforming them into color-neutral hadrons. Since this happens at low scales where the perturbative approach of \acs{QCD} is not valid, phenomenological models have to be used. For most of the processes considered in this thesis, the showering and hadronization is done with \textsc{Pythia 8}~\cite{Sjostrand:2006za}, using parameters tuned to reproduce the experimental data. 
 
 \section{Detector simulation}
 \label{sec:sim}
@@ -111,6 +111,8 @@ In a next step, the \ac{PF} blocks are identified as muons, electrons, or isolat
 
 Jets are reconstructed with the anti-$k_T$ algorithm~\cite{1126-6708-2008-04-063}, which clusters either the particles reconstructed by the \ac{PF} algorithm (\ac{PF} jets) or the energy deposits in the calorimeters (Calo jets). 
 
+% pilup correction, CHS
+
 \subsection{B-tagging}
 
 
@@ -121,6 +123,45 @@ Jets are reconstructed with the anti-$k_T$ algorithm~\cite{1126-6708-2008-04-063
 
 \section{Simulation of the SIMP signal}
 \label{sec:SIMPs}
+
+For the generation of the \ac{SIMP} signal, the model Lagrangian given in equation~\ref{} is implemented in \textsc{FeynRules 2.0}~\cite{Alloul:2013bka}, and the matrix element is calculated at \ac{LO} and events are generated using \textsc{Madgraph 5}. The subsequent parton shower and hadronization is done with \textsc{Pythia 8}, using tune CUEP8M1. Next, the events are simulated in the \ac{CMS} detector using \textsc{Geant 4}~\cite{}. However, the \acp{SIMP} are not included in the simulation, as their interaction with matter is not implemented in \textsc{Geant 4}. The \acp{SIMP} were instead incorporated by adding an additional step to the standard reconstruction described in Section~\ref{sec:reconstruction}. In this additional step the \acp{SIMP} are directly converted to neutral \ac{PF} candidates and merged with the rest of the \ac{PF} candidates. The standard pileup corrections, jet clustering, and charged hadron subtraction are then applied in order to obtain the resulting jets, denoted here as P2PF jets.
+
+In order to validate this method, a second sample was produced using neutrons instead of \acp{SIMP} and applying the same additional step. In this case the the neutrons will also be correctly reconstructed by the standard reconstruction. The reconstructed \ac{PF} candidates that are matched to the generated neutrons were therefore removed before injecting the converted generated neutrons to the collection of \ac{PF} candidates. This sample is then used to evaluate the difference with a standard neutron sample where the full \textsc{Geant 4} simulation is done. Neutrons were chosen because of their resemblance to the \acp{SIMP} as single neutral particles generating a hadronic shower.
+
+The two leading generator-level jets (GEN) can then be compared to the uncorrected P2PF jets from the custom sample and the \ac{PF} jets from the standard sample. The transverse momentum of these jets is compared in Figure~\ref{fig:neutron}. This shows that the \ac{JER} is not described properly, since the additional step directly converts generated particles to \ac{PF} candidates without taking into account any other effects. In order to produce a more realistic simulation, the new \ac{PF} candidates are therefore smeared with \ac{JER} distributions derived using the uncorrected \ac{PF} jets matching the neutrons in the standard neutron sample in bins of $\eta$ and $p_T$. An example of this resolution is shown in Figure~\ref{fig:neutron_res} for central neutrons with low and high transverse momentum.
+
+\begin{figure}[ht]
+  \centering
+ \includegraphics[width=.48\textwidth]{pt_neutron_gun_th2f_JECs_GetRandom2.pdf} \hfill
+\includegraphics[width=.48\textwidth]{pt_neutron_gun_p2pf_th2f_NoSmearing.pdf}
+ \caption{Comparison of the transverse momentum of the generator-level jets to the \ac{PF} jets (left) and P2PF jets (right) without jet energy resolution smearing, using a neutron sample.}
+ \label{fig:neutron}
+\end{figure}
+
+\begin{figure}[ht]
+  \centering
+ \includegraphics[width=.48\textwidth]{pt_res_ptbin_0.pdf} \hfill
+\includegraphics[width=.48\textwidth]{pt_res_ptbin_5.pdf}
+ \caption{The jet energy resolution of neutrons with $0< |\eta| < 0.5$ and \SI{200}{GeV}$<p_T<$\SI{300}{GeV} (left) or \SI{700}{GeV}$<p_T<$\SI{800}{GeV} (right).}
+ \label{fig:neutron_res}
+\end{figure}
+
+After applying this smearing, the P2PF jets are processed with the standard sequence of charged hadron subtraction, jet clustering, L1FastJet, and L2/L3 corrections. The comparison of the corrected P2PF jets and the standard corrected \ac{PF} jets is shown in Figure~\ref{fig:neutron_corr} for the neutron sample, validating that the jet transverse momentum is now correctly smeared. The \ac{JER} distributions are also compared in Figure~\ref{fig:neutron_res_corr} and fitted with a Crystal Ball function, showing compatible parameters. This demonstrates that the procedure, where the \ac{JER} distributions derived from a neutron sample are used to smear the \ac{PF} candidates from generator-level \acp{SIMP}, can sufficiently accurately simulate \acp{SIMP} in a realistic detector.
+
+\begin{figure}[ht]
+  \centering
+ \includegraphics[width=.48\textwidth]{pt_neutron_gun_th2f_005.pdf} \hfill
+\includegraphics[width=.48\textwidth]{pt_neutron_gun_p2pf_th2f_005.pdf}
+ \caption{Comparison of the transverse momentum of the generator-level jets to the \ac{PF} jets (left) and P2PF jets (right) in the region $0< |\eta| < 0.5$ with jet energy resolution smearing, using a neutron sample.}
+ \label{fig:neutron_corr}
+\end{figure}
+
+\begin{figure}[ht]
+  \centering
+ \includegraphics[width=.75\textwidth]{pt_neutron_gun_res_fit_005.pdf} 
+ \caption{The jet energy resolution of the corrected P2PF jets (red) and \ac{PF} jets (black), fitted with a Crystal Ball function.}
+ \label{fig:neutron_res_corr}
+\end{figure}
 
 \clearpage
 \clearpage{\pagestyle{empty}\cleardoublepage}
