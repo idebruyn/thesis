@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.23)  20 JUL 2017 16:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.23)  21 JUL 2017 11:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1077,40 +1077,40 @@ Chapter 4.
 File: chapt3/muon_eff_eta.png Graphic file (type png)
 
 <use chapt3/muon_eff_eta.png>
-Package pdftex.def Info: chapt3/muon_eff_eta.png used on input line 56.
+Package pdftex.def Info: chapt3/muon_eff_eta.png used on input line 58.
 (pdftex.def)             Requested size: 167.2989pt x 161.36319pt.
 
 <chapt3/pion_eff_eta.png, id=337, 691.83469pt x 660.21657pt>
 File: chapt3/pion_eff_eta.png Graphic file (type png)
 
 <use chapt3/pion_eff_eta.png>
-Package pdftex.def Info: chapt3/pion_eff_eta.png used on input line 57.
+Package pdftex.def Info: chapt3/pion_eff_eta.png used on input line 59.
 (pdftex.def)             Requested size: 167.2989pt x 159.65402pt.
-
-<chapt3/PV_eff.png, id=338, 569.12625pt x 546.04pt>
+ [21 <./chapt3/muon_eff_eta.png (PNG copy)> <./chapt3/pion_eff_eta.png (PNG cop
+y)>]
+<chapt3/PV_eff.png, id=341, 569.12625pt x 546.04pt>
 File: chapt3/PV_eff.png Graphic file (type png)
  <use chapt3/PV_eff.png>
-Package pdftex.def Info: chapt3/PV_eff.png used on input line 68.
+Package pdftex.def Info: chapt3/PV_eff.png used on input line 70.
 (pdftex.def)             Requested size: 167.2989pt x 160.51382pt.
 
-<chapt3/PV_res.png, id=339, 569.12625pt x 546.04pt>
+<chapt3/PV_res.png, id=342, 569.12625pt x 546.04pt>
 File: chapt3/PV_res.png Graphic file (type png)
  <use chapt3/PV_res.png>
-Package pdftex.def Info: chapt3/PV_res.png used on input line 69.
+Package pdftex.def Info: chapt3/PV_res.png used on input line 71.
 (pdftex.def)             Requested size: 167.2989pt x 160.51382pt.
 
-[21 <./chapt3/muon_eff_eta.png (PNG copy)> <./chapt3/pion_eff_eta.png (PNG copy
-)> <./chapt3/PV_eff.png (PNG copy)> <./chapt3/PV_res.png (PNG copy)>] [22]
+[22 <./chapt3/PV_eff.png (PNG copy)> <./chapt3/PV_res.png (PNG copy)>] [23]
 
-LaTeX Warning: Reference `' on page 23 undefined on input line 127.
+LaTeX Warning: Reference `' on page 24 undefined on input line 129.
 
-[23]
+
 <chapt4/pt_neutron_gun_th2f_JECs_GetRandom2.pdf, id=349, 569.12625pt x 549.0512
 5pt>
 File: chapt4/pt_neutron_gun_th2f_JECs_GetRandom2.pdf Graphic file (type pdf)
  <use chapt4/pt_neutron_gun_th2f_JECs_GetRandom2.pdf>
 Package pdftex.def Info: chapt4/pt_neutron_gun_th2f_JECs_GetRandom2.pdf used on
- input line 135.
+ input line 137.
 (pdftex.def)             Requested size: 200.75996pt x 193.67882pt.
 
 <chapt4/pt_neutron_gun_p2pf_th2f_NoSmearing.pdf, id=350, 569.12625pt x 549.0512
@@ -1118,21 +1118,21 @@ Package pdftex.def Info: chapt4/pt_neutron_gun_th2f_JECs_GetRandom2.pdf used on
 File: chapt4/pt_neutron_gun_p2pf_th2f_NoSmearing.pdf Graphic file (type pdf)
  <use chapt4/pt_neutron_gun_p2pf_th2f_NoSmearing.pdf>
 Package pdftex.def Info: chapt4/pt_neutron_gun_p2pf_th2f_NoSmearing.pdf used on
- input line 136.
+ input line 138.
 (pdftex.def)             Requested size: 200.75996pt x 193.67882pt.
 
 <chapt4/pt_res_ptbin_0.pdf, id=351, 569.12625pt x 549.05125pt>
 File: chapt4/pt_res_ptbin_0.pdf Graphic file (type pdf)
 
 <use chapt4/pt_res_ptbin_0.pdf>
-Package pdftex.def Info: chapt4/pt_res_ptbin_0.pdf used on input line 143.
+Package pdftex.def Info: chapt4/pt_res_ptbin_0.pdf used on input line 145.
 (pdftex.def)             Requested size: 200.75996pt x 193.67882pt.
 
 <chapt4/pt_res_ptbin_5.pdf, id=352, 569.12625pt x 549.05125pt>
 File: chapt4/pt_res_ptbin_5.pdf Graphic file (type pdf)
 
 <use chapt4/pt_res_ptbin_5.pdf>
-Package pdftex.def Info: chapt4/pt_res_ptbin_5.pdf used on input line 144.
+Package pdftex.def Info: chapt4/pt_res_ptbin_5.pdf used on input line 146.
 (pdftex.def)             Requested size: 200.75996pt x 193.67882pt.
 
 <chapt4/pt_neutron_gun_th2f_005.pdf, id=353, 569.12625pt x 549.05125pt>
@@ -1140,7 +1140,7 @@ File: chapt4/pt_neutron_gun_th2f_005.pdf Graphic file (type pdf)
 
 <use chapt4/pt_neutron_gun_th2f_005.pdf>
 Package pdftex.def Info: chapt4/pt_neutron_gun_th2f_005.pdf used on input line 
-153.
+155.
 (pdftex.def)             Requested size: 200.75996pt x 193.67882pt.
 
 <chapt4/pt_neutron_gun_p2pf_th2f_005.pdf, id=354, 569.12625pt x 549.05125pt>
@@ -1148,7 +1148,7 @@ File: chapt4/pt_neutron_gun_p2pf_th2f_005.pdf Graphic file (type pdf)
 
 <use chapt4/pt_neutron_gun_p2pf_th2f_005.pdf>
 Package pdftex.def Info: chapt4/pt_neutron_gun_p2pf_th2f_005.pdf used on input 
-line 154.
+line 156.
 (pdftex.def)             Requested size: 200.75996pt x 193.67882pt.
 
 <chapt4/pt_neutron_gun_res_fit_005.pdf, id=355, 569.12625pt x 549.05125pt>
@@ -1156,15 +1156,15 @@ File: chapt4/pt_neutron_gun_res_fit_005.pdf Graphic file (type pdf)
 
 <use chapt4/pt_neutron_gun_res_fit_005.pdf>
 Package pdftex.def Info: chapt4/pt_neutron_gun_res_fit_005.pdf used on input li
-ne 161.
+ne 163.
 (pdftex.def)             Requested size: 313.69025pt x 302.64098pt.
- [24 <./chapt4/pt_neutron_gun_th2f_JECs_GetRandom2.pdf, page is rotated 90 degr
-ees> <./chapt4/pt_neutron_gun_p2pf_th2f_NoSmearing.pdf, page is rotated 90 degr
-ees>] [25 <./chapt4/pt_res_ptbin_0.pdf, page is rotated 90 degrees> <./chapt4/p
-t_res_ptbin_5.pdf, page is rotated 90 degrees> <./chapt4/pt_neutron_gun_th2f_00
-5.pdf, page is rotated 90 degrees> <./chapt4/pt_neutron_gun_p2pf_th2f_005.pdf, 
-page is rotated 90 degrees>]
-[26 <./chapt4/pt_neutron_gun_res_fit_005.pdf, page is rotated 90 degrees>])
+ [24] [25 <./chapt4/pt_neutron_gun_th2f_JECs_GetRandom2.pdf, page is rotated 90
+ degrees> <./chapt4/pt_neutron_gun_p2pf_th2f_NoSmearing.pdf, page is rotated 90
+ degrees> <./chapt4/pt_res_ptbin_0.pdf, page is rotated 90 degrees> <./chapt4/p
+t_res_ptbin_5.pdf, page is rotated 90 degrees>] [26 <./chapt4/pt_neutron_gun_th
+2f_005.pdf, page is rotated 90 degrees> <./chapt4/pt_neutron_gun_p2pf_th2f_005.
+pdf, page is rotated 90 degrees> <./chapt4/pt_neutron_gun_res_fit_005.pdf, page
+ is rotated 90 degrees>])
 \openout2 = `chapt6/chapt6.aux'.
 
 
@@ -1424,7 +1424,7 @@ live/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr
 i8a.pfb>
-Output written on thesis.pdf (44 pages, 4230372 bytes).
+Output written on thesis.pdf (44 pages, 4232118 bytes).
 PDF statistics:
  759 PDF objects out of 1000 (max. 8388607)
  383 compressed objects within 4 object streams

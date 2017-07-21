@@ -26,12 +26,12 @@ Since the colliding partons have a color charge, the hard scattering will be acc
 
 The next step after the showering is the hadronization of the colored particles produced in the parton shower, transforming them into color-neutral hadrons. Since this happens at low scales where the perturbative approach of \acs{QCD} is not valid, phenomenological models have to be used. For most of the processes considered in this thesis, the showering and hadronization is done with \textsc{Pythia 8}~\cite{Sjostrand:2006za}, using parameters tuned to reproduce the experimental data. 
 
+In addition to \ac{ISR} and \ac{FSR}, also beam remnants, multiple parton interactions, and pileup give rise to additional activity in the event, referred to as the underlying event. After the partons participating in the hard scattering are extracted, the remainder of the protons have a non-zero color charge. The creation of additional hadrons during the hadronization is therefore possible. Multiple parton interactions represent additional interactions which can take place between other incoming partons, while pileup arises from collisions between other protons in the same bunch crossing or from a previous bunch crossing, respectively referred to as in-time and out-of-time pileup.
+
 \section{Detector simulation}
 \label{sec:sim}
 
-\subsection{Delphes}
-
-\subsection{GEANT4}
+After being generated, the collision events are passed on to the \ac{CMS} detector simulation, which is based on the \textsc{Geant 4}~\cite{} simulation toolkit. This toolkit provides a description of the interaction between particles and the detector material, including effects such as bremsstrahlung of charged particles, photon conversions, energy loss of charged particles by ionization, and the showering of electrons, photons and hadrons in the calorimeters due to interaction with the material. The \ac{CMS} simulation package contains the geometry of the detector with all the sensitive layers designed to detect the traversing particles, as well as the dead material regions consisting of e.g. support structures, cables, and cooling pipes. A precise map of the magnetic field is also included in order to simulate the curvature of the charged particles correctly.
 
 \section{Event reconstruction}
 \label{sec:reconstruction}
@@ -124,7 +124,7 @@ Jets are reconstructed with the anti-$k_T$ algorithm~\cite{1126-6708-2008-04-063
 \section{Simulation of the SIMP signal}
 \label{sec:SIMPs}
 
-For the generation of the \ac{SIMP} signal, the model Lagrangian given in equation~\ref{} is implemented in \textsc{FeynRules 2.0}~\cite{Alloul:2013bka}, and the matrix element is calculated at \ac{LO} and events are generated using \textsc{Madgraph 5}. The subsequent parton shower and hadronization is done with \textsc{Pythia 8}, using tune CUEP8M1. Next, the events are simulated in the \ac{CMS} detector using \textsc{Geant 4}~\cite{}. However, the \acp{SIMP} are not included in the simulation, as their interaction with matter is not implemented in \textsc{Geant 4}. The \acp{SIMP} were instead incorporated by adding an additional step to the standard reconstruction described in Section~\ref{sec:reconstruction}. In this additional step the \acp{SIMP} are directly converted to neutral \ac{PF} candidates and merged with the rest of the \ac{PF} candidates. The standard pileup corrections, jet clustering, and charged hadron subtraction are then applied in order to obtain the resulting jets, denoted here as P2PF jets.
+For the generation of the \ac{SIMP} signal, the model Lagrangian given in equation~\ref{} is implemented in \textsc{FeynRules 2.0}~\cite{Alloul:2013bka}, and the matrix element is calculated at \ac{LO} and events are generated using \textsc{Madgraph 5}. The subsequent parton shower and hadronization is done with \textsc{Pythia 8}, using tune CUEP8M1. Next, the events are simulated in the \ac{CMS} detector using \textsc{Geant 4}. However, the \acp{SIMP} are not included in the simulation, as their interaction with matter is not implemented in \textsc{Geant 4}. The \acp{SIMP} were instead incorporated by adding an additional step to the standard reconstruction described in Section~\ref{sec:reconstruction}. In this additional step the \acp{SIMP} are directly converted to neutral \ac{PF} candidates and merged with the rest of the \ac{PF} candidates. The standard pileup corrections, jet clustering, and charged hadron subtraction are then applied in order to obtain the resulting jets, denoted here as P2PF jets.
 
 In order to validate this method, a second sample was produced using neutrons instead of \acp{SIMP} and applying the same additional step. In this case the the neutrons will also be correctly reconstructed by the standard reconstruction. The reconstructed \ac{PF} candidates that are matched to the generated neutrons were therefore removed before injecting the converted generated neutrons to the collection of \ac{PF} candidates. This sample is then used to evaluate the difference with a standard neutron sample where the full \textsc{Geant 4} simulation is done. Neutrons were chosen because of their resemblance to the \acp{SIMP} as single neutral particles generating a hadronic shower.
 
@@ -132,17 +132,17 @@ The two leading generator-level jets (GEN) can then be compared to the uncorrect
 
 \begin{figure}[ht]
   \centering
- \includegraphics[width=.45\textwidth]{pt_neutron_gun_th2f_JECs_GetRandom2.pdf} \hspace{.6cm}
-\includegraphics[width=.45\textwidth]{pt_neutron_gun_p2pf_th2f_NoSmearing.pdf}
- \caption{}
+ \includegraphics[width=.48\textwidth]{pt_neutron_gun_th2f_JECs_GetRandom2.pdf} \hfill
+\includegraphics[width=.48\textwidth]{pt_neutron_gun_p2pf_th2f_NoSmearing.pdf}
+ \caption{Comparison of the transverse momentum of the generator-level jets to the \ac{PF} jets (left) and P2PF jets (right) without jet energy resolution smearing, using a neutron sample.}
  \label{fig:neutron}
 \end{figure}
 
 \begin{figure}[ht]
   \centering
- \includegraphics[width=.45\textwidth]{pt_res_ptbin_0.pdf} \hspace{.6cm}
-\includegraphics[width=.45\textwidth]{pt_res_ptbin_5.pdf}
- \caption{}
+ \includegraphics[width=.48\textwidth]{pt_res_ptbin_0.pdf} \hfill
+\includegraphics[width=.48\textwidth]{pt_res_ptbin_5.pdf}
+ \caption{The jet energy resolution of neutrons with $0< |\eta| < 0.5$ and \SI{200}{GeV}$<p_T<$\SI{300}{GeV} (left) or \SI{700}{GeV}$<p_T<$\SI{800}{GeV} (right).}
  \label{fig:neutron_res}
 \end{figure}
 
@@ -150,16 +150,16 @@ After applying this smearing, the P2PF jets are processed with the standard sequ
 
 \begin{figure}[ht]
   \centering
- \includegraphics[width=.45\textwidth]{pt_neutron_gun_th2f_005.pdf} \hspace{.6cm}
-\includegraphics[width=.45\textwidth]{pt_neutron_gun_p2pf_th2f_005.pdf}
- \caption{}
+ \includegraphics[width=.48\textwidth]{pt_neutron_gun_th2f_005.pdf} \hfill
+\includegraphics[width=.48\textwidth]{pt_neutron_gun_p2pf_th2f_005.pdf}
+ \caption{Comparison of the transverse momentum of the generator-level jets to the \ac{PF} jets (left) and P2PF jets (right) in the region $0< |\eta| < 0.5$ with jet energy resolution smearing, using a neutron sample.}
  \label{fig:neutron_corr}
 \end{figure}
 
 \begin{figure}[ht]
   \centering
  \includegraphics[width=.75\textwidth]{pt_neutron_gun_res_fit_005.pdf} 
- \caption{}
+ \caption{The jet energy resolution of the corrected P2PF jets (red) and \ac{PF} jets (black), fitted with a Crystal Ball function.}
  \label{fig:neutron_res_corr}
 \end{figure}
 
