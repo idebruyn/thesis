@@ -38,20 +38,19 @@
 \contentsline {subsection}{\numberline {4.3.3}Muon reconstruction}{23}
 \contentsline {subsection}{\numberline {4.3.4}Particle flow}{23}
 \contentsline {subsection}{\numberline {4.3.5}Jet reconstruction}{24}
-\contentsline {subsection}{\numberline {4.3.6}B-tagging}{24}
-\contentsline {subsection}{\numberline {4.3.7}Missing transverse energy reconstruction}{24}
-\contentsline {section}{\numberline {4.4}Simulation of the SIMP signal}{24}
-\contentsline {chapter}{\numberline {5}The Monojet Analysis}{27}
-\contentsline {section}{\numberline {5.1}Introduction}{27}
-\contentsline {section}{\numberline {5.2}Event selection}{27}
-\contentsline {section}{\numberline {5.3}Background estimation}{27}
-\contentsline {section}{\numberline {5.4}Results}{27}
-\contentsline {section}{\numberline {5.5}Improvement going from the 2015 to 2016 analysis}{27}
-\contentsline {section}{\numberline {5.6}Interpretation}{27}
-\contentsline {chapter}{\numberline {6}Search for SIMPs using Trackless Jets}{29}
-\contentsline {section}{\numberline {6.1}Introduction}{29}
-\contentsline {section}{\numberline {6.2}Event selection}{29}
-\contentsline {section}{\numberline {6.3}Background estimation}{29}
-\contentsline {section}{\numberline {6.4}Results}{29}
-\contentsline {section}{\numberline {6.5}SIMP model interpretation}{29}
-\contentsline {chapter}{\numberline {7}Conclusion \& Outlook}{31}
+\contentsline {subsection}{\numberline {4.3.6}Missing transverse energy reconstruction}{25}
+\contentsline {section}{\numberline {4.4}Simulation of the SIMP signal}{25}
+\contentsline {chapter}{\numberline {5}The Monojet Analysis}{29}
+\contentsline {section}{\numberline {5.1}Introduction}{29}
+\contentsline {section}{\numberline {5.2}Event selection}{29}
+\contentsline {section}{\numberline {5.3}Background estimation}{29}
+\contentsline {section}{\numberline {5.4}Results}{29}
+\contentsline {section}{\numberline {5.5}Improvement going from the 2015 to 2016 analysis}{29}
+\contentsline {section}{\numberline {5.6}Interpretation}{29}
+\contentsline {chapter}{\numberline {6}Search for SIMPs using Trackless Jets}{31}
+\contentsline {section}{\numberline {6.1}Introduction}{31}
+\contentsline {section}{\numberline {6.2}Event selection}{31}
+\contentsline {section}{\numberline {6.3}Background estimation}{31}
+\contentsline {section}{\numberline {6.4}Results}{31}
+\contentsline {section}{\numberline {6.5}SIMP model interpretation}{31}
+\contentsline {chapter}{\numberline {7}Conclusion \& Outlook}{33}

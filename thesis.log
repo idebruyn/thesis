@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.23)  21 JUL 2017 11:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.23)  21 JUL 2017 19:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1077,107 +1077,117 @@ Chapter 4.
 File: chapt3/muon_eff_eta.png Graphic file (type png)
 
 <use chapt3/muon_eff_eta.png>
-Package pdftex.def Info: chapt3/muon_eff_eta.png used on input line 58.
+Package pdftex.def Info: chapt3/muon_eff_eta.png used on input line 60.
 (pdftex.def)             Requested size: 167.2989pt x 161.36319pt.
 
 <chapt3/pion_eff_eta.png, id=337, 691.83469pt x 660.21657pt>
 File: chapt3/pion_eff_eta.png Graphic file (type png)
 
 <use chapt3/pion_eff_eta.png>
-Package pdftex.def Info: chapt3/pion_eff_eta.png used on input line 59.
+Package pdftex.def Info: chapt3/pion_eff_eta.png used on input line 61.
 (pdftex.def)             Requested size: 167.2989pt x 159.65402pt.
  [21 <./chapt3/muon_eff_eta.png (PNG copy)> <./chapt3/pion_eff_eta.png (PNG cop
 y)>]
 <chapt3/PV_eff.png, id=341, 569.12625pt x 546.04pt>
 File: chapt3/PV_eff.png Graphic file (type png)
  <use chapt3/PV_eff.png>
-Package pdftex.def Info: chapt3/PV_eff.png used on input line 70.
+Package pdftex.def Info: chapt3/PV_eff.png used on input line 72.
 (pdftex.def)             Requested size: 167.2989pt x 160.51382pt.
 
 <chapt3/PV_res.png, id=342, 569.12625pt x 546.04pt>
 File: chapt3/PV_res.png Graphic file (type png)
  <use chapt3/PV_res.png>
-Package pdftex.def Info: chapt3/PV_res.png used on input line 71.
+Package pdftex.def Info: chapt3/PV_res.png used on input line 73.
 (pdftex.def)             Requested size: 167.2989pt x 160.51382pt.
 
 [22 <./chapt3/PV_eff.png (PNG copy)> <./chapt3/PV_res.png (PNG copy)>] [23]
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 140.
 
-LaTeX Warning: Reference `' on page 24 undefined on input line 129.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 140.
+ [24]
+
+LaTeX Warning: Reference `' on page 25 undefined on input line 160.
 
 
-<chapt4/pt_neutron_gun_th2f_JECs_GetRandom2.pdf, id=349, 569.12625pt x 549.0512
+<chapt4/pt_neutron_gun_th2f_JECs_GetRandom2.pdf, id=352, 569.12625pt x 549.0512
 5pt>
 File: chapt4/pt_neutron_gun_th2f_JECs_GetRandom2.pdf Graphic file (type pdf)
  <use chapt4/pt_neutron_gun_th2f_JECs_GetRandom2.pdf>
 Package pdftex.def Info: chapt4/pt_neutron_gun_th2f_JECs_GetRandom2.pdf used on
- input line 137.
+ input line 168.
 (pdftex.def)             Requested size: 200.75996pt x 193.67882pt.
 
-<chapt4/pt_neutron_gun_p2pf_th2f_NoSmearing.pdf, id=350, 569.12625pt x 549.0512
+<chapt4/pt_neutron_gun_p2pf_th2f_NoSmearing.pdf, id=353, 569.12625pt x 549.0512
 5pt>
 File: chapt4/pt_neutron_gun_p2pf_th2f_NoSmearing.pdf Graphic file (type pdf)
  <use chapt4/pt_neutron_gun_p2pf_th2f_NoSmearing.pdf>
 Package pdftex.def Info: chapt4/pt_neutron_gun_p2pf_th2f_NoSmearing.pdf used on
- input line 138.
+ input line 169.
 (pdftex.def)             Requested size: 200.75996pt x 193.67882pt.
 
-<chapt4/pt_res_ptbin_0.pdf, id=351, 569.12625pt x 549.05125pt>
+<chapt4/pt_res_ptbin_0.pdf, id=354, 569.12625pt x 549.05125pt>
 File: chapt4/pt_res_ptbin_0.pdf Graphic file (type pdf)
 
 <use chapt4/pt_res_ptbin_0.pdf>
-Package pdftex.def Info: chapt4/pt_res_ptbin_0.pdf used on input line 145.
+Package pdftex.def Info: chapt4/pt_res_ptbin_0.pdf used on input line 176.
 (pdftex.def)             Requested size: 200.75996pt x 193.67882pt.
 
-<chapt4/pt_res_ptbin_5.pdf, id=352, 569.12625pt x 549.05125pt>
+<chapt4/pt_res_ptbin_5.pdf, id=355, 569.12625pt x 549.05125pt>
 File: chapt4/pt_res_ptbin_5.pdf Graphic file (type pdf)
 
 <use chapt4/pt_res_ptbin_5.pdf>
-Package pdftex.def Info: chapt4/pt_res_ptbin_5.pdf used on input line 146.
+Package pdftex.def Info: chapt4/pt_res_ptbin_5.pdf used on input line 177.
 (pdftex.def)             Requested size: 200.75996pt x 193.67882pt.
-
-<chapt4/pt_neutron_gun_th2f_005.pdf, id=353, 569.12625pt x 549.05125pt>
+ [25]
+<chapt4/pt_neutron_gun_th2f_005.pdf, id=360, 569.12625pt x 549.05125pt>
 File: chapt4/pt_neutron_gun_th2f_005.pdf Graphic file (type pdf)
 
 <use chapt4/pt_neutron_gun_th2f_005.pdf>
 Package pdftex.def Info: chapt4/pt_neutron_gun_th2f_005.pdf used on input line 
-155.
+186.
 (pdftex.def)             Requested size: 200.75996pt x 193.67882pt.
 
-<chapt4/pt_neutron_gun_p2pf_th2f_005.pdf, id=354, 569.12625pt x 549.05125pt>
+<chapt4/pt_neutron_gun_p2pf_th2f_005.pdf, id=361, 569.12625pt x 549.05125pt>
 File: chapt4/pt_neutron_gun_p2pf_th2f_005.pdf Graphic file (type pdf)
 
 <use chapt4/pt_neutron_gun_p2pf_th2f_005.pdf>
 Package pdftex.def Info: chapt4/pt_neutron_gun_p2pf_th2f_005.pdf used on input 
-line 156.
+line 187.
 (pdftex.def)             Requested size: 200.75996pt x 193.67882pt.
 
-<chapt4/pt_neutron_gun_res_fit_005.pdf, id=355, 569.12625pt x 549.05125pt>
+<chapt4/pt_neutron_gun_res_fit_005.pdf, id=362, 569.12625pt x 549.05125pt>
 File: chapt4/pt_neutron_gun_res_fit_005.pdf Graphic file (type pdf)
 
 <use chapt4/pt_neutron_gun_res_fit_005.pdf>
 Package pdftex.def Info: chapt4/pt_neutron_gun_res_fit_005.pdf used on input li
-ne 163.
+ne 194.
 (pdftex.def)             Requested size: 313.69025pt x 302.64098pt.
- [24] [25 <./chapt4/pt_neutron_gun_th2f_JECs_GetRandom2.pdf, page is rotated 90
- degrees> <./chapt4/pt_neutron_gun_p2pf_th2f_NoSmearing.pdf, page is rotated 90
- degrees> <./chapt4/pt_res_ptbin_0.pdf, page is rotated 90 degrees> <./chapt4/p
-t_res_ptbin_5.pdf, page is rotated 90 degrees>] [26 <./chapt4/pt_neutron_gun_th
-2f_005.pdf, page is rotated 90 degrees> <./chapt4/pt_neutron_gun_p2pf_th2f_005.
-pdf, page is rotated 90 degrees> <./chapt4/pt_neutron_gun_res_fit_005.pdf, page
- is rotated 90 degrees>])
+ [26 <./chapt4/pt_neutron_gun_th2f_JECs_GetRandom2.pdf, page is rotated 90 degr
+ees> <./chapt4/pt_neutron_gun_p2pf_th2f_NoSmearing.pdf, page is rotated 90 degr
+ees> <./chapt4/pt_res_ptbin_0.pdf, page is rotated 90 degrees> <./chapt4/pt_res
+_ptbin_5.pdf, page is rotated 90 degrees>] [27 <./chapt4/pt_neutron_gun_th2f_00
+5.pdf, page is rotated 90 degrees> <./chapt4/pt_neutron_gun_p2pf_th2f_005.pdf, 
+page is rotated 90 degrees> <./chapt4/pt_neutron_gun_res_fit_005.pdf, page is r
+otated 90 degrees>] [28
+
+
+
+])
 \openout2 = `chapt6/chapt6.aux'.
 
 
 (./chapt6/chapt6.tex
 Chapter 5.
-[27
+[29
 
 
 
-
-
-
-] [28
+] [30
 
 
 ])
@@ -1185,11 +1195,11 @@ Chapter 5.
 
  (./chapt5/chapt5.tex
 Chapter 6.
-[29
+[31
 
 
 
-] [30
+] [32
 
 
 
@@ -1198,11 +1208,11 @@ Chapter 6.
 
  (./chapt7/chapt7.tex
 Chapter 7.
-[31
+[33
 
 
 
-] [32
+] [34
 
 
 ]) (./thesis.bbl
@@ -1211,14 +1221,14 @@ Underfull \hbox (badness 1014) in paragraph at lines 27--42
 Min-dau-gas Jan-ulis, Raul
  []
 
-) [33
+) [35
 
 
 
 ]
 \openout2 = `phdacronyms.aux'.
 
- (./phdacronyms.tex [34
+ (./phdacronyms.tex [36
 
 
 ]
@@ -1252,146 +1262,146 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--22
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--29
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--29
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--36
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--36
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--41
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--41
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--48
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--48
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
 
  []
 
-[35]
-Underfull \hbox (badness 10000) in paragraph at lines 52--53
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 52--53
+[37]
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--59
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--59
+Underfull \hbox (badness 10000) in paragraph at lines 59--60
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--65
+Underfull \hbox (badness 10000) in paragraph at lines 59--60
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--65
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--74
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--74
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--104
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--104
-
- []
-
-[36]
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
+
+ []
+
+[38]
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--117
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--117
+Underfull \hbox (badness 10000) in paragraph at lines 117--118
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--123
+Underfull \hbox (badness 10000) in paragraph at lines 117--118
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--123
+Underfull \hbox (badness 10000) in paragraph at lines 123--124
 
  []
 
-) [37] [38
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--124
+
+ []
+
+) [39] [40
 
 
 ] (./thesis.aux (./chapt1/intro.aux) (./chapt2/chapt2.aux)
@@ -1402,10 +1412,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 16960 strings out of 493029
- 320584 string characters out of 6136234
- 346886 words of memory out of 5000000
- 20157 multiletter control sequences out of 15000+600000
+ 16983 strings out of 493029
+ 320918 string characters out of 6136234
+ 346984 words of memory out of 5000000
+ 20177 multiletter control sequences out of 15000+600000
  43074 words of font info for 82 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
  39i,11n,50p,10377b,825s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1424,10 +1434,10 @@ live/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr
 i8a.pfb>
-Output written on thesis.pdf (44 pages, 4232118 bytes).
+Output written on thesis.pdf (46 pages, 4241361 bytes).
 PDF statistics:
- 759 PDF objects out of 1000 (max. 8388607)
- 383 compressed objects within 4 object streams
+ 765 PDF objects out of 1000 (max. 8388607)
+ 387 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
  152 words of extra memory for PDF output out of 10000 (max. 10000000)
 
