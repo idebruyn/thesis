@@ -47,6 +47,16 @@ J.~Pumplin, D.~R. Stump, J.~Huston, H.~L. Lai, Pavel~M. Nadolsky, and W.~K.
   global QCD analysis}}.
 \newblock JHEP, 07:012, 2002.
 
+\bibitem{Martin:2009iq}
+A.~D. Martin, W.~J. Stirling, R.~S. Thorne, and G.~Watt.
+\newblock {\em {Parton distributions for the LHC}}.
+\newblock Eur. Phys. J., C63:189--285, 2009.
+
+\bibitem{Ball:2014uwa}
+Richard~D. Ball et~al.
+\newblock {\em {Parton distributions for the LHC Run II}}.
+\newblock JHEP, 04:040, 2015.
+
 \bibitem{Alwall:2014hca}
 J.~Alwall, R.~Frederix, S.~Frixione, V.~Hirschi, F.~Maltoni, O.~Mattelaer,
   H.~S. Shao, T.~Stelzer, P.~Torrielli, and M.~Zaro.
@@ -60,11 +70,6 @@ Stefano Frixione, Paolo Nason, and Carlo Oleari.
 \newblock {\em {Matching NLO QCD computations with Parton Shower simulations:
   the POWHEG method}}.
 \newblock JHEP, 11:070, 2007.
-
-\bibitem{Ball:2014uwa}
-Richard~D. Ball et~al.
-\newblock {\em {Parton distributions for the LHC Run II}}.
-\newblock JHEP, 04:040, 2015.
 
 \bibitem{Gribov:1972ri}
 V.~N. Gribov and L.~N. Lipatov.
@@ -90,11 +95,22 @@ Torbj{\"o}rn Sj{\"o}strand, Stephen Mrenna, and Peter Skands.
 \newblock {\em {{PYTHIA} 6.4 physics and manual}}.
 \newblock JHEP, 05:026, 2006.
 
+\bibitem{Allison:2006ve}
+John Allison et~al.
+\newblock {\em {Geant4 developments and applications}}.
+\newblock IEEE Trans. Nucl. Sci., 53:270, 2006.
+
 \bibitem{Chatrchyan:2014fea}
 Serguei Chatrchyan et~al.
 \newblock {\em {Description and performance of track and primary-vertex
   reconstruction with the CMS tracker}}.
 \newblock JINST, 9(10):P10009, 2014.
+
+\bibitem{Strandlie:2006gi}
+A.~Strandlie and R.~Fruhwirth.
+\newblock {\em {Discrimination between different types of material in track
+  reconstruction with a Gaussian-sum filter}}.
+\newblock IEEE Trans. Nucl. Sci., 53:3842--3849, 2006.
 
 \bibitem{1126-6708-2008-04-063}
 Matteo Cacciari, Gavin~P. Salam, and Gregory Soyez.

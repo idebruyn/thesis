@@ -118,10 +118,10 @@ order=0
 
 [item:chapt4/chapt4.tex]
 archive=true
-column=119
+column=62
 encoding=UTF-8
 highlight=LaTeX
-line=144
+line=180
 mode=LaTeX
 open=true
 order=3
@@ -215,10 +215,10 @@ JumpList=
 ViMarks=.,130,48,[,130,46,],130,48
 
 [view-settings,view=0,item:chapt4/chapt4.tex]
-CursorColumn=119
-CursorLine=144
+CursorColumn=62
+CursorLine=180
 JumpList=
-ViMarks=.,144,118,[,144,116,],144,118
+ViMarks=.,180,0,[,180,0,],180,1
 
 [view-settings,view=0,item:chapt5/chapt5.tex]
 CursorColumn=15

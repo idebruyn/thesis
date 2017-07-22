@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.23)  22 JUL 2017 17:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.23)  22 JUL 2017 23:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1109,78 +1109,85 @@ Package pdftex.def Info: chapt3/PV_res.png used on input line 80.
 [22 <./chapt3/muon_eff_eta.png (PNG copy)> <./chapt3/pion_eff_eta.png (PNG copy
 )> <./chapt3/PV_eff.png (PNG copy)> <./chapt3/PV_res.png (PNG copy)>] [23]
 [24]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 147.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 153.
 
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 147.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 153.
+
+<chapt4/JEC.png, id=355, 1099.85907pt x 246.9225pt>
+File: chapt4/JEC.png Graphic file (type png)
+ <use chapt4/JEC.png>
+Package pdftex.def Info: chapt4/JEC.png used on input line 160.
+(pdftex.def)             Requested size: 355.51817pt x 79.81557pt.
+
+[25 <./chapt4/JEC.png (PNG copy)>]
+
+LaTeX Warning: Reference `' on page 26 undefined on input line 186.
 
 
-LaTeX Warning: Reference `' on page 25 undefined on input line 167.
-
-[25]
-<chapt4/pt_neutron_gun_th2f_JECs_GetRandom2.pdf, id=359, 569.12625pt x 549.0512
+<chapt4/pt_neutron_gun_th2f_JECs_GetRandom2.pdf, id=360, 569.12625pt x 549.0512
 5pt>
 File: chapt4/pt_neutron_gun_th2f_JECs_GetRandom2.pdf Graphic file (type pdf)
  <use chapt4/pt_neutron_gun_th2f_JECs_GetRandom2.pdf>
 Package pdftex.def Info: chapt4/pt_neutron_gun_th2f_JECs_GetRandom2.pdf used on
- input line 175.
+ input line 194.
 (pdftex.def)             Requested size: 200.75996pt x 193.67882pt.
 
-<chapt4/pt_neutron_gun_p2pf_th2f_NoSmearing.pdf, id=360, 569.12625pt x 549.0512
+<chapt4/pt_neutron_gun_p2pf_th2f_NoSmearing.pdf, id=361, 569.12625pt x 549.0512
 5pt>
 File: chapt4/pt_neutron_gun_p2pf_th2f_NoSmearing.pdf Graphic file (type pdf)
  <use chapt4/pt_neutron_gun_p2pf_th2f_NoSmearing.pdf>
 Package pdftex.def Info: chapt4/pt_neutron_gun_p2pf_th2f_NoSmearing.pdf used on
- input line 176.
+ input line 195.
 (pdftex.def)             Requested size: 200.75996pt x 193.67882pt.
 
-<chapt4/pt_res_ptbin_0.pdf, id=361, 569.12625pt x 549.05125pt>
+<chapt4/pt_res_ptbin_0.pdf, id=362, 569.12625pt x 549.05125pt>
 File: chapt4/pt_res_ptbin_0.pdf Graphic file (type pdf)
 
 <use chapt4/pt_res_ptbin_0.pdf>
-Package pdftex.def Info: chapt4/pt_res_ptbin_0.pdf used on input line 183.
+Package pdftex.def Info: chapt4/pt_res_ptbin_0.pdf used on input line 202.
 (pdftex.def)             Requested size: 200.75996pt x 193.67882pt.
 
-<chapt4/pt_res_ptbin_5.pdf, id=362, 569.12625pt x 549.05125pt>
+<chapt4/pt_res_ptbin_5.pdf, id=363, 569.12625pt x 549.05125pt>
 File: chapt4/pt_res_ptbin_5.pdf Graphic file (type pdf)
 
 <use chapt4/pt_res_ptbin_5.pdf>
-Package pdftex.def Info: chapt4/pt_res_ptbin_5.pdf used on input line 184.
+Package pdftex.def Info: chapt4/pt_res_ptbin_5.pdf used on input line 203.
 (pdftex.def)             Requested size: 200.75996pt x 193.67882pt.
 
-<chapt4/pt_neutron_gun_th2f_005.pdf, id=363, 569.12625pt x 549.05125pt>
+<chapt4/pt_neutron_gun_th2f_005.pdf, id=364, 569.12625pt x 549.05125pt>
 File: chapt4/pt_neutron_gun_th2f_005.pdf Graphic file (type pdf)
 
 <use chapt4/pt_neutron_gun_th2f_005.pdf>
 Package pdftex.def Info: chapt4/pt_neutron_gun_th2f_005.pdf used on input line 
-193.
+212.
 (pdftex.def)             Requested size: 200.75996pt x 193.67882pt.
 
-<chapt4/pt_neutron_gun_p2pf_th2f_005.pdf, id=364, 569.12625pt x 549.05125pt>
+<chapt4/pt_neutron_gun_p2pf_th2f_005.pdf, id=365, 569.12625pt x 549.05125pt>
 File: chapt4/pt_neutron_gun_p2pf_th2f_005.pdf Graphic file (type pdf)
 
 <use chapt4/pt_neutron_gun_p2pf_th2f_005.pdf>
 Package pdftex.def Info: chapt4/pt_neutron_gun_p2pf_th2f_005.pdf used on input 
-line 194.
+line 213.
 (pdftex.def)             Requested size: 200.75996pt x 193.67882pt.
 
-<chapt4/pt_neutron_gun_res_fit_005.pdf, id=365, 569.12625pt x 549.05125pt>
+<chapt4/pt_neutron_gun_res_fit_005.pdf, id=366, 569.12625pt x 549.05125pt>
 File: chapt4/pt_neutron_gun_res_fit_005.pdf Graphic file (type pdf)
 
 <use chapt4/pt_neutron_gun_res_fit_005.pdf>
 Package pdftex.def Info: chapt4/pt_neutron_gun_res_fit_005.pdf used on input li
-ne 201.
+ne 220.
 (pdftex.def)             Requested size: 313.69025pt x 302.64098pt.
- [26 <./chapt4/pt_neutron_gun_th2f_JECs_GetRandom2.pdf, page is rotated 90 degr
-ees> <./chapt4/pt_neutron_gun_p2pf_th2f_NoSmearing.pdf, page is rotated 90 degr
-ees>] [27 <./chapt4/pt_res_ptbin_0.pdf, page is rotated 90 degrees> <./chapt4/p
-t_res_ptbin_5.pdf, page is rotated 90 degrees> <./chapt4/pt_neutron_gun_th2f_00
-5.pdf, page is rotated 90 degrees> <./chapt4/pt_neutron_gun_p2pf_th2f_005.pdf, 
-page is rotated 90 degrees>]
-[28 <./chapt4/pt_neutron_gun_res_fit_005.pdf, page is rotated 90 degrees>])
+ [26] [27 <./chapt4/pt_neutron_gun_th2f_JECs_GetRandom2.pdf, page is rotated 90
+ degrees> <./chapt4/pt_neutron_gun_p2pf_th2f_NoSmearing.pdf, page is rotated 90
+ degrees> <./chapt4/pt_res_ptbin_0.pdf, page is rotated 90 degrees> <./chapt4/p
+t_res_ptbin_5.pdf, page is rotated 90 degrees>] [28 <./chapt4/pt_neutron_gun_th
+2f_005.pdf, page is rotated 90 degrees> <./chapt4/pt_neutron_gun_p2pf_th2f_005.
+pdf, page is rotated 90 degrees> <./chapt4/pt_neutron_gun_res_fit_005.pdf, page
+ is rotated 90 degrees>])
 \openout2 = `chapt6/chapt6.aux'.
 
 
@@ -1418,13 +1425,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 16996 strings out of 493029
- 321107 string characters out of 6136234
- 347049 words of memory out of 5000000
- 20189 multiletter control sequences out of 15000+600000
+ 17005 strings out of 493029
+ 321247 string characters out of 6136234
+ 347072 words of memory out of 5000000
+ 20197 multiletter control sequences out of 15000+600000
  43074 words of font info for 82 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
- 39i,11n,50p,10377b,825s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,12n,50p,10377b,825s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
@@ -1441,10 +1448,10 @@ mf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/tim
 es/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
 
-Output written on thesis.pdf (46 pages, 4451433 bytes).
+Output written on thesis.pdf (46 pages, 4545223 bytes).
 PDF statistics:
- 771 PDF objects out of 1000 (max. 8388607)
+ 772 PDF objects out of 1000 (max. 8388607)
  390 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
- 157 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 162 words of extra memory for PDF output out of 10000 (max. 10000000)
 
