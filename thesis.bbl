@@ -55,6 +55,36 @@ J.~Alwall, R.~Frederix, S.~Frixione, V.~Hirschi, F.~Maltoni, O.~Mattelaer,
   simulations}}.
 \newblock JHEP, 07:079, 2014.
 
+\bibitem{Frixione:2007vw}
+Stefano Frixione, Paolo Nason, and Carlo Oleari.
+\newblock {\em {Matching NLO QCD computations with Parton Shower simulations:
+  the POWHEG method}}.
+\newblock JHEP, 11:070, 2007.
+
+\bibitem{Ball:2014uwa}
+Richard~D. Ball et~al.
+\newblock {\em {Parton distributions for the LHC Run II}}.
+\newblock JHEP, 04:040, 2015.
+
+\bibitem{Gribov:1972ri}
+V.~N. Gribov and L.~N. Lipatov.
+\newblock {\em {Deep inelastic e p scattering in perturbation theory}}.
+\newblock Sov. J. Nucl. Phys., 15:438--450, 1972.
+\newblock [Yad. Fiz.15,781(1972)].
+
+\bibitem{Dokshitzer:1977sg}
+Yuri~L. Dokshitzer.
+\newblock {\em {Calculation of the Structure Functions for Deep Inelastic
+  Scattering and e+ e- Annihilation by Perturbation Theory in Quantum
+  Chromodynamics.}}
+\newblock Sov. Phys. JETP, 46:641--653, 1977.
+\newblock [Zh. Eksp. Teor. Fiz.73,1216(1977)].
+
+\bibitem{Altarelli:1977zs}
+Guido Altarelli and G.~Parisi.
+\newblock {\em {Asymptotic Freedom in Parton Language}}.
+\newblock Nucl. Phys., B126:298--318, 1977.
+
 \bibitem{Sjostrand:2006za}
 Torbj{\"o}rn Sj{\"o}strand, Stephen Mrenna, and Peter Skands.
 \newblock {\em {{PYTHIA} 6.4 physics and manual}}.
