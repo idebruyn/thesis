@@ -1,13 +1,13 @@
 This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
-A level-1 auxiliary file: chapt1/intro.aux
-A level-1 auxiliary file: chapt2/chapt2.aux
-A level-1 auxiliary file: chapt3/chapt3.aux
-A level-1 auxiliary file: chapt4/chapt4.aux
-A level-1 auxiliary file: chapt6/chapt6.aux
-A level-1 auxiliary file: chapt5/chapt5.aux
-A level-1 auxiliary file: chapt7/chapt7.aux
+A level-1 auxiliary file: intro/intro.aux
+A level-1 auxiliary file: theory/theory.aux
+A level-1 auxiliary file: detector/detector.aux
+A level-1 auxiliary file: reconstruction/reconstruction.aux
+A level-1 auxiliary file: monojet/monojet.aux
+A level-1 auxiliary file: simps/simps.aux
+A level-1 auxiliary file: conclusions/conclusions.aux
 The style file: phdbib.bst
 A level-1 auxiliary file: phdacronyms.aux
 Database file #1: PhD.bib
@@ -15,7 +15,7 @@ Warning--empty journal in CMS:2012sda
 Warning--empty journal in Tapper:2013yva
 You've used 19 entries,
             1787 wiz_defined-function locations,
-            585 strings with 8021 characters,
+            585 strings with 8050 characters,
 and the built_in function-call counts, 4797 in all, are:
 = -- 343
 > -- 385

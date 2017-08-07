@@ -26,9 +26,9 @@
 \contentsline {subsection}{\numberline {3.2.2}The electromagnetic calorimeter}{10}
 \contentsline {subsection}{\numberline {3.2.3}The hadronic calorimeter}{11}
 \contentsline {subsection}{\numberline {3.2.4}The muon system}{13}
-\contentsline {subsection}{\numberline {3.2.5}Trigger and data acquisition}{14}
-\contentsline {subsection}{\numberline {3.2.6}CMS performance in Run 2}{16}
-\contentsline {subsubsection}{\numberline {3.2.6.1}Pre-amplifier saturation in the APV25 chip}{16}
+\contentsline {subsection}{\numberline {3.2.5}Trigger and data acquisition}{13}
+\contentsline {subsection}{\numberline {3.2.6}CMS performance in Run 2}{15}
+\contentsline {subsubsection}{\numberline {3.2.6.1}Pre-amplifier saturation in the APV25 chip}{15}
 \contentsline {chapter}{\numberline {4}Event Simulation and Reconstruction}{19}
 \contentsline {section}{\numberline {4.1}Event generation}{19}
 \contentsline {section}{\numberline {4.2}Detector simulation}{20}

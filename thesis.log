@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.23)  22 JUL 2017 23:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.23)  7 AUG 2017 21:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -684,9 +684,9 @@ Package: lineno 2005/11/02 line numbers on paragraphs v4.41
 \bframebox=\box59
 LaTeX Info: Redefining \\ on input line 3056.
 ) (./thesis.aux
-(./chapt1/intro.aux) (./chapt2/chapt2.aux) (./chapt3/chapt3.aux)
-(./chapt4/chapt4.aux) (./chapt6/chapt6.aux) (./chapt5/chapt5.aux)
-(./chapt7/chapt7.aux) (./phdacronyms.aux))
+(./intro/intro.aux) (./theory/theory.aux) (./detector/detector.aux)
+(./reconstruction/reconstruction.aux) (./monojet/monojet.aux)
+(./simps/simps.aux) (./conclusions/conclusions.aux) (./phdacronyms.aux))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 80.
@@ -886,9 +886,9 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 \openout4 = `thesis.toc'.
 
  [4]
-\openout2 = `chapt1/intro.aux'.
+\openout2 = `intro/intro.aux'.
 
- (./chapt1/intro.tex
+ (./intro/intro.tex
 Chapter 1.
 [1
 
@@ -901,9 +901,9 @@ Chapter 1.
 
 
 ])
-\openout2 = `chapt2/chapt2.aux'.
+\openout2 = `theory/theory.aux'.
 
- (./chapt2/chapt2.tex
+ (./theory/theory.tex
 Chapter 2.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 14.
@@ -917,159 +917,170 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 
 
 ])
-\openout2 = `chapt3/chapt3.aux'.
+\openout2 = `detector/detector.aux'.
 
- (./chapt3/chapt3.tex
+ (./detector/detector.tex
 Chapter 3.
 [5
 
 
 
-] <chapt3/lhc_complex.jpg, id=45, 602.25pt x 409.53pt>
-File: chapt3/lhc_complex.jpg Graphic file (type jpg)
+] <detector/lhc_complex.jpg, id=45, 602.25pt x 409.53pt>
+File: detector/lhc_complex.jpg Graphic file (type jpg)
 
-<use chapt3/lhc_complex.jpg>
-Package pdftex.def Info: chapt3/lhc_complex.jpg used on input line 32.
+<use detector/lhc_complex.jpg>
+Package pdftex.def Info: detector/lhc_complex.jpg used on input line 32.
 (pdftex.def)             Requested size: 313.69025pt x 213.31926pt.
- [6 <./chapt3/lhc_complex.jpg>]
-<chapt3/CMS_lumi_allyears.png, id=53, 578.16pt x 433.62pt>
-File: chapt3/CMS_lumi_allyears.png Graphic file (type png)
+ [6 <./detector/lhc_complex.jpg>]
+<detector/CMS_lumi_allyears.png, id=53, 578.16pt x 433.62pt>
+File: detector/CMS_lumi_allyears.png Graphic file (type png)
 
-<use chapt3/CMS_lumi_allyears.png>
-Package pdftex.def Info: chapt3/CMS_lumi_allyears.png used on input line 61.
+<use detector/CMS_lumi_allyears.png>
+Package pdftex.def Info: detector/CMS_lumi_allyears.png used on input line 62.
 (pdftex.def)             Requested size: 313.69025pt x 235.26288pt.
 
 
-Package acronym Warning: Acronym `ALICE' is not defined on input line 68.
+Package acronym Warning: Acronym `ALICE' is not defined on input line 69.
 
 
-Package acronym Warning: Acronym `LHCb' is not defined on input line 68.
+Package acronym Warning: Acronym `LHCb' is not defined on input line 69.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 4279) has occurred while \output is active []
 
- [7 <./chapt3/CMS_lumi_allyears.png>]
-<chapt3/cms_complete_labelled.pdf, id=60, 807.015pt x 583.17876pt>
-File: chapt3/cms_complete_labelled.pdf Graphic file (type pdf)
+ [7 <./detector/CMS_lumi_allyears.png>]
+<detector/cms_complete_labelled.pdf, id=60, 807.015pt x 583.17876pt>
+File: detector/cms_complete_labelled.pdf Graphic file (type pdf)
 
-<use chapt3/cms_complete_labelled.pdf>
-Package pdftex.def Info: chapt3/cms_complete_labelled.pdf used on input line 77
-.
+<use detector/cms_complete_labelled.pdf>
+Package pdftex.def Info: detector/cms_complete_labelled.pdf used on input line 
+78.
 (pdftex.def)             Requested size: 376.42575pt x 272.02069pt.
 
 Underfull \vbox (badness 1043) has occurred while \output is active []
 
- [8 <./chapt3/cms_complete_labelled.pdf>]
-<chapt3/fig_cmstracker.png, id=218, 1111.15125pt x 522.95375pt>
-File: chapt3/fig_cmstracker.png Graphic file (type png)
+ [8 <./detector/cms_complete_labelled.pdf>]
+<detector/fig_cmstracker.png, id=218, 1111.15125pt x 522.95375pt>
+File: detector/fig_cmstracker.png Graphic file (type png)
 
-<use chapt3/fig_cmstracker.png>
-Package pdftex.def Info: chapt3/fig_cmstracker.png used on input line 100.
+<use detector/fig_cmstracker.png>
+Package pdftex.def Info: detector/fig_cmstracker.png used on input line 101.
 (pdftex.def)             Requested size: 376.42575pt x 177.16354pt.
 
-<chapt3/pixel.pdf, id=219, 602.65152pt x 361.95226pt>
-File: chapt3/pixel.pdf Graphic file (type pdf)
- <use chapt3/pixel.pdf>
-Package pdftex.def Info: chapt3/pixel.pdf used on input line 116.
+<detector/pixel.pdf, id=219, 602.65152pt x 361.95226pt>
+File: detector/pixel.pdf Graphic file (type pdf)
+
+<use detector/pixel.pdf>
+Package pdftex.def Info: detector/pixel.pdf used on input line 117.
 (pdftex.def)             Requested size: 250.95476pt x 150.72101pt.
+ [9 <./detector/fig_cmstracker.png (PNG copy)>]
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 126.
 
-[9 <./chapt3/fig_cmstracker.png (PNG copy)>] [10 <./chapt3/pixel.pdf>]
-<chapt3/Transverse_section.pdf, id=230, 585.60579pt x 365.04005pt>
-File: chapt3/Transverse_section.pdf Graphic file (type pdf)
 
-<use chapt3/Transverse_section.pdf>
-Package pdftex.def Info: chapt3/Transverse_section.pdf used on input line 175.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+) [10 <./detector/pixel.pdf>] <detector/Transverse_section.pdf, id=230, 585.605
+79pt x 365.04005pt>
+File: detector/Transverse_section.pdf Graphic file (type pdf)
+
+<use detector/Transverse_section.pdf>
+Package pdftex.def Info: detector/Transverse_section.pdf used on input line 176
+.
 (pdftex.def)             Requested size: 334.60422pt x 208.5763pt.
 
-<chapt3/ecal_res.png, id=231, 505.13719pt x 484.05844pt>
-File: chapt3/ecal_res.png Graphic file (type png)
+<detector/ecal_res.png, id=231, 505.13719pt x 484.05844pt>
+File: detector/ecal_res.png Graphic file (type png)
 
-<use chapt3/ecal_res.png>
-Package pdftex.def Info: chapt3/ecal_res.png used on input line 189.
+<use detector/ecal_res.png>
+Package pdftex.def Info: detector/ecal_res.png used on input line 190.
 (pdftex.def)             Requested size: 250.95476pt x 240.48492pt.
- [11 <./chapt3/Transverse_section.pdf>]
-<chapt3/hcal.png, id=249, 1218.05063pt x 649.67719pt>
-File: chapt3/hcal.png Graphic file (type png)
- <use chapt3/hcal.png>
-Package pdftex.def Info: chapt3/hcal.png used on input line 205.
-(pdftex.def)             Requested size: 334.60422pt x 178.46846pt.
+ [11 <./detector/Transverse_section.pdf>]
+<detector/hcal.png, id=249, 1218.05063pt x 649.67719pt>
+File: detector/hcal.png Graphic file (type png)
 
-[12 <./chapt3/ecal_res.png (PNG copy)> <./chapt3/hcal.png (PNG copy)>]
-<chapt3/JER.png, id=254, 791.95876pt x 536.0025pt>
-File: chapt3/JER.png Graphic file (type png)
- <use chapt3/JER.png>
-Package pdftex.def Info: chapt3/JER.png used on input line 216.
+<use detector/hcal.png>
+Package pdftex.def Info: detector/hcal.png used on input line 206.
+(pdftex.def)             Requested size: 334.60422pt x 178.46846pt.
+ [12 <./detector/ecal_res.png (PNG copy)> <./detector/hcal.png (PNG copy)>] <de
+tector/JER.png, id=254, 791.95876pt x 536.0025pt>
+File: detector/JER.png Graphic file (type png)
+
+<use detector/JER.png>
+Package pdftex.def Info: detector/JER.png used on input line 217.
 (pdftex.def)             Requested size: 250.95476pt x 169.84766pt.
 
-<chapt3/muon_system_new.png, id=255, 1013.28563pt x 660.96938pt>
-File: chapt3/muon_system_new.png Graphic file (type png)
+<detector/muon_system_new.png, id=255, 1013.28563pt x 660.96938pt>
+File: detector/muon_system_new.png Graphic file (type png)
 
-<use chapt3/muon_system_new.png>
-Package pdftex.def Info: chapt3/muon_system_new.png used on input line 227.
+<use detector/muon_system_new.png>
+Package pdftex.def Info: detector/muon_system_new.png used on input line 228.
 (pdftex.def)             Requested size: 376.42575pt x 245.54323pt.
- [13 <./chapt3/JER.png (PNG copy)> <./chapt3/muon_system_new.png (PNG copy)>]
-<chapt3/muon_res.png, id=262, 990.70125pt x 661.72218pt>
-File: chapt3/muon_res.png Graphic file (type png)
 
-<use chapt3/muon_res.png>
-Package pdftex.def Info: chapt3/muon_res.png used on input line 238.
+<detector/muon_res.png, id=256, 990.70125pt x 661.72218pt>
+File: detector/muon_res.png Graphic file (type png)
+
+<use detector/muon_res.png>
+Package pdftex.def Info: detector/muon_res.png used on input line 239.
 (pdftex.def)             Requested size: 376.42575pt x 251.42674pt.
- [14 <./chapt3/muon_res.png (PNG copy)>]
-<chapt3/trigger.png, id=266, 897.3525pt x 630.10406pt>
-File: chapt3/trigger.png Graphic file (type png)
+ [13 <./detector/JER.png (PNG copy)>]
+<detector/trigger.png, id=263, 897.3525pt x 630.10406pt>
+File: detector/trigger.png Graphic file (type png)
 
-<use chapt3/trigger.png>
-Package pdftex.def Info: chapt3/trigger.png used on input line 251.
+<use detector/trigger.png>
+Package pdftex.def Info: detector/trigger.png used on input line 252.
 (pdftex.def)             Requested size: 376.42575pt x 264.315pt.
- <chapt3/DAQ.png, id=267, 641.39626pt x 265.74281pt>
-File: chapt3/DAQ.png Graphic file (type png)
 
-<use chapt3/DAQ.png>
-Package pdftex.def Info: chapt3/DAQ.png used on input line 261.
+<detector/DAQ.png, id=264, 641.39626pt x 265.74281pt>
+File: detector/DAQ.png Graphic file (type png)
+ <use detector/DAQ.png>
+Package pdftex.def Info: detector/DAQ.png used on input line 262.
 (pdftex.def)             Requested size: 376.42575pt x 155.96375pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[14 <./detector/muon_system_new.png (PNG copy)>]
+<detector/CMS_recorded_lumi.png, id=268, 578.16pt x 433.62pt>
+File: detector/CMS_recorded_lumi.png Graphic file (type png)
 
- [15 <./chapt3/trigger.png (PNG copy)>]
-<chapt3/CMS_recorded_lumi.png, id=271, 578.16pt x 433.62pt>
-File: chapt3/CMS_recorded_lumi.png Graphic file (type png)
+<use detector/CMS_recorded_lumi.png>
+Package pdftex.def Info: detector/CMS_recorded_lumi.png used on input line 275.
 
-<use chapt3/CMS_recorded_lumi.png>
-Package pdftex.def Info: chapt3/CMS_recorded_lumi.png used on input line 274.
 (pdftex.def)             Requested size: 313.69025pt x 235.26288pt.
- [16 <./chapt3/DAQ.png (PNG copy)> <./chapt3/CMS_recorded_lumi.png>]
-<chapt3/APVsaturation_SOverN.png, id=276, 1190.4475pt x 560.0925pt>
-File: chapt3/APVsaturation_SOverN.png Graphic file (type png)
 
-<use chapt3/APVsaturation_SOverN.png>
-Package pdftex.def Info: chapt3/APVsaturation_SOverN.png used on input line 285
-.
+<detector/APVsaturation_SOverN.png, id=269, 1190.4475pt x 560.0925pt>
+File: detector/APVsaturation_SOverN.png Graphic file (type png)
+
+<use detector/APVsaturation_SOverN.png>
+Package pdftex.def Info: detector/APVsaturation_SOverN.png used on input line 2
+86.
 (pdftex.def)             Requested size: 376.42575pt x 177.10522pt.
 
-<chapt3/nhits_perRunPeriod.pdf, id=277, 569.12625pt x 444.66125pt>
-File: chapt3/nhits_perRunPeriod.pdf Graphic file (type pdf)
+<detector/nhits_perRunPeriod.pdf, id=270, 569.12625pt x 444.66125pt>
+File: detector/nhits_perRunPeriod.pdf Graphic file (type pdf)
 
-<use chapt3/nhits_perRunPeriod.pdf>
-Package pdftex.def Info: chapt3/nhits_perRunPeriod.pdf used on input line 292.
+<use detector/nhits_perRunPeriod.pdf>
+Package pdftex.def Info: detector/nhits_perRunPeriod.pdf used on input line 293
+.
 (pdftex.def)             Requested size: 250.95476pt x 196.07222pt.
+ [15 <./detector/muon_res.png (PNG copy)>] <detector/APVsaturation_muoneff.png,
+ id=274, 600.2425pt x 577.15625pt>
+File: detector/APVsaturation_muoneff.png Graphic file (type png)
 
-<chapt3/APVsaturation_muoneff.png, id=278, 600.2425pt x 577.15625pt>
-File: chapt3/APVsaturation_muoneff.png Graphic file (type png)
-
-<use chapt3/APVsaturation_muoneff.png>
-Package pdftex.def Info: chapt3/APVsaturation_muoneff.png used on input line 30
-2.
+<use detector/APVsaturation_muoneff.png>
+Package pdftex.def Info: detector/APVsaturation_muoneff.png used on input line 
+303.
 (pdftex.def)             Requested size: 250.95476pt x 241.30313pt.
- [17 <./chapt3/APVsaturation_SOverN.png> <./chapt3/nhits_perRunPeriod.pdf, page
- is rotated 90 degrees>] [18 <./chapt3/APVsaturation_muoneff.png>])
-\openout2 = `chapt4/chapt4.aux'.
+ [16 <./detector/trigger.png (PNG copy)> <./detector/DAQ.png (PNG copy)>] [17 <
+./detector/CMS_recorded_lumi.png> <./detector/APVsaturation_SOverN.png>] [18 <.
+/detector/nhits_perRunPeriod.pdf, page is rotated 90 degrees> <./detector/APVsa
+turation_muoneff.png>])
+\openout2 = `reconstruction/reconstruction.aux'.
 
- (./chapt4/chapt4.tex
+
+(./reconstruction/reconstruction.tex
 Chapter 4.
-<chapt3/pdf.png, id=329, 1199.48125pt x 785.93625pt>
-File: chapt3/pdf.png Graphic file (type png)
- <use chapt3/pdf.png>
-Package pdftex.def Info: chapt3/pdf.png used on input line 27.
+<detector/pdf.png, id=329, 1199.48125pt x 785.93625pt>
+File: detector/pdf.png Graphic file (type png)
+ <use detector/pdf.png>
+Package pdftex.def Info: detector/pdf.png used on input line 27.
 (pdftex.def)             Requested size: 313.69025pt x 205.53784pt.
 
 [19
@@ -1079,119 +1090,125 @@ Package pdftex.def Info: chapt3/pdf.png used on input line 27.
 
 
 
-] [20 <./chapt3/pdf.png>]
-<chapt3/muon_eff_eta.png, id=339, 679.78969pt x 655.69969pt>
-File: chapt3/muon_eff_eta.png Graphic file (type png)
+] [20 <./detector/pdf.png>]
+<detector/muon_eff_eta.png, id=339, 679.78969pt x 655.69969pt>
+File: detector/muon_eff_eta.png Graphic file (type png)
 
-<use chapt3/muon_eff_eta.png>
-Package pdftex.def Info: chapt3/muon_eff_eta.png used on input line 67.
+<use detector/muon_eff_eta.png>
+Package pdftex.def Info: detector/muon_eff_eta.png used on input line 67.
 (pdftex.def)             Requested size: 167.2989pt x 161.36319pt.
 
-<chapt3/pion_eff_eta.png, id=340, 691.83469pt x 660.21657pt>
-File: chapt3/pion_eff_eta.png Graphic file (type png)
+<detector/pion_eff_eta.png, id=340, 691.83469pt x 660.21657pt>
+File: detector/pion_eff_eta.png Graphic file (type png)
 
-<use chapt3/pion_eff_eta.png>
-Package pdftex.def Info: chapt3/pion_eff_eta.png used on input line 68.
+<use detector/pion_eff_eta.png>
+Package pdftex.def Info: detector/pion_eff_eta.png used on input line 68.
 (pdftex.def)             Requested size: 167.2989pt x 159.65402pt.
  [21]
-<chapt3/PV_eff.png, id=344, 569.12625pt x 546.04pt>
-File: chapt3/PV_eff.png Graphic file (type png)
- <use chapt3/PV_eff.png>
-Package pdftex.def Info: chapt3/PV_eff.png used on input line 79.
+<detector/PV_eff.png, id=344, 569.12625pt x 546.04pt>
+File: detector/PV_eff.png Graphic file (type png)
+
+<use detector/PV_eff.png>
+Package pdftex.def Info: detector/PV_eff.png used on input line 79.
 (pdftex.def)             Requested size: 167.2989pt x 160.51382pt.
 
-<chapt3/PV_res.png, id=345, 569.12625pt x 546.04pt>
-File: chapt3/PV_res.png Graphic file (type png)
- <use chapt3/PV_res.png>
-Package pdftex.def Info: chapt3/PV_res.png used on input line 80.
-(pdftex.def)             Requested size: 167.2989pt x 160.51382pt.
+<detector/PV_res.png, id=345, 569.12625pt x 546.04pt>
+File: detector/PV_res.png Graphic file (type png)
 
-[22 <./chapt3/muon_eff_eta.png (PNG copy)> <./chapt3/pion_eff_eta.png (PNG copy
-)> <./chapt3/PV_eff.png (PNG copy)> <./chapt3/PV_res.png (PNG copy)>] [23]
-[24]
+<use detector/PV_res.png>
+Package pdftex.def Info: detector/PV_res.png used on input line 80.
+(pdftex.def)             Requested size: 167.2989pt x 160.51382pt.
+ [22 <./detector/muon_eff_eta.png (PNG copy)> <./detector/pion_eff_eta.png (PNG
+ copy)> <./detector/PV_eff.png (PNG copy)> <./detector/PV_res.png (PNG copy)>] 
+[23] [24]
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 153.
 
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 153.
 
-<chapt4/JEC.png, id=355, 1099.85907pt x 246.9225pt>
-File: chapt4/JEC.png Graphic file (type png)
- <use chapt4/JEC.png>
-Package pdftex.def Info: chapt4/JEC.png used on input line 160.
-(pdftex.def)             Requested size: 355.51817pt x 79.81557pt.
+<reconstruction/JEC.png, id=355, 1099.85907pt x 246.9225pt>
+File: reconstruction/JEC.png Graphic file (type png)
 
-[25 <./chapt4/JEC.png (PNG copy)>]
+<use reconstruction/JEC.png>
+Package pdftex.def Info: reconstruction/JEC.png used on input line 160.
+(pdftex.def)             Requested size: 355.51817pt x 79.81557pt.
+ [25 <./reconstruction/JEC.png (PNG copy)>]
 
 LaTeX Warning: Reference `' on page 26 undefined on input line 186.
 
 
-<chapt4/pt_neutron_gun_th2f_JECs_GetRandom2.pdf, id=360, 569.12625pt x 549.0512
-5pt>
-File: chapt4/pt_neutron_gun_th2f_JECs_GetRandom2.pdf Graphic file (type pdf)
- <use chapt4/pt_neutron_gun_th2f_JECs_GetRandom2.pdf>
-Package pdftex.def Info: chapt4/pt_neutron_gun_th2f_JECs_GetRandom2.pdf used on
- input line 194.
+<reconstruction/pt_neutron_gun_th2f_JECs_GetRandom2.pdf, id=360, 569.12625pt x 
+549.05125pt>
+File: reconstruction/pt_neutron_gun_th2f_JECs_GetRandom2.pdf Graphic file (type
+ pdf)
+ <use reconstruction/pt_neutron_gun_th2f_JECs_GetRandom2.pdf>
+Package pdftex.def Info: reconstruction/pt_neutron_gun_th2f_JECs_GetRandom2.pdf
+ used on input line 194.
 (pdftex.def)             Requested size: 200.75996pt x 193.67882pt.
 
-<chapt4/pt_neutron_gun_p2pf_th2f_NoSmearing.pdf, id=361, 569.12625pt x 549.0512
-5pt>
-File: chapt4/pt_neutron_gun_p2pf_th2f_NoSmearing.pdf Graphic file (type pdf)
- <use chapt4/pt_neutron_gun_p2pf_th2f_NoSmearing.pdf>
-Package pdftex.def Info: chapt4/pt_neutron_gun_p2pf_th2f_NoSmearing.pdf used on
- input line 195.
+<reconstruction/pt_neutron_gun_p2pf_th2f_NoSmearing.pdf, id=361, 569.12625pt x 
+549.05125pt>
+File: reconstruction/pt_neutron_gun_p2pf_th2f_NoSmearing.pdf Graphic file (type
+ pdf)
+ <use reconstruction/pt_neutron_gun_p2pf_th2f_NoSmearing.pdf>
+Package pdftex.def Info: reconstruction/pt_neutron_gun_p2pf_th2f_NoSmearing.pdf
+ used on input line 195.
 (pdftex.def)             Requested size: 200.75996pt x 193.67882pt.
 
-<chapt4/pt_res_ptbin_0.pdf, id=362, 569.12625pt x 549.05125pt>
-File: chapt4/pt_res_ptbin_0.pdf Graphic file (type pdf)
+<reconstruction/pt_res_ptbin_0.pdf, id=362, 569.12625pt x 549.05125pt>
+File: reconstruction/pt_res_ptbin_0.pdf Graphic file (type pdf)
 
-<use chapt4/pt_res_ptbin_0.pdf>
-Package pdftex.def Info: chapt4/pt_res_ptbin_0.pdf used on input line 202.
+<use reconstruction/pt_res_ptbin_0.pdf>
+Package pdftex.def Info: reconstruction/pt_res_ptbin_0.pdf used on input line 2
+02.
 (pdftex.def)             Requested size: 200.75996pt x 193.67882pt.
 
-<chapt4/pt_res_ptbin_5.pdf, id=363, 569.12625pt x 549.05125pt>
-File: chapt4/pt_res_ptbin_5.pdf Graphic file (type pdf)
+<reconstruction/pt_res_ptbin_5.pdf, id=363, 569.12625pt x 549.05125pt>
+File: reconstruction/pt_res_ptbin_5.pdf Graphic file (type pdf)
 
-<use chapt4/pt_res_ptbin_5.pdf>
-Package pdftex.def Info: chapt4/pt_res_ptbin_5.pdf used on input line 203.
+<use reconstruction/pt_res_ptbin_5.pdf>
+Package pdftex.def Info: reconstruction/pt_res_ptbin_5.pdf used on input line 2
+03.
 (pdftex.def)             Requested size: 200.75996pt x 193.67882pt.
 
-<chapt4/pt_neutron_gun_th2f_005.pdf, id=364, 569.12625pt x 549.05125pt>
-File: chapt4/pt_neutron_gun_th2f_005.pdf Graphic file (type pdf)
-
-<use chapt4/pt_neutron_gun_th2f_005.pdf>
-Package pdftex.def Info: chapt4/pt_neutron_gun_th2f_005.pdf used on input line 
-212.
+<reconstruction/pt_neutron_gun_th2f_005.pdf, id=364, 569.12625pt x 549.05125pt>
+File: reconstruction/pt_neutron_gun_th2f_005.pdf Graphic file (type pdf)
+<use reconstruction/pt_neutron_gun_th2f_005.pdf>
+Package pdftex.def Info: reconstruction/pt_neutron_gun_th2f_005.pdf used on inp
+ut line 212.
 (pdftex.def)             Requested size: 200.75996pt x 193.67882pt.
 
-<chapt4/pt_neutron_gun_p2pf_th2f_005.pdf, id=365, 569.12625pt x 549.05125pt>
-File: chapt4/pt_neutron_gun_p2pf_th2f_005.pdf Graphic file (type pdf)
-
-<use chapt4/pt_neutron_gun_p2pf_th2f_005.pdf>
-Package pdftex.def Info: chapt4/pt_neutron_gun_p2pf_th2f_005.pdf used on input 
-line 213.
+<reconstruction/pt_neutron_gun_p2pf_th2f_005.pdf, id=365, 569.12625pt x 549.051
+25pt>
+File: reconstruction/pt_neutron_gun_p2pf_th2f_005.pdf Graphic file (type pdf)
+ <use reconstruction/pt_neutron_gun_p2pf_th2f_005.pdf>
+Package pdftex.def Info: reconstruction/pt_neutron_gun_p2pf_th2f_005.pdf used o
+n input line 213.
 (pdftex.def)             Requested size: 200.75996pt x 193.67882pt.
 
-<chapt4/pt_neutron_gun_res_fit_005.pdf, id=366, 569.12625pt x 549.05125pt>
-File: chapt4/pt_neutron_gun_res_fit_005.pdf Graphic file (type pdf)
-
-<use chapt4/pt_neutron_gun_res_fit_005.pdf>
-Package pdftex.def Info: chapt4/pt_neutron_gun_res_fit_005.pdf used on input li
-ne 220.
+<reconstruction/pt_neutron_gun_res_fit_005.pdf, id=366, 569.12625pt x 549.05125
+pt>
+File: reconstruction/pt_neutron_gun_res_fit_005.pdf Graphic file (type pdf)
+ <use reconstruction/pt_neutron_gun_res_fit_005.pdf>
+Package pdftex.def Info: reconstruction/pt_neutron_gun_res_fit_005.pdf used on 
+input line 220.
 (pdftex.def)             Requested size: 313.69025pt x 302.64098pt.
- [26] [27 <./chapt4/pt_neutron_gun_th2f_JECs_GetRandom2.pdf, page is rotated 90
- degrees> <./chapt4/pt_neutron_gun_p2pf_th2f_NoSmearing.pdf, page is rotated 90
- degrees> <./chapt4/pt_res_ptbin_0.pdf, page is rotated 90 degrees> <./chapt4/p
-t_res_ptbin_5.pdf, page is rotated 90 degrees>] [28 <./chapt4/pt_neutron_gun_th
-2f_005.pdf, page is rotated 90 degrees> <./chapt4/pt_neutron_gun_p2pf_th2f_005.
-pdf, page is rotated 90 degrees> <./chapt4/pt_neutron_gun_res_fit_005.pdf, page
- is rotated 90 degrees>])
-\openout2 = `chapt6/chapt6.aux'.
+ [26] [27 <./reconstruction/pt_neutron_gun_th2f_JECs_GetRandom2.pdf, page is ro
+tated 90 degrees> <./reconstruction/pt_neutron_gun_p2pf_th2f_NoSmearing.pdf, pa
+ge is rotated 90 degrees> <./reconstruction/pt_res_ptbin_0.pdf, page is rotated
+ 90 degrees> <./reconstruction/pt_res_ptbin_5.pdf, page is rotated 90 degrees>]
+ [28 <./reconstruction/pt_neutron_gun_th2f_005.pdf, page is rotated 90 degrees>
+ <./reconstruction/pt_neutron_gun_p2pf_th2f_005.pdf, page is rotated 90 degrees
+> <./reconstruction/pt_neutron_gun_res_fit_005.pdf, page is rotated 90 degrees>
+])
+\openout2 = `monojet/monojet.aux'.
 
 
-(./chapt6/chapt6.tex
+(./monojet/monojet.tex
 Chapter 5.
 [29
 
@@ -1204,9 +1221,9 @@ Chapter 5.
 
 
 ])
-\openout2 = `chapt5/chapt5.aux'.
+\openout2 = `simps/simps.aux'.
 
- (./chapt5/chapt5.tex
+ (./simps/simps.tex
 Chapter 6.
 [31
 
@@ -1217,9 +1234,9 @@ Chapter 6.
 
 
 ])
-\openout2 = `chapt7/chapt7.aux'.
+\openout2 = `conclusions/conclusions.aux'.
 
- (./chapt7/chapt7.tex
+ (./conclusions/conclusions.tex
 Chapter 7.
 [33
 
@@ -1417,19 +1434,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 123--124
 ) [39] [40
 
 
-] (./thesis.aux (./chapt1/intro.aux) (./chapt2/chapt2.aux)
-(./chapt3/chapt3.aux) (./chapt4/chapt4.aux) (./chapt6/chapt6.aux)
-(./chapt5/chapt5.aux) (./chapt7/chapt7.aux) (./phdacronyms.aux))
+] (./thesis.aux (./intro/intro.aux) (./theory/theory.aux)
+(./detector/detector.aux) (./reconstruction/reconstruction.aux)
+(./monojet/monojet.aux) (./simps/simps.aux) (./conclusions/conclusions.aux)
+(./phdacronyms.aux))
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 17005 strings out of 493029
- 321247 string characters out of 6136234
- 347072 words of memory out of 5000000
- 20197 multiletter control sequences out of 15000+600000
- 43074 words of font info for 82 fonts, out of 8000000 for 9000
+ 17028 strings out of 493029
+ 322273 string characters out of 6136234
+ 347038 words of memory out of 5000000
+ 20217 multiletter control sequences out of 15000+600000
+ 44523 words of font info for 86 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
  39i,12n,50p,10377b,825s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
@@ -1448,7 +1466,7 @@ mf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/tim
 es/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
 
-Output written on thesis.pdf (46 pages, 4545223 bytes).
+Output written on thesis.pdf (46 pages, 4545507 bytes).
 PDF statistics:
  772 PDF objects out of 1000 (max. 8388607)
  390 compressed objects within 4 object streams
