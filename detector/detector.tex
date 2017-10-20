@@ -42,14 +42,14 @@ The protons are kept on the correct orbit by the 1232 \ac{LHC} dipole magnets. T
 \begin{equation}
  p = B/\rho = 8.33\, \mathrm{T}/2804\,\mathrm{m}=7\,\mathrm{TeV/c},
 \end{equation}
-with $\rho$ the bending radius of the tunnel. The protons are accelerated up to the desired energy by \ac{RF} cavities, which produce an oscillating electric field. The RF frequency is 400~MHz
+with $\rho$ the bending radius of the tunnel. The protons are accelerated up to the desired energy by \ac{RF} cavities, which produce an oscillating electric field. 
 %As a consequence, late or early protons will feel a stronger or weaker acceleration, respectively.
 
 A high event rate or luminosity~$\mathcal{L}$ is equally important, to obtain a sufficiently high number of collisions. For a process with cross section $\sigma$, this rate is 
 \begin{equation}
  \frac{dN}{dt} = \mathcal{L}\sigma .
 \end{equation}
-In order to achieve the high design luminosity of $10^{34}$ cm$^{-2}$s$^{-1}$ in the \ac{LHC}, the protons are concentrated in bunches with a \SI{25}{ns} spacing, which are focused by strong quadrupole magnets around the interaction regions. Additionally, 2\SI{25}{ns} gaps are present between the bunch trains, corresponding to the rise time of the injection kicker magnets. One gap of 3~$\mu$s is necessary as well to allow clean beam dumps. These requirements limit the number of bunches to a maximum of 2808.
+In order to achieve the high design luminosity of $10^{34}$ cm$^{-2}$s$^{-1}$ in the \ac{LHC}, the protons are concentrated in bunches which are focused by strong quadrupole magnets around the interaction regions. The RF frequency is 400~MHz, which corresponds to a wavelength of \SI{75}{cm} and confines the protons into buckets of \SI{2.5}{ns}. The \ac{LHC} circumference would then allow for 35640 buckets in total, which would result in bunch crossings spaced by only \SI{37.5}{cm}. A more realistic spacing is \SI{25}{ns}, corresponding to one bunch per 10 RF buckets. Additionally, \SI{225}{ns} gaps are present between the bunch trains, corresponding to the rise time of the injection kicker magnets. One gap of 3~$\mu$s is necessary as well to allow clean beam dumps. These requirements limit the number of bunches to a maximum of 2808.
 
 % Additionally, over 8000 higher-order multipole and corrector magnets focus and stabilize the proton beams.
 
@@ -76,7 +76,7 @@ The searches described in this thesis were conducted using data collected with t
 \begin{figure}[ht]
   \centering
  \includegraphics[width=.9\textwidth]{cms_complete_labelled}
- \caption{The \ac{CMS} detector, consisting of the pixel and strip tracker, the \protect\acf{ECAL} with preshower, the \protect\acf{HCAL} with its forward component, and the muon systems.}
+ \caption{The \ac{CMS} detector, consisting of the pixel and strip tracker, the \protect\acf{ECAL} with preshower, the \protect\acf{HCAL} with its forward component, and the muon systems. Figure taken from~\cite{Chatrchyan:2008aa}.}
  \label{fig:CMS}
 \end{figure}
 
@@ -99,7 +99,7 @@ The innermost part of the \ac{CMS} detector, closest to the \ac{IP}, is the trac
 \begin{figure}[ht]
   \centering
  \includegraphics[width=.9\textwidth]{fig_cmstracker}
- \caption{A transverse view of the pixel and strip tracker detectors.}
+ \caption{A transverse view of the pixel and strip tracker detectors. Figure taken from~\cite{Chatrchyan:2008aa}.}
  \label{fig:cmstracker}
 \end{figure}
 
@@ -187,8 +187,8 @@ The stochastic term represents contributions from the shower containment, the nu
 
 \begin{figure}[ht]
  \centering
- \includegraphics[width = .6\textwidth]{ecal_res}
-\caption{The \ac{ECAL} energy resolution as a function of the electron energy, measured from a beam test. The stochastic ($S$), noise ($N$), and constant ($C$) are given as well.}
+ \includegraphics[width = .55\textwidth]{ecal_res}
+\caption{The \ac{ECAL} energy resolution as a function of the electron energy, measured from a beam test. The stochastic ($S$), noise ($N$), and constant ($C$) are given as well. Figure taken from~\cite{Chatrchyan:2008aa}.}
 \label{fig:ecal_res}
 \end{figure}
 
@@ -204,7 +204,7 @@ Figure~\ref{fig:hcal} shows a longitudinal quarter view of the different \ac{HCA
 \begin{figure}[ht]
   \centering
  \includegraphics[width=.8\textwidth]{hcal}
- \caption{A quarter view of the \protect\acf{HCAL}, parallel to the beamline. The barrel (HB), endcap (HE), outer (HO), and forward (HF) detectors are indicated.}
+ \caption{A quarter view of the \protect\acf{HCAL}, parallel to the beamline. The barrel (HB), endcap (HE), outer (HO), and forward (HF) detectors are indicated. Figure taken from~\cite{Chatrchyan:2008aa}.}
  \label{fig:hcal}
 \end{figure}
 
@@ -215,7 +215,7 @@ The expected transverse energy resolution for jets is shown in Figure~\ref{fig:J
 \begin{figure}[ht]
   \centering
  \includegraphics[width=.6\textwidth]{JER}
- \caption{The jet transverse energy resolution as a function of the jet transverse energy, for barrel jets ($|\eta| < 1.4$), endcap jets ($1.4 < |\eta| < 3.0$), and very forward jets ($3.0 < |\eta| < 5.0$).}
+ \caption{The jet transverse energy resolution as a function of the jet transverse energy, for barrel jets ($|\eta| < 1.4$), endcap jets ($1.4 < |\eta| < 3.0$), and very forward jets ($3.0 < |\eta| < 5.0$). Figure taken from~\cite{Chatrchyan:2008aa}.}
  \label{fig:JER}
 \end{figure}
 
@@ -237,7 +237,7 @@ The offline reconstruction efficiency of simulated events containing one muon is
 \begin{figure}[ht]
   \centering
  \includegraphics[width=.9\textwidth]{muon_res}
- \caption{The muon transverse momentum resolution as a function of transverse momentum for low (left) and (high) pseudorapidities. The resolution is shown for the muon system and the tracker separately, and for the full system.~\cite{Chatrchyan:2008aa}}
+ \caption{The muon transverse momentum resolution as a function of transverse momentum for low (left) and (high) pseudorapidities. The resolution is shown for the muon system and the tracker separately, and for the full system. Figure taken from~\cite{Chatrchyan:2008aa}.}
  \label{fig:muon_res}
 \end{figure}
 
