@@ -88,8 +88,65 @@ Electrons are reconstructed using information from both the tracker and the calo
 For electrons, a \ac{GSF}~\cite{Strandlie:2006gi} candidate is taken as starting point. This \ac{GSF} candidate is obtained using 2 different methods to reconstruct the electron track from the hits in the tracker, which should gather all radiated energy from the electron. First, the ECAL-based approach is used, grouping \ac{ECAL} clusters into superclusters. These superclusters collect the energy of the electron and the bremsstrahlung photons in a small $\eta$ window and a large $\phi$ window, taking the bending of the electron track in the magnetic field into account. The supercluster energy and position is then used to estimate the position of the corresponding hits in the tracker layers. Subsequently, the tracker-based approach is used to find electrons missed by the ECAL-based method. In this case, the tracks from the iterative tracking with transverse momentum larger than \SI{2}{GeV} are used. Additional requirements are placed on the number of hits and the $\chi^2$ of the fit, and the specific electron tracking is performed, using a \ac{GSF} fit, which is more adapted to electrons than the Kalman filter used in the iterative tracking, as it describes the energy loss in each tracker layer. The electron seeds obtained with both methods are merged and used as input for the full electron tracking. The obtained electron tracks are then linked to \ac{ECAL} clusters by the \ac{PF} algorithm, as described in Section~\ref{sec:PF}. In the case of isolated photons, a candidate is seeded from an \ac{ECAL} supercluster with transverse energy larger than \SI{10}{GeV} which is not linked to a \ac{GSF} track.
 
 The total energy of the accumulated \ac{ECAL} clusters is corrected for the energy that was lost in the process of reconstruction, using analytical functions of the energy and pseudorapidity. The applied corrections can be as large as 25\%, at low transverse momentum and at $|\eta| = 1.5$, where the material density in the tracker is largest. The energy of the electron is then obtained from a combination of the corrected energy and the momentum of the \ac{GSF} track, while the direction of the electron is taken from the \ac{GSF} track. For photons, the corrected energy and the direction of the supercluster are used.
+% 
+%  while for photons the candidates must be isolated from other tracks and calorimeter clusters, and the energy distribution in the \ac{ECAL} and the ratio between the \ac{HCAL} and \ac{ECAL} energies must be compatible with the expectation from a photon shower.
 
-Additionally, the electron and photon candidates must satisfy identification criteria to be retained. In the case of electrons a boosted decision tree is used, combining fourteen variables including the amount of energy radiated and the ratio between the energies gathered in HCAL and ECAL, while for photons the candidates must be isolated from other tracks and calorimeter clusters, and the energy distribution in the \ac{ECAL} and the ratio between the \ac{HCAL} and \ac{ECAL} energies must be compatible with the expectation from a photon shower.
+\subsection{Electron and photon identification}
+\label{sec:electron_ID}
+
+In general, the electron and photon candidates must satisfy identification criteria to be retained. In the case of electrons two methods for identification are available: a cut-based identification or a boosted decision tree (BDT) combining fourteen variables including the amount of energy radiated and the ratio between the energies gathered in HCAL and ECAL. In the monojet analysis described in Chapter~\ref{ch:monojet}, the former is used. In method, four different working points are defined, denoted as ``tight'', ``medium'', ``loose'', and ``veto'', with varying signal efficiency and background rejection. For the electron veto the loose selection is used, while a tight identification is required on one electron to select the events in the dielectron and single electron control regions.
+
+\renewcommand{\arraystretch}{1.1}
+\begin{table}[ht!]
+\centering
+\small
+\begin{tabular}{|l|l|l||l|l|c|}
+\hline
+\multirow{2}{*}{variable}                             &  \multicolumn{2}{c||}{loose} &  \multicolumn{2}{c|}{tight} \\
+\cline{2-5}
+                                                            &  barrel        & endcaps  &  barrel  & endcaps\\
+\hline
+full 5x5 $\sigma_{i\eta i\eta}$                             & $< 0.0114  $     & $< 0.0352  $ & $< 0.0101  $     & $< 0.0279  $ \\
+$|\Delta \eta_{in}|$                                        & $< 0.0152  $     & $< 0.0113  $ & $< 0.00926 $     & $< 0.00724 $ \\
+$|\Delta \phi_{in}|$                                        & $< 0.216   $     & $< 0.237   $ & $< 0.0336  $     & $< 0.0918  $ \\
+H/E                                                         & $< 0.181   $     & $< 0.116   $ & $< 0.0597  $     & $< 0.0615  $ \\
+relative isolation			                    & $< 0.126   $     & $< 0.144   $ & $< 0.0354  $     & $< 0.0646  $ \\
+1/E - 1/p                                                   & $< 0.207   $     & $< 0.174   $ & $< 0.012   $     & $< 0.00999 $ \\
+$|\mathrm{d_{xy}(vtx)}|$                                    & $< 0.0564  $     & $< 0.222   $ & $< 0.0111  $     & $< 0.0351  $ \\
+$|\mathrm{d_{z}(vtx)}|$                                     & $< 0.472   $     & $< 0.921   $ & $< 0.0466  $     & $< 0.417   $ \\
+expected inner missing hits                                 & $\leq 2$         & $\leq 3$     & $\leq 2$           & $\leq 1$   \\
+pass conversion veto                                        & yes              & yes          & yes              & yes        \\
+\hline
+\end{tabular}
+\caption{Loose and tight electron identification criteria. The isolation is computed in a cone of $\Delta R < 0.3$ around the electron.}
+\label{tab:ElectronID}
+\end{table}
+
+Similarly, for the photons, both a cut-based identification and a multivariate analysis can be used. Both for the monojet and the \ac{SIMP} analysis, described in Chapters~\ref{ch:monojet} and \ref{ch:SIMPs}, the cut-based identification is used. Three standard working points are provided, denoted as ``loose'', ``medium'', and ``tight'', with an average efficiency of 70\%, 80\%, and 90\%, respectively. In both analyses, the loose identification is used for the photon veto. In the \ac{SIMP} analysis, the event is only rejected when the identified photon is within a cone of $\Delta R < 0.1$ of one of the two leading jets. Additionally, the photon veto is extended to reject events containing jets with a large photon energy fraction and unidentified photons. This happens for instance when there is a photon conversion in the tracker. The event is therefore rejected when the jet photon energy fraction is larger than 0.8, the photon is not identified by the loose criteria, and the conversion is matched to the photon within $\Delta R < 0.2$ and has $p_{T,conv} / p_{T,\gamma} > 0.3$. Lastly, the two jets are also required to have a neutral electromagnetic energy fraction lower than 0.9, corresponding to one of the standard tight jet identification requirements mentioned in Section~\ref{sec:jet_reconstruction}. The full jet ID is not applied, since the requirements on e.g. the neutral hadronic energy fraction and the charged multiplicity would reject the signal events. Finally, the monojet analysis uses a photon + jets control region as well. These events are selected by applying the tight photon identification.
+
+
+\renewcommand{\arraystretch}{1.1}
+\begin{table}[ht!]
+\centering
+\footnotesize
+\begin{tabular}{|l|l|l||l|c|}
+\hline
+\multirow{2}{*}{variable}                             &  \multicolumn{2}{c||}{loose} & tight \\
+\cline{2-4}
+                                                            &  barrel        & endcaps  &  barrel  \\
+\hline
+full 5x5 $\sigma_{i\eta i\eta}$            & $< 0.0102$                                                  & $< 0.0274$    & $< 0.0102$     \\
+H/E                                        & $< 0.05$                                                    & $< 0.05$     & $< 0.05$      \\
+charged hadron isolation                   & $< 3.32$                                                    & $< 1.97$    & $< 1.37$    \\
+\multirow{2}{*}{neutral hadron isolation}  & $< 1.92 + 0.014\times p_T$ & $< 11.86 + 0.0139\times p_T$ & $< 1.06 + 0.014\times p_T$  \\
+					   & $\qquad +1.9\times 10^{-5} \times {p_T}^2$ 			 & $\qquad +2.5\times 10^{-5} \times {p_T}^2$ & $\qquad +1.9\times 10^{-5} \times {p_T}^2$ \\
+photon isolation                           & $< 0.81 + 0.0053\times p_T$                                 & $< 0.83 + 0.0034\times p_T$ & $< 0.28 + 0.0053\times p_T$   \\
+conversion safe electron veto              & yes                                                         & yes        & yes       \\
+\hline
+\end{tabular}
+\caption{Loose and tight photon identification criteria. The isolation is computed in a cone of $\Delta R < 0.3$ around the photon.}
+\label{tab:PhotonID}
+\end{table}
 
 \subsection{Muon reconstruction}
 \label{sec:muon_reconstruction}
@@ -101,6 +158,17 @@ For momenta below \SI{10}{GeV}, muons often fail the global muon conditions whic
 Within the geometrical acceptance of the muon system about 99\% of the muons are reconstructed, either as global muon or as tracker muon and frequently as both. Global and tracker muons that share the same track inside the tracker are merged into a single candidate. Muons that are only reconstructed as standalone muons have a worse momentum resolution compared to the global and tracker muons. These standalone muons are however only considered in the further reconstruction when the fit is of high quality and is associated with a large number of hits in the muon system.
 
 Charged hadrons can be misreconstructed as muons if e.g. a part of the hadron shower reaches the muon system. In order to improve the muon identification, the \ac{PF} muon identification algorithm described in Section~\ref{sec:PF} also matches energy deposits in the \ac{ECAL} and \ac{HCAL} with the muon track.
+
+\subsection{Muon identification}
+\label{sec:muonID}
+
+When using muons for physics analysis, some identification criteria are generally applied in order to ensure the quality of the muons. There are several levels of identification, denoted as ``tight'', ``medium'', and ``loose'', which provide a trade-off between muon identification efficiency and misidentification. In general, the tight and loose identification are the most widely used identification criteria.
+
+The loose identification only requires the muons to be either global or tracker-only muons, and to be identified as a \ac{PF} muon. As a result, it is highly efficient for both prompt muons and muons from quark decays. In analyses with prompt muons, this identification is therefore often complemented by an impact parameter cut.
+
+For the tight identification, the muon is required to be a global muon and to pass the \ac{PF} muon identification. The normalized $\chi^2$ of the global muon track fit should be smaller than 10 to suppress hadronic punch through and muons from decays in flight. To further suppress these contributions at least one muon chamber hit should be included in the global muon track fit and muon segments should be found in at least two muon stations. Cosmic muons and tracks from pileup are suppressed by requiring the tracker track to have $d_{xy} < \SI{2}{mm}$ and $d_z < \SI{5}{mm}$, with $d_{xy}$ the traverse impact parameter and $d_z$ the longitudinal distance with respect to the primary vertex. Finally, at least one pixel hit is required, as well as hits in at least 5 tracker layers, in order to guarantee a good $p_T$ measurement.
+
+In the case of the monojet analysis described in Chapter~\ref{ch:monojet}, the loose muon identification is used to select muons for the muon veto. An additional isolation cut is of 0.2 applied in order to select only prompt muons. The isolation value is computed as the sum of the transverse momenta of all charged hadrons associated to the primary vertex, neutral hadrons, and photons in a cone of $\Delta R < 0.4$ around the muon, relative to the $p_T$ of the muon. The tight muon identification is used as well, to select events in the dimuon and single muon control regions. 
 
 \subsection{Particle flow}
 \label{sec:PF}
@@ -164,6 +232,8 @@ A reliable determination of the jet energy is not straightforward, since many ef
 
 Optionally, a set of identification criteria are applied on the \ac{PF} jets. A jet is required to consist of at least two particles. For jets in the region $|\eta| < 2.7$, the fraction of energy coming from ether neutral hadrons or photons should not exceed 99\%. Additionally, for jets restricted to the tracker acceptance ($|\eta| < 2.4$), there should at least be some energy deposited in the \ac{HCAL}, the jet should contain 1 or more charged constituent, and the fraction of energy corresponding to electrons or photons should not exceed 99\%.
 
+Moreover, jets from pileup can be identified as well. This pileup jet identification relies on the topology of the jet shape which is used to disentangle jets coming from the overlap of multiple interaction and real hard jets, the object multiplicity, and the compatibility of the tracks in the jets with the primary vertex. This last property of pileup jets can evidently only be exploited for jets within the tracker acceptance.
+
 \subsection{Identification of b-jets}
 \label{sec:btagging}
 
@@ -189,26 +259,54 @@ where the sum runs over all reconstructed \ac{PF} particles. The variable that i
 
 A notable example of particles leaving no hits or energy deposits behind are neutrinos, as they are neutral and weakly interacting and will therefore traverse the entire detector unhindered. Other hypothetical neutral weakly interacting particles, which are being searched for in many physics analyses, would escape the detector without producing hits as well.
 
-\section{Simulation of the SIMP signal}
+\section{Simulation of the monojet signals}
+\label{sec:monojet_sim}
+
+
+
+\section{Simulation and reconstruction of the SIMP signal}
 \label{sec:SIMPs}
 
-%In Section 4 you should decide whether you want to at point introduce the various CMS data tiers (GEN, SIM, RECO) or not. Can also be done later in the analysis chapter, but e.g. your SIMP simulation section uses or somehow half introduces GEN jets etc, but I think it's easiest if this is done somewhere properly.
+%In Section 4 you should decide whether you want to at point introduce the various CMS data tiers (GEN, SIM, RECO) or not. Can also be done later in the analysis chapter, but e.g. your \ac{SIMP} simulation section uses or somehow half introduces GEN jets etc, but I think it's easiest if this is done somewhere properly.
 
 % this needs a reference obviously. Why this particular tune? 
 
-For the generation of the \ac{SIMP} signal, the model Lagrangian given in equation~\ref{} is implemented in \textsc{FeynRules 2.0}~\cite{Alloul:2013bka}. Next, the matrix element is calculated at \ac{LO} and events are generated using \textsc{Madgraph 5}. The subsequent parton shower and hadronization is done with \textsc{Pythia 8}, using tune CUEP8M1. Next, the events are simulated in the \ac{CMS} detector using \textsc{Geant}. However, the \acp{SIMP} are not included in the simulation, as their interaction with matter is not implemented in \textsc{Geant}. The \acp{SIMP} were instead incorporated by adding an additional step to the standard reconstruction described in Section~\ref{sec:reconstruction}. In this additional step the \acp{SIMP} are directly converted to neutral \ac{PF} candidates and merged with the rest of the \ac{PF} candidates. The standard pileup corrections, jet clustering, and charged hadron subtraction are then applied in order to obtain the resulting jets, denoted here as P2PF jets.
+For the generation of the \ac{SIMP} signal, the model Lagrangian given in equation~\ref{eq:SIMP_lagrangian} is implemented in \textsc{FeynRules 2.0}~\cite{Alloul:2013bka}. The matrix element is then calculated at \ac{LO} and events are generated using \textsc{Madgraph 5}. The subsequent parton shower and hadronization is done with \textsc{Pythia 8}, using tune CUEP8M1. Several samples were produced, with \ac{SIMP} mass $m_{\chi} = 1, 10, 100, 200, 400, 700, \SI{1000}{GeV}$. The corresponding productions cross sections are given in Table~\ref{tab:signal_samples}. Next, the events are then simulated in the \ac{CMS} detector using \textsc{Geant}. However, the \acp{SIMP} are not included in the simulation, as these new particles are unknown in \textsc{Geant} and their interaction with matter has not been implemented yet. In order to simulate the new dark matter candidates in the \ac{CMS} detector two new approaches were implemented.
 
-In order to validate this method, a second sample was produced using neutrons instead of \acp{SIMP}, because of their resemblance to the \acp{SIMP} as single neutral particles generating a hadronic shower. The same additional step is applied, but in this case the neutrons will also be correctly reconstructed by the standard reconstruction. The reconstructed \ac{PF} candidates that are matched to the generated neutrons were therefore removed before injecting the converted generated neutrons to the collection of \ac{PF} candidates. This sample is then used to evaluate the difference with a standard neutron sample where the full \textsc{Geant} simulation is done.
-
-The two leading generator-level jets (GEN) can then be compared to the uncorrected P2PF jets from the custom sample and the \ac{PF} jets from the standard sample. The transverse momentum of these jets is compared in Figure~\ref{fig:neutron}. This shows that the \ac{JER} is not described properly, since the additional step directly converts generated particles to \ac{PF} candidates without taking into account any other effects. In order to produce a more realistic simulation, the new \ac{PF} candidates are therefore smeared with \ac{JER} distributions derived using the uncorrected \ac{PF} jets matching the neutrons in the standard neutron sample in bins of $\eta$ and $p_T$. An example of this resolution is shown in Figure~\ref{fig:neutron_res} for central neutrons with low and high transverse momentum.
-
-\begin{figure}[ht]
+\begin{table}[ht]
   \centering
- \includegraphics[width=.48\textwidth]{pt_neutron_gun_th2f_JECs_GetRandom2.pdf} \hfill
-\includegraphics[width=.48\textwidth]{pt_neutron_gun_p2pf_th2f_NoSmearing.pdf}
- \caption{Comparison of the transverse momentum of the generator-level jets to the \ac{PF} jets (left) and P2PF jets (right) without jet energy resolution smearing, using a neutron sample.}
- \label{fig:neutron}
-\end{figure}
+\begin{tabular}{| c | l |}
+\hline
+$m_\chi$ [GeV] & $\sigma_{\bar{\chi}\chi}$ [pb] \\
+\hline
+    1 &  4.46 \\
+  10 &   4.40  \\
+  100 &  2.55  \\
+  200 &   0.790  \\
+  400 &   0.0743   \\
+  700 &   0.00485  \\
+1000 &   0.000571  \\
+\hline
+\end{tabular}
+\caption{Production cross section for each \ac{SIMP} mass, after $|\eta_{\chi}| < 2.5$ and $p_{\rm T}^{\chi} > 200$ GeV generator level cuts.}
+\label{tab:signal_samples}
+\end{table}
+
+In the first approach, the \acp{SIMP} were incorporated by adding an additional step to the standard reconstruction described in Section~\ref{sec:reconstruction}. In this additional step the \acp{SIMP} are directly converted to neutral \ac{PF} candidates and merged with the rest of the \ac{PF} candidates. Additionally, the new \ac{PF} candidates are smeared with \ac{JER} distributions obtained from a sample produced using neutrons instead of \acp{SIMP}. Neutrons were chosen because of their resemblance to the \acp{SIMP} as single neutral particles generating a hadronic shower. 
+
+Order to produce this sample, the same additional custom step is applied, but in this case the neutrons will also be correctly reconstructed by the standard reconstruction. The reconstructed \ac{PF} candidates that are matched to the generated neutrons are therefore removed before injecting the converted generated neutrons to the collection of \ac{PF} candidates. The applied \ac{JER} distributions are derived by comparing the resulting uncorrected \ac{PF} jets with the corresponding neutrons in sample produced with the standard reconstruction using the the full \textsc{Geant} simulation. The resolution is computed in bins of $\eta$ and $p_T$, and an example is shown in Figure~\ref{fig:neutron_res} for central neutrons with low and high transverse momentum. 
+
+After applying this smearing, the P2PF jets are processed with the standard sequence of \ac{CHS}, jet clustering, L1FastJet, and L2/L3 corrections described in Section~\ref{sec:jet_reconstruction}.
+
+% Following this method, the \ac{JER} of the resulting jets is however not described properly, as can be seen from Figure~\ref{fig:neutron}. In this figure, the new sample containing P2PF jets, shown on the right, is compared to a sample produced using neutrons. In the plots, the $p_T$ of the generated  In order to produce a more realistic simulation, 
+
+% \begin{figure}[ht]
+%   \centering
+%  \includegraphics[width=.48\textwidth]{pt_neutron_gun_th2f_JECs_GetRandom2.pdf} \hfill
+% \includegraphics[width=.48\textwidth]{pt_neutron_gun_p2pf_th2f_NoSmearing.pdf}
+%  \caption{Comparison of the transverse momentum of the generator-level jets to the \ac{PF} jets (left) and P2PF jets (right) without jet energy resolution smearing, using a neutron sample.}
+%  \label{fig:neutron}
+% \end{figure}
 
 \begin{figure}[ht]
   \centering
@@ -218,7 +316,7 @@ The two leading generator-level jets (GEN) can then be compared to the uncorrect
  \label{fig:neutron_res}
 \end{figure}
 
-After applying this smearing, the P2PF jets are processed with the standard sequence of charged hadron subtraction, jet clustering, L1FastJet, and L2/L3 corrections. The comparison of the corrected P2PF jets and the standard corrected \ac{PF} jets is shown in Figure~\ref{fig:neutron_corr} for the neutron sample, validating that the jet transverse momentum is now correctly smeared. The \ac{JER} distributions are also compared in Figure~\ref{fig:neutron_res_corr} and fitted with a Crystal Ball function, showing compatible parameters. This demonstrates that the procedure, where the \ac{JER} distributions derived from a neutron sample are used to smear the \ac{PF} candidates from generator-level \acp{SIMP}, can sufficiently accurately simulate \acp{SIMP} in a realistic detector, assuming \acp{SIMP} are neutron-like.
+In order to validate this method, the custom and standard neutron samples are used to compare the two leading generator-level jets to the new jets from the custom sample, denoted as P2PF jets, and the \ac{PF} jets from the standard sample. This is illustrated in Figure~\ref{fig:neutron_corr}, where the $p_T$ of the generated neutrons is shown on the horizontal axis, and the $p_T$ of the reconstructed jet is shown on the vertical axis. The left plot shows the standard neutron sample produced with the full \textsc{Geant} simulation, while the right plot shows the custom neutron sample where the neutron was directly converted into a neutral \ac{PF} candidate. The \ac{JER} distributions are also compared in Figure~\ref{fig:neutron_res_corr} and fitted with a Crystal Ball function, showing compatible parameters.
 
 \begin{figure}[ht]
   \centering
@@ -234,6 +332,19 @@ After applying this smearing, the P2PF jets are processed with the standard sequ
  \caption{The jet energy resolution of the corrected P2PF jets (red) and \ac{PF} jets (black), fitted with a Crystal Ball function.}
  \label{fig:neutron_res_corr}
 \end{figure}
+
+This demonstrates that the procedure, where the \ac{JER} distributions derived from a neutron sample are used to smear the \ac{PF} candidates from generator-level \acp{SIMP}, can sufficiently accurately simulate \acp{SIMP} in a realistic detector, assuming \acp{SIMP} are neutron-like. However, since this procedure directly converts the generated \acp{SIMP} into \ac{PF} candidates, the \acp{SIMP} do not interact in the Tracker and the resulting jets have a very steeply falling charged hadron energy fraction (CHF) distribution. This gives an optimistic image, which translates in a maximal signal efficiency.
+
+The \ac{SIMP} signal simulation and reconstruction was therefore further improved by moving to the second approach. In this method, the generated \ac{SIMP} particles are not converted into neutral \ac{PF} candidates, but they are instead replaced by neutrons, keeping the \ac{SIMP} kinematics. The standard reconstruction and full \textsc{Geant} simulation can then be applied, since the neutrons are correctly recognized and simulated. In this case, interactions will happen inside the Tracker as well and the resulting jets will contain a larger CHF, as is shown in Figure~\ref{fig:neutron_chf}.
+
+\begin{figure}[ht]
+  \centering
+ \includegraphics[width=.75\textwidth]{ChF_neutrons.pdf} 
+ \caption{CHF distribution of the leading jet, for a signal sample produced with the first approach (red) and the corresponding sample produced using the second method (blue).}
+ \label{fig:neutron_chf}
+\end{figure}
+
+This method gives a good approximation of a \ac{SIMP} signal, since the shower generated by the \ac{SIMP} is in principle contained inside the calorimeters, as the model described in Section~\ref{sec:SIMP} is constructed so that for a specific choice of couplings the \acp{SIMP} may be detected as a regular hadrons. Although the considered \ac{SIMP}-nucleon interaction is repulsive, this does not differ considerably from known attractive interactions at the probed high energies. The incoming \ac{SIMP} hits a nucleon at rest in the calorimeter, breaking it up, and because of the large incoming momentum, there is a boost forward into the calorimeter and the shower starts. The cross section would therefore be identical for a repulsive or attractive interaction and the effect on the shower is negligible since the scattering angle is very small due to the momentum boost. Furthermore, the higher the momentum of the \ac{SIMP}, the shorter the distance it travels to deposit its characteristic momentum. With the considered couplings, the depth containing a \ac{SIMP} with \SI{500}{GeV} momentum is below \SI{1}{m}, within the calorimeter. Most of the energy will therefore be deposited in the first interaction with the material. Given the expected forward energy flow in the calorimeter shower, and the shower containment achieved by the choice of couplings in the simplified model, the shower induced by the \ac{SIMP} interaction can to first order be modelled by the interaction of a high-momentum neutral hadron, like a neutron.
 
 \clearpage
 \clearpage{\pagestyle{empty}\cleardoublepage}
