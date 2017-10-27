@@ -14,13 +14,21 @@ In order to use the recorded data, the obtained signals coming from various part
 \section{Event generation}
 \label{sec:generation}
 
-% simps -> feynrules -> madgraph
 % matching?
 % meer detail? Fabio, MCnet school
 
-The event structure at the \ac{LHC} is complicated by the composite nature of protons, as well as the attainable high momentum transfers. A number of aspects must therefore be taken into account when generating events, such as \acp{PDF}, hard scattering, the parton shower, hadronization, and additional activity in the event.
+The event structure at the \ac{LHC} is complicated by the composite nature of protons, as demonstrated in Figure~\ref{fig:event}. This sketch shows the hard interaction in red, with a tree-like structure surrounding it, representing the ensuing shower. In this hard scattering, the quark or gluon constituents of the protons, called partons, will interact according to a so-called \ac{PDF}, which is determined by the parton's momentum fraction and the momentum transfer. Due to their colour charge, the partons involved in the hard interaction will induce parton showers consisting of a cascade of radiation from \acs{QCD} processes. This is shown in blue for the incoming partons and in red for the outgoing partons. The produced partons will also hadronize due to colour confinement, as illustrated in green, with hadron decays in dark green and radiated photons in yellow. Finally, the purple interaction represents a second interaction between the proton remnants. Next to interactions between the proton remnants, additional activity in the event can come from multiple parton interactions and pileup. All these aspects must be taken into account when generating events, as detailed below.
 
-Two partons, meaning the quark or gluon constituents of the colliding protons, will interact with a certain probability at a given momentum transfer. This is parametrized by the \acp{PDF} $f(x, Q^2)$, were $x$ is the proton's momentum fraction and $Q^2$ is the momentum transfer scale. Experimentally determined \acp{PDF} are available from various groups, including e.g. CTEQ~\cite{Pumplin:2002vw}, MRST/MSTW~\cite{Martin:2009iq}, and NNPDF~\cite{Ball:2014uwa}. An example of such \acp{PDF} obtained by the NNPDF group is shown in Figure~\ref{fig:pdf}. The \acp{PDF} are then convoluted with the matrix element of the hard scattering, which is the process of interest where the two colliding partons create high-energetic final state particles. This is done using an event generator, such as \textsc{MadGraph5\_}a\textsc{MC@NLO} ~\cite{Alwall:2014hca} and \textsc{PowHeg}~\cite{Frixione:2007vw}. With \textsc{MadGraph5\_}a\textsc{MC@NLO} the matrix element can be calculated at tree-level or \ac{LO}, and since the addition of a\textsc{MC@NLO} at \ac{NLO} as well. This generator was used to generate most of the background processes for the Monojet analysis detailed in Chapter~\ref{ch:monojet} and for the \ac{SIMP} signal used in Chapter~\ref{ch:SIMPs}. \textsc{PowHeg} is able to generate events using \ac{NLO} computations, but only for a relatively limited number of physics processes. In this thesis, background processes from single-top production were generated with this program. Since \ac{NLO} calculations are more time-consuming, one can instead use the less precise method of scaling a \ac{LO} cross section to the \ac{NLO} level by using a so-called k-factor, defined as the ratio of the \ac{NLO} and \ac{LO} cross sections. However, these k-factors often need to be determined as a function of the relevant kinematic variables as they depend on the kinematic phase space and the probed energy scale.
+\begin{figure}[ht]
+  \centering
+ \includegraphics[width=.9\textwidth]{event.png} 
+ \caption{Illustration of an event showing the hard scattering, parton shower, hadronization, and underlying event. Figure taken from~\cite{Hoche:2014rga}.}
+ \label{fig:event}
+\end{figure}
+
+\begin{itemize}
+ \item[] \textbf{Hard scattering}\\
+ In the hard interaction, two partons of the colliding protons, will interact with a certain probability at a given momentum transfer. This is parametrized by the \acp{PDF} $f(x, Q^2)$, were $x$ is the proton's momentum fraction and $Q^2$ is the momentum transfer scale. Experimentally determined \acp{PDF} are available from various groups, including e.g. CTEQ~\cite{Pumplin:2002vw}, MRST/MSTW~\cite{Martin:2009iq}, and NNPDF~\cite{Ball:2014uwa}. An example of such \acp{PDF} obtained by the NNPDF group is shown in Figure~\ref{fig:pdf}. The \acp{PDF} are then convoluted with the matrix element of the hard scattering, which is the process of interest where the two colliding partons create high-energetic final state particles. This is done using an event generator, such as \textsc{MadGraph5\_}a\textsc{MC@NLO} ~\cite{Alwall:2014hca} and \textsc{PowHeg}~\cite{Frixione:2007vw}. With \textsc{MadGraph5\_}a\textsc{MC@NLO} the matrix element can be calculated at tree-level or \ac{LO}, and since the addition of a\textsc{MC@NLO} at \ac{NLO} as well. This generator was used to produce most of the background processes for the Monojet analysis detailed in Chapter~\ref{ch:monojet} and for the \ac{SIMP} signal used in Chapter~\ref{ch:SIMPs}. \textsc{PowHeg} is able to generate events using \ac{NLO} computations, but only for a relatively limited number of physics processes. This generator was used to produce the monojet signal samples and the background processes from single-top production. Since \ac{NLO} calculations are more time-consuming, one can instead use the less precise method of scaling a \ac{LO} cross section to the \ac{NLO} level by using a so-called k-factor, defined as the ratio of the \ac{NLO} and \ac{LO} cross sections. However, these k-factors often need to be determined as a function of the relevant kinematic variables as they depend on the kinematic phase space and the probed energy scale.
 
 \begin{figure}[ht]
   \centering
@@ -29,11 +37,34 @@ Two partons, meaning the quark or gluon constituents of the colliding protons, w
  \label{fig:pdf}
 \end{figure}
 
-Since the colliding partons have a color charge, the hard scattering will be accompanied by a cascade of radiation from \acs{QCD} processes. This radiation can originate from the incoming partons, which is referred to as \ac{ISR}, or the outgoing partons in the final state, the so-called \ac{FSR}. The perturbative evolution of the cascade can be modelled using the DGLAP (Dokshitzer-Gribov-Lipatov-Altarelli-Parisi) equations~\cite{Gribov:1972ri, Dokshitzer:1977sg, Altarelli:1977zs}. These equations describe the time evolution of the probability of a `mother' parton to split into `daughter' partons at an energy scale $Q^2$. The momentum of the mother is then divided among the daughter partons, which can in turn split into other partons at a lower $Q^2$ scale. The cascade continues down to an energy scale $\Lambda_{QCD}$ where the strong coupling constant becomes unity.
+ \item[] \textbf{Parton showering}\\
+Since the colliding partons have a colour charge, the hard scattering will be accompanied by a cascade of radiation from \acs{QCD} processes. The partons will for example radiate soft gluons or split into two collinear partons. This radiation can originate from the incoming partons, which is referred to as \ac{ISR}, or the outgoing partons in the final state, the so-called \ac{FSR}. The perturbative evolution of the cascade can be modelled using the DGLAP (Dokshitzer-Gribov-Lipatov-Altarelli-Parisi) equations~\cite{Gribov:1972ri, Dokshitzer:1977sg, Altarelli:1977zs}. These equations describe the time evolution of the probability of a `mother' parton to split into `daughter' partons at an energy scale $Q^2$. The momentum of the mother is then divided among the daughter partons, which can in turn split into other partons at a lower $Q^2$ scale. The cascade continues down to an energy scale $\Lambda_{QCD}$ where the strong coupling constant becomes unity. The resulting number of jets can vary depending on the modelled process, as shown in Figure~\ref{fig:njets}.
 
-The next step after the showering is the hadronization of the coloured particles produced in the parton shower, transforming them into color-neutral hadrons. Since this happens at low energy scales where the perturbative approach of \acs{QCD} is not valid, phenomenological models have to be used. For most of the processes considered in this thesis, the showering and hadronization is done with \textsc{Pythia 8}~\cite{Sjostrand:2006za}, using a standard set of parameters which were tuned to reproduce the experimental data. 
+\begin{figure}[ht]
+  \centering
+ \includegraphics[width=.5\textwidth]{fig.pdf} 
+ \caption{.}
+ \label{fig:njets}
+\end{figure}
 
-In addition to \ac{ISR} and \ac{FSR}, also beam remnants and multiple parton interactions give rise to additional activity in the event, referred to as the underlying event. After the partons participating in the hard scattering are extracted, the remainder of the protons have a non-zero colour charge. The creation of additional hadrons during the hadronization is therefore possible. Multiple parton interactions represent additional interactions which can take place between other incoming partons. Finally, additional collisions between other protons in the same bunch crossing or from a previous bunch crossing, respectively referred to as in-time and out-of-time pileup, add extra activity in the event.
+\item[] \textbf{Hadronization}\\
+The next step after the showering is the hadronization of the coloured particles produced in the parton shower, transforming them into colour-neutral hadrons. Since this happens at low energy scales where the perturbative approach of \acs{QCD} is not valid, phenomenological models have to be used. For most of the processes considered in this thesis, the showering and hadronization is done with \textsc{Pythia 8}~\cite{Sjostrand:2006za}, using a standard set of parameters which were tuned to reproduce the experimental data. In \textsc{Pythia}, the string Lund model~\cite{Andersson:1983ia} is used, based on string fragmentation. This model starts from the idea of a string connecting a quark $q$ and an antiquark $\bar{q}$, following the assumption of linear confinement. As the two quarks move away from each other, the string stretches and the potential energy stored in the string increases. The increase in potential energy is assumed to be proportional to the distance between the quarks. When the energy becomes sufficient to produce a new pair of quarks $q'\bar{q}'$ with mass $m$, the string breaks and the original quark pair is split into two new pairs, $q\bar{q}'$ and $q'\bar{q}$. If the invariant mass of the new strings is large enough, the same process is repeated, leading to a new break-up. This procedure continues until only colour-neutral hadrons with an on-shell mass remain.
+
+\item[] \textbf{Additional activity in the event}\\
+In addition to \ac{ISR} and \ac{FSR}, also beam remnants and multiple parton interactions give rise to additional activity in the event, referred to as the underlying event. After the partons participating in the hard scattering are extracted, the remainder of the protons have a non-zero colour charge. The creation of additional hadrons during the hadronization is therefore possible. Multiple parton interactions represent additional interactions which can take place between other incoming partons. As the probability for an additional hard interaction to occur is rather small, the activity from multiple parton interaction is typically much less energetic than the hard interaction, producing mostly low energetic hadrons. Finally, additional collisions between other protons in the same bunch crossing or from a previous bunch crossing, respectively referred to as in-time and out-of-time pileup, add extra activity in the event. The pileup distribution is for example shown in Figure~\ref{fig:pileup} for QCD dijet events recorded in 2016, and is compared to simulated QCD events. This shows that there were about $20$ collisions per bunch crossing on average. Typically, the simulation does not completely agree with the data and needs to be reweighted in order to match the data.
+
+\begin{figure}[ht]
+  \centering
+ \includegraphics[width=.75\textwidth]{pileup.pdf} 
+ \caption{The pileup distribution of QCD dijet events recorded in 2016 compared to simulated QCD events.}
+ \label{fig:pileup}
+\end{figure}
+ \end{itemize}
+
+\subsection{Simulation of the monojet signals}
+\label{sec:monojet_sim}
+
+In the monojet analysis, the simplified models described in Section~\ref{sec:monojet_models} are considered. The used signal samples were generated with \textsc{PowHeg}, which can generate \ac{NLO} vector and axial mediator production and \ac{LO} scalar and pseudoscalar production. The samples were also produced at \ac{LO} with MCFM~\cite{Campbell:2010ff} as a cross check. The scanned mediator masses are $m_{\phi} = 10, 20, 50, 100, 200, 300, 500, 1000, 2000,$ \SI{10000}{GeV}, for dark matter masses of $m_{\chi} = 1, 10, 50, 100, 150, 500, \SI{1000}{GeV}$, with $m_{\chi} \leq m_{\phi}$.
 
 \section{Detector simulation}
 \label{sec:sim}
@@ -258,11 +289,6 @@ where the sum runs over all reconstructed \ac{PF} particles. The variable that i
 \end{equation}
 
 A notable example of particles leaving no hits or energy deposits behind are neutrinos, as they are neutral and weakly interacting and will therefore traverse the entire detector unhindered. Other hypothetical neutral weakly interacting particles, which are being searched for in many physics analyses, would escape the detector without producing hits as well.
-
-\section{Simulation of the monojet signals}
-\label{sec:monojet_sim}
-
-
 
 \section{Simulation and reconstruction of the SIMP signal}
 \label{sec:SIMPs}
