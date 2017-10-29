@@ -7,7 +7,7 @@
 \hyphenation{}
 
 \chapter{Event Simulation and Reconstruction}
-\label{ch4}
+\label{ch:reconstruction}
 
 In order to use the recorded data, the obtained signals coming from various parts of the detector must be reconstructed to be able to identify the particles in the event. Additionally, to compare the experimental results with theory, events are generated and the resulting signals in the detector are simulated, as detailed in Sections~\ref{sec:generation} and \ref{sec:sim}, respectively. The event reconstruction is detailed in Section~\ref{sec:reconstruction}. Finally, some details about the simulation of \acp{SIMP} are given in Section~\ref{sec:SIMPs}.
 
@@ -38,11 +38,11 @@ The event structure at the \ac{LHC} is complicated by the composite nature of pr
 \end{figure}
 
  \item[] \textbf{Parton showering}\\
-Since the colliding partons have a colour charge, the hard scattering will be accompanied by a cascade of radiation from \acs{QCD} processes. The partons will for example radiate soft gluons or split into two collinear partons. This radiation can originate from the incoming partons, which is referred to as \ac{ISR}, or the outgoing partons in the final state, the so-called \ac{FSR}. The perturbative evolution of the cascade can be modelled using the DGLAP (Dokshitzer-Gribov-Lipatov-Altarelli-Parisi) equations~\cite{Gribov:1972ri, Dokshitzer:1977sg, Altarelli:1977zs}. These equations describe the time evolution of the probability of a `mother' parton to split into `daughter' partons at an energy scale $Q^2$. The momentum of the mother is then divided among the daughter partons, which can in turn split into other partons at a lower $Q^2$ scale. The cascade continues down to an energy scale $\Lambda_{QCD}$ where the strong coupling constant becomes unity. The resulting number of jets can vary depending on the modelled process, as shown in Figure~\ref{fig:njets}.
+Since the colliding partons have a colour charge, the hard scattering will be accompanied by a cascade of radiation from \acs{QCD} processes. The partons will for example radiate soft gluons or split into two collinear partons. This radiation can originate from the incoming partons, which is referred to as \ac{ISR}, or the outgoing partons in the final state, the so-called \ac{FSR}. The perturbative evolution of the cascade can be modelled using the DGLAP (Dokshitzer-Gribov-Lipatov-Altarelli-Parisi) equations~\cite{Gribov:1972ri, Dokshitzer:1977sg, Altarelli:1977zs}. These equations describe the time evolution of the probability of a `mother' parton to split into `daughter' partons at an energy scale $Q^2$. The momentum of the mother is then divided among the daughter partons, which can in turn split into other partons at a lower $Q^2$ scale. The cascade continues down to an energy scale $\Lambda_{QCD}$ where the strong coupling constant becomes unity. The resulting number of jets can vary depending on the modelled process, as shown in Figure~\ref{fig:njets}. {\color{red}Still need to describe figure, but it shows the opposite as expected for vector and scalar}
 
 \begin{figure}[ht]
   \centering
- \includegraphics[width=.5\textwidth]{fig.pdf} 
+ \includegraphics[width=.7\textwidth]{njets.pdf} 
  \caption{.}
  \label{fig:njets}
 \end{figure}
@@ -110,6 +110,8 @@ The reconstruction is done in 2 steps: first the tracks that appear to originate
  \caption{The primary vertex reconstruction efficiency (left) and resolution (right) as a function of the number of tracks associated to it. Figures taken from~\cite{Chatrchyan:2014fea}}
  \label{fig:PV}
 \end{figure}
+
+The vertex with the highest $\sum p_T^2$ is chosen as primary vertex, where the sum runs over the tracks associated to the vertex following the application of a deterministic annealing filter which assigns weights to sufficiently high-quality tracks that enter the vertex fit~\cite{Chatrchyan:2014fea}. While in events with jets many tens of high-momentum tracks can usually be associated to a primary vertex, thus making primary vertex finding almost fully efficient and pure, in the case of a pair of neutral jets, produced for example by \acp{SIMP}, this is not the case any more. The underlying event and potentially initial state \acs{QCD} radiation can still provide some tracks, but in extreme cases a wrong vertex is chosen, arising from a hard pileup collision.
 
 \subsection{Electron and isolated photon reconstruction}
 \label{sec:electron_reconstruction}
