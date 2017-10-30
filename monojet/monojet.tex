@@ -16,25 +16,35 @@ with one or more jets. The dark matter particles are expected to pass through th
 
 First, the event selection and the estimation of the background are described, respectively in Sections~\ref{sec:selection} and \ref{sec:bkgd}. The included systematic uncertainties are described in Section~\ref{sec:syst}. In Section~\ref{sec:results}, the obtained results are shown. The improvements achieved by going from the analysis strategy used in 2015 to the 2016 version are detailed in Section~\ref{sec:improvement}. Finally, the results are interpreted in terms of the considered dark matter models in Section~\ref{sec:interpretation}.
 
-% {\color{red}models in theory chapter?\\
 % MET: add in chapter 3: + type I corrections from jets + corrections in simulation as well to match data)\\
-% {\color{red} add in chapter 3: loose jet ID, pileup jet ID}.
+
+\section{Physics object reconstruction}
+
+, and to pass the loose jet identification and pileup jet identification described in Section~\ref{sec:jet_reconstruction}, as well as the jet cleaning.  The jet cleaning is done by requiring a jet charged hadron energy fraction CHF $> 0.1$ and a jet neutral hadron energy fraction NHF $< 0.8$. The same requirements are applied for the remaining jets to be taken into account, except for the $p_T$ threshold which is at 30~GeV in this case.
+
+Electrons (muons) are considered for the veto if they pass the loose selection, described in Section~\ref{sec:electron_ID}~(\ref{sec:muonID}), and have $p_T > 10$~GeV and $|\eta| < 2.5 (2.4)$. In the case of tau leptons, they are required to have $p_T > 15$~GeV and $|\eta| < 2.3$. They should also pass the tau identification criteria, which require a jet with an identified subset of particles with a mass consistent with the decay products of a hadronic tau and which are isolated with a pileup corrected isolation cut requiring less than 5~GeV of energy deposits within a radial cone of $\Delta R < 0.3$. Photons are required to have $p_T > 15$~GeV, $|\eta| < 2.5$, and to pass the loose identification criteria described in Section~\ref{sec:electron_ID}. 
+
+The b-jets are tagged with the Combined Secondary Vertex algorithm described in Section~\ref{sec:btagging}, using the loose working point.
+
+\section{Trigger selection}
+
+In order to select events that have the Monojet signature displayed in Figure~\ref{fig:monojet_display}, the trigger requires either $E_T^{miss} > 90$~GeV, where $E_T^{miss}$ is the magnitude of the negative vectorial sum of the $p_T$ of all particles at trigger level, or $H_T^ {miss} > 90$ ~GeV, where $H_T^{miss}$ is calculated as the magnitude of the negative vectorial sum of the momenta of all jets with $p_T > 20$~GeV. Muons are not taken into account to compute $E_T^{miss}$ and $H_T^{miss}$, so that the same trigger can be used to select the events for the muon control regions used for the background prediction. The trigger efficiency is above 98\% for events passing the analysis selection described below.
+
+\begin{figure}[ht]
+  \centering
+ \includegraphics[width=.6\textwidth]{monojet_event.pdf} 
+ \caption{Event display showing the monojet final state.}
+ \label{fig:monojet_display}
+\end{figure}
+
+
 
 \section{Event selection}
 \label{sec:selection}
 
-In order to select events that have the Monojet signature illustrated in Figure~\ref{fig:monojet_display}, the trigger requires either $E_T^{miss} > 90$~GeV, where $E_T^{miss}$ is the magnitude of the negative vectorial sum of the $p_T$ of all particles at trigger level, or $H_T^ {miss} > 90$ ~GeV, where $H_T^{miss}$ is calculated as the magnitude of the negative vectorial sum of the momenta of all jets with $p_T > 20$~GeV. Muons are not taken into account to compute $E_T^{miss}$ and $H_T^{miss}$, so that the same trigger can be used to select the events for the muon control regions used for the background prediction. The trigger efficiency is above 98\% for events passing the analysis selection described below.
+Once the events have been fully reconstructed and the jets in the event have been corrected as described in Section~\ref{sec:jet_reconstruction}, an event selection is applied by requiring the missing transverse energy $E_T^{miss}$ defined in Section~\ref{sec:MET} to be larger than 200~GeV in order to be consistent with the trigger turn-on. Additionally, the leading jet is required to have $p_T > 100$~GeV, $|\eta| < 2.5$. A cut on the difference in azimuthal angle between the $E_T^{miss}$ and the first four leading jets of $\Delta\phi(jet, E_T^{miss}) > 0.5$ is also applied to suppress the QCD background from mismeasurements of jet momentum or detector noise. The events are further cleaned by applying quality filters to remove events with badly reconstructed missing transverse energy. Finally, events containing a lepton, a photon, or a b-jet are vetoed as well.
 
-\begin{figure}[ht]
-  \centering
- \includegraphics[width=.4\textwidth]{fig.pdf} 
- \caption{Illustration of dark matter production in the monojet final state.}
- \label{fig:monojet_display}
-\end{figure}
-
-Once the events have been fully reconstructed and the jets in the event have been corrected as described in Section~\ref{sec:jet_reconstruction}, an event selection is applied by requiring the missing transverse energy $E_T^{miss}$ defined in Section~\ref{sec:MET} to be larger than 200~GeV in order to be consistent with the trigger turn-on. Additionally, the leading jet is required to have $p_T > 100$~GeV, $|\eta| < 2.5$, and to pass the loose jet identification and pileup jet identification described in Section~\ref{sec:jet_reconstruction}, as well as the jet cleaning.  The jet cleaning is done by requiring a jet charged hadron energy fraction CHF $> 0.1$ and a jet neutral hadron energy fraction NHF $< 0.8$. The same requirements are applied for the remaining jets to be taken into account, except for the $p_T$ threshold which is at 30~GeV in this case. A cut on the difference in azimuthal angle between the $E_T^{miss}$ and the first four leading jets of $\Delta\phi(jet, E_T^{miss}) > 0.5$ is also applied to suppress the QCD background from mismeasurements of jet momentum or detector noise. The events are further cleaned by applying quality filters to remove events with badly reconstructed missing transverse energy. Finally, events containing a lepton, a photon, or a b-jet are vetoed as well.
-
-The leptons are vetoed to suppress the electroweak backgrounds, such as $W(lv)$ + jets and semileptonic diboson decays. Electrons (muons) are considered for the veto if they pass the loose selection, described in Section~\ref{sec:electron_ID}~(\ref{sec:muonID}), and have $p_T > 10$~GeV and $|\eta| < 2.5 (2.4)$. In the case of tau leptons, they are required to have $p_T > 15$~GeV and $|\eta| < 2.3$. They should also pass the tau identification criteria, which require a jet with an identified subset of particles with a mass consistent with the decay products of a hadronic tau and which are isolated with a pileup corrected isolation cut requiring less than 5~GeV of energy deposits within a radial cone of $\Delta R < 0.3$. Photons are required to have $p_T > 15$~GeV, $|\eta| < 2.5$, and to pass the loose identification criteria described in Section~\ref{sec:electron_ID}. The photon veto is added to suppress the $Z(\nu\nu)$ + photon + jets and $W(l\nu)$ + photon + jets background processes, and to ensure there is no overlap with a similar dark matter search which investigates the final state consisting of missing energy and a photon. This rejects less than 1\% of the signal. Finally, the b-jet veto reduces the top background by a factor 3 and only reduces the signal by 5 to 10\%, depending on the type and mass of the mediator. The b-jets are tagged with the Combined Secondary Vertex algorithm described in Section~\ref{sec:btagging}, using the loose working point.
+The leptons are vetoed to suppress the electroweak backgrounds, such as $W(lv)$ + jets and semileptonic diboson decays. The photon veto is added to suppress the $Z(\nu\nu)$ + photon + jets and $W(l\nu)$ + photon + jets background processes, and to ensure there is no overlap with a similar dark matter search which investigates the final state consisting of missing energy and a photon. This rejects less than 1\% of the signal. Finally, the b-jet veto reduces the top background by a factor 3 and only reduces the signal by 5 to 10\%, depending on the type and mass of the mediator.
 
 \section{Background estimation}
 \label{sec:bkgd}
