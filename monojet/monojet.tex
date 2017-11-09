@@ -9,10 +9,7 @@
 \chapter{The Monojet Analysis}
 \label{ch:monojet}
 
-As has been described in Chapter~\ref{ch:theory}, there are many searches for dark matter both at 
-particle accelerators and elsewhere. At the \ac{LHC}, one very promising channel is the 
-monojet search, where the detection of dark matter is done by looking for missing energy in association 
-with one or more jets. The dark matter particles are expected to pass through the detector without leaving any signal since they are neutral and only interact very weakly. They can however be detected indirectly as missing energy when they recoil off one or more jets coming from initial state radiation.
+As has been described in Chapter~\ref{ch:theory}, there are many searches for dark matter both at particle accelerators and elsewhere. At the \ac{LHC}, one very promising channel is the so-called monojet search, where the detection of dark matter is done by looking for missing energy in association with one or more jets. The dark matter particles are expected to pass through the detector without leaving any signal since they are neutral and only interact very weakly. They can however be detected indirectly as missing energy when they recoil off one or more jets coming from initial state radiation.
 
 First, the used physics objects are described in Section~\ref{sec:monojet_objects}. Next, the selection of the events using the trigger is described in Section~\ref{sec:monojet_trigger}, and the subsequent event selection performed with fully reconstructed events is detailed in Section~\ref{sec:selection}. The estimation of the background and the included systematic uncertainties are described Section~\ref{sec:bkgd} and \ref{sec:syst}, respectively. In Section~\ref{sec:results}, the obtained results are shown. The improvements achieved by going from the analysis strategy used in 2015 to the 2016 version are detailed in Section~\ref{sec:improvement}. Finally, the results are interpreted in terms of the considered dark matter models in Section~\ref{sec:interpretation}.
 
@@ -102,6 +99,7 @@ The leptons are vetoed to suppress the electroweak backgrounds, such as $W(lv)$ 
 The dominant background comes from $Z$ + jet events where the $Z$ boson decays to two neutrinos. This produces the same signature of jets with missing energy as the signal, and results in an irreducible background. The second largest background consists of $W$ + jets events with a leptonically decaying $W$ boson. This background is already suppressed by the lepton veto, but a fraction of these events remain when the lepton is either not identified or outside of the detector acceptance. The remaining background events come from top quark decays, which are suppressed by the b-jet veto, semileptonic diboson ($WW$, $WZ$, and $ZZ$) decays, and QCD multijet events. The two main background contributions are estimated from five control regions in data consisting of dimuon, dielectron, single muon, single electron, and photon + jets events. The $E_T^{miss}$ in these control regions is redefined in order to imitate the $E_T^{miss}$ shape in the signal region. This hadronic recoil $U$ is obtained by removing the leptons or the photon from the $E_T^{miss}$ computation. The contributions from top quark decays and semileptonic diboson decays are estimated using simulated samples, while the QCD multijet background is estimated using a data-driven approach.
 
 \subsection{The \boldmath$Z$ and \boldmath$W$ background estimation}
+\label{sec:main_bkgd}
 
 The yield of $Z(\nu\nu)$ and $W(l\nu)$ + jets events in the signal region is estimated from five control regions by using the ratio between data and MC in the control region, per bin of the recoil distribution. For the prediction using $Z\rightarrow \mu\mu$ events in the dimuon control region for example, the predicted yield of $Z\rightarrow\nu\nu$ events is given by
 \begin{align}
@@ -133,7 +131,7 @@ The simulated samples used for the background estimation are generated at leadin
  \includegraphics[width=.49\textwidth]{Z_EWK_kfactor.pdf} 
  \includegraphics[width=.49\textwidth]{W_EWK_kfactor.pdf} \\
  \includegraphics[width=.49\textwidth]{gamma_EWK_kfactor.pdf} 
- \caption{The differential cross section as a function of the boson $p_T$ for photon, $W$,and $Z$ production, with the resulting k-factors in the ratio plots.}
+ \caption{The differential cross section as a function of the boson $p_T$ for photon, $W$,and $Z$ production, using boson $p_T$-binned \ac{NLO} samples. The resulting k-factors are shown in the ratio plots.}
  \label{fig:kfactors}
 \end{figure}
 
@@ -255,11 +253,42 @@ Table~\ref{tab:monojet_yields} gives the background prediction for the various b
 \section{Improvements going from the 2015 to 2016 analysis}
 \label{sec:improvement}
 
-An substantial difference going from the 2015 to the 2016 analysis is of course the increase in collected data, which allowed to reduce the statistical uncertainties and set stronger limits on the considered models. In the first Run 2 iteration of this analysis only $2.1\ \mathrm{fb}^{-1}$ of data was used, while $12.9\ \mathrm{fb}^{-1}$ were available for the second iteration in 2016.
+Several iterations of the monojet analysis were performed during Run 2 in 2015 and 2016, improving the achieved sensitivity with the increase in available data and additional developments to the analysis strategy, and adding new interpretations. In 2015, a first analysis with data at a centre-of-mass energy of \SI{13}{TeV} was carried out~\cite{CMS:2015jdt}, using data corresponding to an integrated luminosity of $2.1\ \mathrm{fb}^{-1}$. In this first iteration of the search, the NLO k-factors applied to correct the \ac{LO} samples used for the $Z$ and $W$ background estimation are derived from inclusive \ac{NLO} samples, which are not binned in boson $p_T$. These k-factors are shown in Figure~\ref{fig:kfactors_15}, and can be compared to the k-factors obtained from $p_T$-binned samples used in the following iterations of the analysis and shown in Figure~\ref{fig:kfactors}.
 
-An important addition the first Run 2 iteration of this analysis is the extension to the mono-V channel, which can give rise to a monojet-like signature. At high $p_T$, the production of a $W$ or $Z$ boson which then decays hadronically, can be effectively reconstructed as a single jet of large cone radius. However, in this section the focus will be on the improvements added to the monojet channel of the 2016 analysis, compared to the 2015 analysis.
+\begin{figure}[ht]
+  \centering
+ \includegraphics[width=.49\textwidth]{Z_kfactor.png} 
+ \includegraphics[width=.49\textwidth]{W_kfactor.png} \\
+ \includegraphics[width=.49\textwidth]{gamma_kfactor.png} 
+ \caption{The differential cross section as a function of the boson $p_T$ for photon, $W$,and $Z$ production, using inclusive \ac{NLO} samples. The resulting k-factors are shown in the ratio plots.}
+ \label{fig:kfactors_15}
+\end{figure}
 
-One of the improvements that were added is the use of MC samples generated at leading order for the estimation of the main backgrounds. This was possible by generating samples that are binned in photon, $Z$, or $W$ boson $p_T$. As a result, no k-factors need to be applied to samples generated at LO and no additional systematic uncertainties need to be introduced for this.
+In 2016, the analysis was extended to the mono-V channel~\cite{CMS:2016tns}, which can give rise to a monojet-like signature. At high $p_T$, the production of a $W$ or $Z$ boson which decays hadronically, can be effectively reconstructed as a single jet of large cone radius. However, in this chapter the focus is on the monojet channel and the added improvements during 2016. For this analysis, the full amount of data collected in 2015 was used, corresponding to $2.3\ \mathrm{fb}^{-1}$. The used \ac{NLO} k-factors were derived using the $p_T$-binned samples, as described in Section~\ref{sec:main_bkgd}.
+
+A substantial difference in the next iteration of the 2016 analysis~\cite{Sirunyan:2017hci} is the increase in collected data, which allowed to reduce the statistical uncertainties and set stronger limits on the considered models. For these results, data collected in the first half of 2016 and corresponding to an integrated luminosity of $12.9\ \mathrm{fb}^{-1}$ were available. One of the improvements that were added is the direct use of MC samples generated at leading order for the estimation of the main backgrounds. This was possible by generating samples that are binned in $W$ boson $p_T$. As a result, no k-factors need to be applied to the $W$ + jets sample and no additional systematic uncertainties are to be introduced for this. Figures~\ref{fig:comparison} and~\ref{fig:comparison2} show the obtained reduction in the overall post-fit uncertainty on the predictions in the 5 control regions.
+
+\begin{figure}[p]
+  \centering
+ \includegraphics[width=.42\textwidth]{EXO-16-013_dimuon.png} \hspace{.3cm}
+ \includegraphics[width=.42\textwidth]{EXO-16-037_dimuon.png} \\
+ \includegraphics[width=.42\textwidth]{EXO-16-013_dielectron.png} \hspace{.3cm}
+ \includegraphics[width=.42\textwidth]{EXO-16-037_dielectron.png} \\
+ \includegraphics[width=.42\textwidth]{EXO-16-013_gamma.png}  \hspace{.3cm}
+ \includegraphics[width=.42\textwidth]{EXO-16-037_gamma.png} 
+ \caption{Comparison of the hadronic recoil $p_T$ distribution between the data and MC simulation in the dimuon (top), dielectron (middle), and photon + jets (bottom) control regions, showing the reduction in overall post-fit uncertainty (grey band) going from the early 2016 analysis (left) to the analysis using data from the first half of 2016 (right). The fit was performed simultaneously over all the control and signal regions, assuming the absence of any signal. The last bin includes all events with hadronic recoil $pT > \SI{1160}{GeV}$. Figures taken from~\cite{CMS:2016tns} and~\cite{Sirunyan:2017hci}.}
+ \label{fig:comparison}
+\end{figure}
+
+\begin{figure}[p]
+  \centering
+ \includegraphics[width=.42\textwidth]{EXO-16-013_singlemuon.png}  \hspace{.3cm}
+ \includegraphics[width=.42\textwidth]{EXO-16-037_singlemuon.png} \\
+ \includegraphics[width=.42\textwidth]{EXO-16-013_singleelectron.png}  \hspace{.3cm}
+ \includegraphics[width=.43\textwidth]{EXO-16-037_singleelectron.png} \\
+ \caption{Comparison of the hadronic recoil $p_T$ distribution between the data and MC simulation in the single muon (top) and single electron (bottom) control regions, showing the reduction in overall post-fit uncertainty (grey band) going from the early 2016 analysis (left) to the analysis using data from the first half of 2016 (right). The fit was performed simultaneously over all the control and signal regions, assuming the absence of any signal. The last bin includes all events with hadronic recoil $pT > \SI{1160}{GeV}$. Figures taken from~\cite{CMS:2016tns} and~\cite{Sirunyan:2017hci}.}
+ \label{fig:comparison2}
+\end{figure}
 
 \section{Interpretation}
 \label{sec:interpretation}
@@ -271,7 +300,7 @@ The results of the second iteration of this search, using the mono-V final state
   \centering
  \includegraphics[width=.49\textwidth]{vectormed.png} 
  \includegraphics[width=.49\textwidth]{axialmed.png} 
- \caption{The 95\% CL upper limits on the $\mu =  \sigma/\sigma_{th}$ in the  $m_{\mathrm{med}}-m_{\mathrm{DM}}$ plane, for a vector (left) or axial-vector (right) mediator. The cosmological constraints from the WMAP and Planck measurements of the \ac{CMB} are shown as well.}
+ \caption{The 95\% CL upper limits on the $\mu =  \sigma/\sigma_{th}$ in the  $m_{\mathrm{med}}-m_{\mathrm{DM}}$ plane, for a vector (left) or axial-vector (right) mediator. The cosmological constraints from the WMAP and Planck measurements of the \ac{CMB} are shown as well. Figures taken from~\cite{Sirunyan:2017hci}.}
  \label{fig:limits_1}
 \end{figure}
 
@@ -279,7 +308,7 @@ The results of the second iteration of this search, using the mono-V final state
   \centering
  \includegraphics[width=.49\textwidth]{scalarmed.png} 
  \includegraphics[width=.49\textwidth]{pseudoscalarmed.png} 
- \caption{The 95\% CL upper limits on the $\mu =  \sigma/\sigma_{th}$ in the  $m_{\mathrm{med}}-m_{\mathrm{DM}}$ plane, for a scalar (left) or pseudoscalar (right) mediator. The cosmological constraints from the WMAP and Planck measurements of the \ac{CMB} are shown as well.}
+ \caption{The 95\% CL upper limits on the $\mu =  \sigma/\sigma_{th}$ in the  $m_{\mathrm{med}}-m_{\mathrm{DM}}$ plane, for a scalar (left) or pseudoscalar (right) mediator. The cosmological constraints from the WMAP and Planck measurements of the \ac{CMB} are shown as well. Figures taken from~\cite{Sirunyan:2017hci}.}
  \label{fig:limits_2}
 \end{figure}
 
@@ -291,7 +320,7 @@ The obtained limits can also be translated into 90\% CL upper limits on the dark
   \centering
  \includegraphics[width=.49\textwidth]{vector_DD.png} 
  \includegraphics[width=.49\textwidth]{axial_DD.png} 
- \caption{The 90\% CL upper limits in the  $m_{\mathrm{DM}}-\sigma_{\mathrm{SI/SD}}$ plane, for a vector (left) or axial-vector (right) mediator.}
+ \caption{The 90\% CL upper limits in the  $m_{\mathrm{DM}}-\sigma_{\mathrm{SI/SD}}$ plane, for a vector (left) or axial-vector (right) mediator. Figures taken from~\cite{Sirunyan:2017hci}.}
  \label{fig:DDlimits_1}
 \end{figure}
 
@@ -299,7 +328,7 @@ The obtained limits can also be translated into 90\% CL upper limits on the dark
   \centering
  \includegraphics[width=.49\textwidth]{scalar_DD.png} 
  \includegraphics[width=.49\textwidth]{pseudoscalar_DD.png} 
- \caption{The 90\% CL upper limits in the  $m_{\mathrm{DM}}-\sigma_{\mathrm{SI/SD}}$ plane, for a scalar (left) or pseudoscalar (right) mediator.}
+ \caption{The 90\% CL upper limits in the  $m_{\mathrm{DM}}-\sigma_{\mathrm{SI/SD}}$ plane, for a scalar (left) or pseudoscalar (right) mediator. Figures taken from~\cite{Sirunyan:2017hci}.}
  \label{fig:DDlimits_2}
 \end{figure}
 
