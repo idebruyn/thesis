@@ -247,7 +247,7 @@ In this clustering algorithm, the parameter $R$ determines what is called a jet.
 
 The anti-$k_T$ algorithm favours clustering around hard particles, and the jets then grow outward from this seed. This gives rise to circular jets, with a cone size that is proportional to $R$. Since it still involves a combination of energy and angle in the distance measure, this is a collinear-safe growth, meaning that the jet will not change when one of the particles of the jet is split collinearly. This algorithm is also infrared-safe, i.e. the same set of jets is obtained when soft particles are emitted.
 
-A reliable determination of the jet energy is not straightforward, since many effects can distort the energy estimation, such as the calorimeter response, the limited particle reconstruction efficiency, the underlying event, the pileup, and the charged particles bending out of the jet cone due to the strong magnetic field. The pileup is mitigated by applying \ac{CHS}, which consists of removing charged hadrons associated with vertices other than the primary vertex from the list of \ac{PF} candidates. Additionally, the jet energy is corrected using a factorized approach, as illustrated in Figure~\ref{fig:JEC}, with the following steps:
+A reliable determination of the jet energy is not straightforward, since many effects can distort the energy estimation, such as the calorimeter response, the limited particle reconstruction efficiency, the underlying event, the pileup, and the charged particles bending out of the jet cone due to the strong magnetic field. The pileup is mitigated by applying \ac{CHS}, which consists of removing charged hadrons associated with vertices other than the primary vertex from the list of \ac{PF} candidates. Additionally, the jet energy is corrected using a factorised approach, as illustrated in Figure~\ref{fig:JEC}, with the following steps:
 \begin{itemize}
  \item \textbf{Pileup correction (L1).} The first level of jet energy corrections is applied event-by-event and jet-by-jet, and is determined from simulation. It is dependent on the pseudorapidity and transverse momentum of the jet, the average $p_T$ density in the event, and the effective jet area. This effective area is determined by injecting a large number of very soft particles in the event before the jet clustering. The spread of the soft particles in each jet then defines the jet area. When these corrections are applied on data, residual corrections are also applied to take into account the difference between the simulated events and the data.
  
@@ -259,7 +259,7 @@ A reliable determination of the jet energy is not straightforward, since many ef
 \begin{figure}[ht]
   \centering
  \includegraphics[width=.85\textwidth]{JEC.pdf} 
- \caption{Graphical overview of the factorized approach used at \ac{CMS} to apply jet energy corrections.}
+ \caption{Graphical overview of the factorised approach used at \ac{CMS} to apply jet energy corrections.}
  \label{fig:JEC}
 \end{figure}
 
