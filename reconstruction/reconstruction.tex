@@ -38,14 +38,15 @@ The event structure at the \ac{LHC} is complicated by the composite nature of pr
 \end{figure}
 
  \item[] \textbf{Parton showering}\\
-Since the colliding partons have a colour charge, the hard scattering will be accompanied by a cascade of radiation from \acs{QCD} processes. The partons will for example radiate soft gluons or split into two collinear partons. This radiation can originate from the incoming partons, which is referred to as \ac{ISR}, or the outgoing partons in the final state, the so-called \ac{FSR}. The perturbative evolution of the cascade can be modelled using the DGLAP (Dokshitzer-Gribov-Lipatov-Altarelli-Parisi) equations~\cite{Gribov:1972ri, Dokshitzer:1977sg, Altarelli:1977zs}. These equations describe the time evolution of the probability of a `mother' parton to split into `daughter' partons at an energy scale $Q^2$. The momentum of the mother is then divided among the daughter partons, which can in turn split into other partons at a lower $Q^2$ scale. The cascade continues down to an energy scale $\Lambda_{QCD}$ where the strong coupling constant becomes unity. The resulting number of jets can vary depending on the modelled process, as shown in Figure~\ref{fig:njets}. {\color{red}Still need to describe figure, but it shows the opposite as expected for vector and scalar}
-
-\begin{figure}[ht]
-  \centering
- \includegraphics[width=.7\textwidth]{njets.pdf} 
- \caption{.}
- \label{fig:njets}
-\end{figure}
+Since the colliding partons have a colour charge, the hard scattering will be accompanied by a cascade of radiation from \acs{QCD} processes. The partons will for example radiate soft gluons or split into two collinear partons. This radiation can originate from the incoming partons, which is referred to as \ac{ISR}, or the outgoing partons in the final state, the so-called \ac{FSR}. The perturbative evolution of the cascade can be modelled using the DGLAP (Dokshitzer-Gribov-Lipatov-Altarelli-Parisi) equations~\cite{Gribov:1972ri, Dokshitzer:1977sg, Altarelli:1977zs}. These equations describe the time evolution of the probability of a `mother' parton to split into `daughter' partons at an energy scale $Q^2$. The momentum of the mother is then divided among the daughter partons, which can in turn split into other partons at a lower $Q^2$ scale. The cascade continues down to an energy scale $\Lambda_{QCD}$ where the strong coupling constant becomes unity. The resulting number of jets can vary depending on the modelled process.
+% , as shown in Figure~\ref{fig:njets}. {\color{red}Still need to describe figure, but it shows the opposite as expected for vector and scalar}
+% 
+% \begin{figure}[ht]
+%   \centering
+%  \includegraphics[width=.7\textwidth]{njets.pdf} 
+%  \caption{.}
+%  \label{fig:njets}
+% \end{figure}
 
 \item[] \textbf{Hadronization}\\
 The next step after the showering is the hadronization of the coloured particles produced in the parton shower, transforming them into colour-neutral hadrons. Since this happens at low energy scales where the perturbative approach of \acs{QCD} is not valid, phenomenological models have to be used. For most of the processes considered in this thesis, the showering and hadronization is done with \textsc{Pythia 8}~\cite{Sjostrand:2006za}, using a standard set of parameters which were tuned to reproduce the experimental data. In \textsc{Pythia}, the string Lund model~\cite{Andersson:1983ia} is used, based on string fragmentation. This model starts from the idea of a string connecting a quark $q$ and an antiquark $\bar{q}$, following the assumption of linear confinement. As the two quarks move away from each other, the string stretches and the potential energy stored in the string increases. The increase in potential energy is assumed to be proportional to the distance between the quarks. When the energy becomes sufficient to produce a new pair of quarks $q'\bar{q}'$ with mass $m$, the string breaks and the original quark pair is split into two new pairs, $q\bar{q}'$ and $q'\bar{q}$. If the invariant mass of the new strings is large enough, the same process is repeated, leading to a new break-up. This procedure continues until only colour-neutral hadrons with an on-shell mass remain.
