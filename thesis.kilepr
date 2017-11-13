@@ -132,13 +132,13 @@ order=0
 
 [item:monojet/monojet.tex]
 archive=true
-column=108
+column=1242
 encoding=UTF-8
 highlight=LaTeX
-line=278
+line=84
 mode=LaTeX
 open=true
-order=2
+order=1
 
 [item:myfirstphd.kilepr]
 archive=true
@@ -172,10 +172,10 @@ order=2
 
 [item:reconstruction/reconstruction.tex]
 archive=true
-column=0
+column=44
 encoding=UTF-8
 highlight=LaTeX
-line=0
+line=261
 mode=LaTeX
 open=false
 order=1
@@ -212,12 +212,12 @@ order=-1
 
 [item:theory/theory.tex]
 archive=true
-column=261
+column=7
 encoding=UTF-8
 highlight=LaTeX
-line=92
+line=295
 mode=LaTeX
-open=true
+open=false
 order=1
 
 [item:thesis.tex]
@@ -246,13 +246,13 @@ ViMarks=.,117,102,[,117,102,],117,102
 CursorColumn=911
 CursorLine=31
 JumpList=
-ViMarks=.,31,910,[,31,909,],31,910
+ViMarks=.,29,574,[,29,574,],29,582
 
 [view-settings,view=0,item:monojet/monojet.tex]
-CursorColumn=108
-CursorLine=278
+CursorColumn=1242
+CursorLine=84
 JumpList=
-ViMarks=.,278,107,[,278,75,],278,107
+ViMarks=.,84,1241,[,84,1188,],84,1241
 
 [view-settings,view=0,item:page_layout_definition.tex]
 CursorColumn=46
@@ -267,10 +267,10 @@ JumpList=
 ViMarks=.,38,40,[,38,40,],38,40
 
 [view-settings,view=0,item:reconstruction/reconstruction.tex]
-CursorColumn=0
-CursorLine=0
+CursorColumn=44
+CursorLine=261
 JumpList=
-ViMarks=.,40,1177,[,40,1176,],40,1177
+ViMarks=.,261,43,[,261,43,],261,43
 
 [view-settings,view=0,item:simps/simps.tex]
 CursorColumn=273
@@ -291,10 +291,10 @@ JumpList=
 ViMarks=.,9,260,[,9,260,],9,260
 
 [view-settings,view=0,item:theory/theory.tex]
-CursorColumn=261
-CursorLine=92
+CursorColumn=7
+CursorLine=295
 JumpList=
-ViMarks=.,77,555,[,77,555,],77,555
+ViMarks=.,35,293,[,35,293,],35,300
 
 [view-settings,view=0,item:thesis.tex]
 CursorColumn=11
