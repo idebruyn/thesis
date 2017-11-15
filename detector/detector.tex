@@ -129,52 +129,18 @@ In the \ac{TOB} and the 3 outermost rings of the \ac{TEC} two silicon sensors ar
 
 The strip sensors are single sided p-on-n type silicon. The signals from the sensors are amplified, shaped, and stored by 4 or 6 custom APV25 chips per module. When the trigger has made a positive decision, the analogue signals from two APV25 chips are multiplexed and sent to the \ac{FED} boards in the service cavern via optical fibres, where they are converted to digital signals. The \acp{FED} then perform pedestal and common mode subtraction as well as cluster finding. Additionally, the data is sparsified in these off-detector electronics, before being sent to the CMS central \ac{DAQ}. Due to charge sharing, this analogue read-out scheme also results in an improved spatial resolution of 15 to 40 $\mu$m, depending on the position of the modules and the strip pitch. 
 
-%Different strip pitch/width because 80 - 205 µm depending on the sensor type
-% 
-% \subsubsection{Tracking}
-% 
-% The tracks of charged particles going through the \ac{CMS} tracker are reconstructed with an iterative tracking approach. This is used to cope with the high occupancy and consequently high combinatorics. Additionally, the first iterations search for tracks with less possible combinations, such as tracks with many pixel hits or a high momentum. After every iteration, the hits associated with the found track are removed to reduce the combinatorics. Each iteration consists of four steps:
-% \begin{enumerate}
-%  \item \textbf{Seed generation.} In this first step hits are combined into seeds for the subsequent track finding. In the initial iterations pixel triplets are used, then pixel pairs, in order to take gaps or non-working modules into account. Next, mixed pixel/strip triplets are taken, and finally strip-only seeds are used. These additional iterations improve the acceptance in $p_T$ and in displacement with respect to the primary vertex.
-%  \item \textbf{Track finding}. The seeds are used as starting point for a Kalman filter algorithm. This method extrapolates the seed trajectory outward to the next layer, taking into account potential energy loss and multiple scattering. If compatible hits are found in the next layer, the parameters of the trajectory are updated. This process continues until the outermost layer of the tracking system. Using this method, a given seed can generate multiple tracks, or different tracks can share hits. A trajectory cleaner therefore determines the fraction of hits the tracks have in common and discards the track with the lowest number of hits when there are too many shared hits. If both tracks have the same number of hits, the track with the largest $\chi^2$ value is removed.
-%  \item \textbf{Track fitting.} The track parameters are then refitted using a Kalman filter and smoother, taking all hits determined in the track finding step into account.
-%  \item \textbf{Track selection.} Finally, the tracks are selected based on quality requirements, such as the number of layers that have hits, the $\chi^2/$dof, and the distance to a primary vertex. This greatly reduces the fraction of reconstructed tracks that are fake.
-% \end{enumerate}
-% 
-% The performance of the track reconstruction is excellent, and a high track-finding efficiency is obtained~\cite{Chatrchyan:2014fea} while keeping the rate of fake tracks negligible. The highest tracking efficiency is obtained for muons, which traverse the full detector volume and have an improved momentum resolution due to tracking information from the muon detectors giving a long lever arm. For isolated muons with $p_T$ between 1 and \SI{100}{GeV} the tracking efficiency is higher than 99\% for the entire $\eta$ coverage of the tracker, as can be seen from the left plot in Figure~\ref{fig:eff_eta}. The $p_T$ resolution is about 2-3\% for a muon with $p_T = $ \SI{100}{GeV} up to $|\eta| < 1.6$, but worsens for higher pseudorapidities. Different types of particles interact differently with the detector material. Charged hadrons, for example, are also subject to elastic and inelastic nuclear interactions and have a tracking efficiency of 80-95\% depending on pseudorapidity and transverse momentum, as shown in the right plot of Figure~\ref{fig:eff_eta}.
-% 
-% \begin{figure}[ht]
-%   \centering
-% \includegraphics[width=.4\textwidth]{muon_eff_eta}\hspace{1cm}
-%  \includegraphics[width=.4\textwidth]{pion_eff_eta} 
-%  \caption{The muon efficiency (left) and pion efficiency (right) as a function of pseudorapidity, for multiple transverse momenta.~\cite{Chatrchyan:2014fea}}
-%  \label{fig:eff_eta}
-% \end{figure}
-% 
-% Finally, the primary vertex is reconstructed from the tracks. Since the collisions happen between bunches of protons, multiple protons will be colliding at the same time. The extra collisions, next to the potentially interesting collision, are referred to as pile-up interactions. The particles generated in these collisions are all detected simultaneously and form a challenge to disentangle them from the particles coming from the to be studied interaction.
-% 
-% The reconstruction is done in 2 steps: first the tracks that appear to originate from the same interaction vertex are clustered, then a fitting procedure computes the vertex parameters and assigns a weight to each associated track, reflecting the probability that it corresponds to the considered vertex. Figure~\ref{fig:PV} shows the reconstruction efficiency and the resolution of the primary vertex. The more tracks, the better the vertex is constrained and thus the better the resolution.
-% 
-% \begin{figure}[ht]
-%   \centering
-% \includegraphics[width=.4\textwidth]{PV_eff}\hspace{1cm}
-%  \includegraphics[width=.4\textwidth]{PV_res} 
-%  \caption{The primary vertex reconstruction efficiency (left) and resolution (right) as a function of the number of tracks associated to it.~\cite{Chatrchyan:2014fea}}
-%  \label{fig:PV}
-% \end{figure}
-
 \subsection{The electromagnetic calorimeter}
 
-Surrounding the tracker, the \ac{CMS} \acf{ECAL} is designed to measure the energy of photons and electrons. It is composed of 75~848~lead tungstate (PbWO$_4$) crystals arranged in a cylindrical barrel and 2 endcaps. The barrel crystals measure $22\times22\, \mathrm{mm}^2$ at the front face of crystal, and $26\times26\, \mathrm{mm}^2$ at the rear face, which corresponds to approximately $0.0174\times0.0174$ in $\eta$-$\phi$. The length of the crystal is \SI{230}{mm}, corresponding to $25.8$ radiation lengths. In the endcaps, the crystals have a rear face cross section of $30\times30\, \mathrm{mm}^2$, front face cross section of $28.62\times28.62\, \mathrm{mm}^2$, and a length of \SI{220}{mm}, corresponding to 24.7 radiation lengths. 
+Surrounding the tracker, the \ac{CMS} \acf{ECAL} is designed to measure the energy of photons and electrons. It is composed of 75~848~lead tungstate (PbWO$_4$) crystals arranged in a cylindrical barrel and 2 endcaps. The barrel crystals measure $22\times22\, \mathrm{mm}^2$ at the front face of crystal, and $26\times26\, \mathrm{mm}^2$ at the rear face, which corresponds to approximately $0.0174\times0.0174$ in $\eta$-$\phi$. The length of the crystal is \SI{230}{mm}, corresponding to $25.8$ radiation lengths. In the endcaps, the crystals have a rear face cross section of $30\times30\, \mathrm{mm}^2$, front face cross section of $28.62\times28.62\, \mathrm{mm}^2$, and a length of \SI{220}{mm}, corresponding to 24.7 radiation lengths. The crystals are arranged such that they are off-pointing with respect to the centre of the detector, and instead point at a focus \SI{1.3}{m} beyond the interaction point, in order to avoid cracks between the crystals to be aligned with the trajectories of the particles.
 
-The high density material was chosen due to its short radiation length and small Moli\'ere radius, resulting in a small spread of the electromagnetic shower generated by an incoming photon or electron. This allows for a fine granularity, a better shower separation, and a compact calorimeter. Additionally, this scintillating material has a fast response, as about 80\% of the light is emitted during the first \SI{25}{ns}. The scintillation light is collected by photodetectors, digitized, and read out.
+The high density material was chosen due to its short radiation length and small Moli\`ere radius, resulting in a small lateral spread of the electromagnetic shower generated by an incoming photon or electron. This allows for a fine granularity, a better shower separation, and a compact calorimeter. Additionally, this scintillating material has a fast response, as about 80\% of the light is emitted during the first \SI{25}{ns}. The scintillation light is collected by photodetectors, digitized, and read out.
 
 The layout of the \ac{ECAL} is shown in Figure~\ref{fig:ecal}, with the barrel (EB) extending up to $|\eta| < 1.470$ and the endcaps (EE) on each side covering the range $1.479 < |\eta| < 3.0$. A preshower detector (ES) is positioned in front of the endcap crystals, covering the pseudorapidity range between $|\eta|=1.653$ and $|\eta| = 2.6$. This detector consists of a layer of lead which initiates an electromagnetic shower from incoming photons or electrons, and a layer of silicon sensors which measures the deposited energy. The main goal of this 20~cm thick detector is to discriminate between photons and neutral pions.
 
 \begin{figure}[ht]
  \centering
  \includegraphics[width = .8\textwidth]{Transverse_section}
-\caption{A transverse view parallel to the beamline showing one quarter of the \ac{ECAL}, with its barrel (EB), endcap (EE), and preshower (ES) detectors. Figure taken from~\cite{Bayatian:2006nff}}
+\caption{A transverse view parallel to the beamline showing one quarter of the \ac{ECAL}, with its barrel (EB), endcap (EE), and preshower (ES) detectors. Figure taken from~\cite{Bayatian:2006nff}.}
 \label{fig:ecal}
 \end{figure}
 
@@ -196,9 +162,9 @@ A more recent measurement of the energy resolution was performed using electrons
 
 \subsection{The hadronic calorimeter}
 
-The \acf{HCAL} surrounds the \ac{ECAL} with the aim to measure the energy of charged and neutral hadrons. The missing transverse energy can then be inferred from this measurement together with the measured energy in the \ac{ECAL}, in order to identify neutrinos or exotic particles. The \ac{HCAL} consists of brass absorber plates interleaved with plastic scintillator tiles.
+The \acf{HCAL} surrounds the \ac{ECAL} with the aim to measure the energy of charged and neutral hadrons. The missing transverse energy can then be inferred from this measurement together with the measured energies in the \ac{ECAL}, in order to identify neutrinos or exotic particles. The \ac{HCAL} consists of brass absorber plates interleaved with plastic scintillator tiles.
 
-Figure~\ref{fig:hcal} shows a longitudinal quarter view of the different \ac{HCAL} components. A cylindrical barrel (HB) covers the region up to $|\eta| < 1.4$ and is complemented by endcaps (HE) on each side, extending the pseudorapidity range to $|\eta| < 3.0$. In the central region, the stopping power of the \ac{ECAL} and \ac{HCAL} barrel is not sufficient to contain the entire hadron showers. The \ac{HCAL} was therefore extended outside the solenoid with an outer calorimeter (HO), which uses the the magnet coil as absorber and consists of scintillators. Two layers are positioned at $\eta = 0$, where the absorber depth is minimal, and only 1 layer is used for the 2 rings on each side of the central ring. Finally, a forward calorimeter (HF) is positioned at 11.2~m from the \ac{IP} covering $3.0 < |\eta| < 5.2$. Unlike the other \ac{HCAL} components, this detector consists of iron and quartz fibres. Cherenkov-based, radiation-hard technology, since it is exposed to very large particle fluxes. 
+Figure~\ref{fig:hcal} shows a longitudinal quarter view of the different \ac{HCAL} components. A cylindrical barrel (HB) covers the region up to $|\eta| < 1.4$ and is complemented by endcaps (HE) on each side, extending the pseudorapidity range to $|\eta| < 3.0$. In the central region, the stopping power of the \ac{ECAL} and \ac{HCAL} barrel is not sufficient to contain the entire hadron showers of very energetic jets. The \ac{HCAL} was therefore extended outside the solenoid with an outer calorimeter (HO), which uses the the magnet coil as absorber and consists of scintillators. Two layers are positioned at $\eta = 0$, where the absorber depth is minimal, and only 1 layer is used for the 2 rings on each side of the central ring. Finally, a forward calorimeter (HF) is positioned at 11.2~m from the \ac{IP} covering $3.0 < |\eta| < 5.2$. Unlike the other \ac{HCAL} components, this detector consists of iron and quartz fibres, which are radiation-hard. This is an important aspect for the choice of active material since it is exposed to very large particle fluxes. A signal is generated by the charged shower particles which generate Cherenkov light.
 % Additionally, the forward detector is used as luminosity monitor.
 
 \begin{figure}[ht]
@@ -210,7 +176,7 @@ Figure~\ref{fig:hcal} shows a longitudinal quarter view of the different \ac{HCA
 
 The optical signals from the scintillators in the HB and HE are converted to electrical signals by multichannel hybrid photodiodes, while silicon photomultipliers (SiPMs) are used in the HO. In the HF, the Cherenkov light emitted in the quartz fibres is detected by standard photomultiplier tubes (PMTs), since the magnetic field is much smaller in this region.
 
-The expected transverse energy resolution for jets is shown in Figure~\ref{fig:JER} for various pseudorapidity regions: barrel jets ($|\eta| < 1.4$), endcap jets ($1.4 < |\eta| < 3.0$), and very forward jets ($3.0 < |\eta| < 5.0$). Details about the reconstruction of jets from calorimeter and tracking information will be given in Section~\ref{sec:jet_reconstruction}.
+The expected transverse energy resolution for jets reconstructed from calorimeter information is shown in Figure~\ref{fig:JER} for various pseudorapidity regions: barrel jets ($|\eta| < 1.4$), endcap jets ($1.4 < |\eta| < 3.0$), and very forward jets ($3.0 < |\eta| < 5.0$). Details about the reconstruction of jets from calorimeter and tracking information will be given in Section~\ref{sec:jet_reconstruction}.
 
 \begin{figure}[ht]
   \centering
@@ -230,9 +196,9 @@ The outermost detector, located entirely on the outside of the solenoid, is a de
  \label{fig:muons}
 \end{figure}
 
-Three different types of gaseous detectors are used. In the barrel, 4 layers of \ac{DT} are installed, covering the pseudorapidity range up to $|\eta| < 1.2$. Due the higher flux and the larger and non-uniform magnetic field at larger pseudorapidities, \ac{CSC} are used in the endcap region ($0.9 < |\eta| < 2.4$). The \acp{DT} are designed for the low muon rates that are expected in the barrel and thus have a slower response time than the \acp{CSC}. \acp{RPC} complement the \ac{DT} and \ac{CSC} systems in the pseudorapidity region up to $|\eta| < 1.8$. They provide a fast response, with a good time resolution but a worse spatial resolution than the \acp{DT} or \acp{CSC}. The \acp{RPC} are therefore very well suited to trigger on muons.
+Three different types of gas-ionisation detectors are used. In the barrel, \acp{DT} are installed, covering the pseudorapidity range up to $|\eta| < 1.2$, while \acp{CSC} are used in the endcap region ($0.9 < |\eta| < 2.4$). The \acp{DT} are designed for the low muon rates that are expected in the barrel and thus have a slower response time than the \acp{CSC}, which are used a larger pseudorapidities due to the higher flux and the larger and non-uniform magnetic field. \acp{RPC} complement the \ac{DT} and \ac{CSC} systems in the pseudorapidity region up to $|\eta| < 1.8$. They have a good time resolution but a worse spatial resolution than the \acp{DT} or \acp{CSC}, and provide a fast response which is much shorter than the 25 ns between 2 consecutive bunch crossings, making them very well suited to trigger on muons.
 
-The offline reconstruction efficiency of simulated events containing one muon is typically between 95\% and 99\%, except for the regions between 2 \ac{DT} wheels ($|\eta| = 0.25$ and $|\eta| = 0.8$) and the transition region between the \acp{DT} and \acp{CSC} ($|\eta| = 1.2$), where the efficiency drops to 92\%. The reconstruction of muons using the information from the tracker and the muon detectors will be detailed in Section~\ref{sec:muon_reconstruction}. For low pseudorapidities and small momenta, the offline momentum resolution of the standalone muon system is about 9\%. At momenta around \SI{1}{TeV}, the resolution varies from 15\% to 40\%, depending on the pseudorapidity. As demonstrated in Figure~\ref{fig:muon_res}, performing a global momentum fit using the tracker as well improves the resolution by an order of magnitude at low muon momenta. At high momenta the resolution of the full system is about 5\%.
+The offline muon reconstruction efficiency in simulated events containing one muon is typically between 95\% and 99\%, except for the regions between 2 \ac{DT} wheels ($|\eta| = 0.25$ and $|\eta| = 0.8$) and the transition region between the \acp{DT} and \acp{CSC} ($|\eta| = 1.2$), where the efficiency drops to 92\%. The reconstruction of muons using the information from the tracker and the muon detectors will be detailed in Section~\ref{sec:muon_reconstruction}. For central muons with a small momentum, the offline momentum resolution of the standalone muon system is about 9\%. At momenta around \SI{1}{TeV}, the resolution varies from 15\% to 40\%, depending on the pseudorapidity. As demonstrated in Figure~\ref{fig:muon_res}, performing a global momentum fit using the tracker as well improves the resolution by an order of magnitude at low muon momenta. At high momenta the resolution of the full system is about 5\%.
 
 \begin{figure}[ht]
   \centering
@@ -245,12 +211,12 @@ The offline reconstruction efficiency of simulated events containing one muon is
 
 Collisions are provided by the \ac{LHC} at high interaction rates, with an interval of \SI{25}{ns} between bunch crossings. This corresponds to a frequency of \SI{40}{MHz}. Additionally, multiple collisions occur at the same time, depending on the luminosity. Since it is impossible to store and process the large amount of data produced in the collisions at this high rate, a severe rate reduction is needed. This rate reduction is performed by the trigger system, which decides whether to store or reject an event. Since this decision process is constrained in time, the computing time is optimized by rejecting uninteresting events as quickly as possible. The rate is reduced to \SI{1}{kHz} in two steps by the \ac{L1} Trigger and the \ac{HLT}.
 
-The \ac{L1} Trigger decision is based on information from the calorimeters and muon systems, following the structure illustrated in Figure~\ref{fig:L1}. At the lowest level, the Local Triggers are based on energy deposits in calorimeter towers and track segments or hit patterns in the muon system. Regional triggers, indicated as Calo Trigger Layer 1 and Muon Track-Finder Layer in the figure, then combine this information and use pattern logic to determine trigger objects such as jet or muon candidates in separated spatial regions. The candidates are ranked based on their energy or momentum and quality, reflecting the level of confidence assigned to the \ac{L1} parameter measurements. Finally, the Calo Trigger Layer 2 and the Global Muon Trigger~(GMT) determine the highest-rank calorimeter and muon objects across the whole detector and transfer them to the Global Trigger, which makes the final decision to accept or reject an event. Following this procedure, the \ac{L1} Trigger thresholds are tuned to reduce the event rate to 100~kHz. The \ac{L1} Trigger is composed of custom electronics located partially on the detectors, and partially in the underground service cavern. The \ac{L1} decision needs to be made and distributed to the detector front-end electronics within 3.8~$\mu$s~\cite{Tapper:2013yva}.
+The \ac{L1} Trigger decision is based on information from the calorimeters and muon systems, following the structure illustrated in Figure~\ref{fig:L1}. At the lowest level, the Local Triggers are based on energy deposits in calorimeter towers and track segments or hit patterns in the muon system. Regional triggers, indicated as Calo Trigger Layer 1 and Muon Track-Finder Layer in the figure, then combine this information and use pattern logic to determine trigger objects such as jet or muon candidates in separated spatial regions. The candidates are ranked based on their energy or momentum and quality, reflecting the level of confidence assigned to the \ac{L1} parameter measurements. Finally, the Calo Trigger Layer 2 and the Global Muon Trigger~(GMT) determine the highest-rank calorimeter and muon objects across the whole detector and transfer them to the Global Trigger, which makes the final decision to accept or reject an event. Following this procedure, the \ac{L1} Trigger thresholds are tuned to reduce the event rate and keep it below \SI{100}{kHz}. The \ac{L1} Trigger is composed of custom electronics located partially on the detectors, and partially in the underground service cavern. The \ac{L1} decision needs to be made and distributed to the detector front-end electronics within \SI{3.8}{\mu s}~\cite{Tapper:2013yva}.
 
 \begin{figure}[ht]
   \centering
  \includegraphics[width=.9\textwidth]{trigger}
- \caption{Schematic overview of the \ac{L1} Trigger. Figure taken from~\cite{Tapper:2013yva}}
+ \caption{Schematic overview of the \ac{L1} Trigger. Figure taken from~\cite{Tapper:2013yva}.}
  \label{fig:L1}
 \end{figure}
  % figure from: http://cds.cern.ch/record/2238553/files/CR2016_412.pdf
@@ -260,21 +226,30 @@ The readout of the data proceeds as illustrated in Figure~\ref{fig:DAQ}. When an
 \begin{figure}[ht]
   \centering
  \includegraphics[width=.9\textwidth]{DAQ}
- \caption{Schematic of the \protect\acf{DAQ} system. Figure taken from~\cite{Andre:2252634}}
+ \caption{Schematic of the \protect\acf{DAQ} system. Figure taken from~\cite{Andre:2252634}.}
  \label{fig:DAQ}
 \end{figure}
 
-The \ac{HLT} software system is implemented in this filter farm, which uses more than 15000 CPU cores for the final event selection. In this second step, the \ac{HLT} reduces the event rate further to \SI{1}{kHz}. The complete read-out data, including information from the pixel and strip tracker, are available for this step. New objects can therefore be reconstructed such as e.g. tau leptons and b-jets, as is done in the offline software, but speed-optimized.%http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7111380
+The \ac{HLT} software system is implemented in this filter farm, which uses more than \SI{15000}{} CPU cores for the final event selection. In this second step, the \ac{HLT} reduces the event rate further to \SI{1}{kHz}. The complete read-out data, including information from the pixel and strip tracker, are available for this step. New objects can therefore be reconstructed such as e.g. tau leptons and b-jets, as is done in the offline software, but speed-optimized.%http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7111380
 
 \subsection{CMS performance in Run 2}
 
-The number of collisions recorded at the experiments will differ from the amount delivered by the \ac{LHC}. Data loss can be caused by e.g. problems with a particular subdetector, the trigger rate, the data acquisition, or the infrastructure. During Run 2, CMS achieved a data taking efficiency of 89\% and 92\% in 2015 and 2016, respectively. The comparison between the delivered and recorded cumulative integrated luminosity in 2016 is shown in Figure~\ref{fig:CMSlumi}. Subsequently, the recorded data is certified by the offline \ac{DQM}, to ensure that the data are suited for physics analysis. 
+The number of collisions recorded at the experiments will differ from the amount delivered by the \ac{LHC}. Data loss can be caused by e.g. problems with a particular subdetector, data acquisition, the trigger rate, or the infrastructure. During Run 2, CMS achieved a data taking efficiency of 89\% and 92\% in 2015 and 2016, respectively. The comparison between the delivered and recorded cumulative integrated luminosity in 2016 is shown in Figure~\ref{fig:CMSlumi}. Subsequently, the recorded data is certified by the offline \ac{DQM}, to ensure that the data are suited for physics analysis. The efficiency of this certification process with respect to the amount of recorded data was 80\% in 2015 and 96\% in 2016. This is shown in Figure~\ref{fig:CMSlumi} as well for 2016.
 
 \begin{figure}[ht]
   \centering
- \includegraphics[width=.75\textwidth]{CMS_recorded_lumi}
- \caption{The cumulative distribution of the instantaneous luminosity delivered by the \ac{LHC} (blue) and recorded by \ac{CMS} (yellow) in 2016.}
+ \includegraphics[width=.75\textwidth]{lumi}
+ \caption{The cumulative distribution of the instantaneous luminosity delivered by the \ac{LHC} (blue), recorded by \ac{CMS} (yellow), and certified as good for physics analysis (light orange) in 2016. Figure taken from~\cite{twiki:lumi}.}
  \label{fig:CMSlumi}
+\end{figure}
+
+The detector was in good condition during data taking in 2015 and 2016. Figure~\ref{fig:activechannels} shows the active fraction of channels per subdetector, and the evolution from 2015 to 2016. In 2016, all subdetectors have an active fraction higher than 97.5\%, except for the strip tracker, which has the largest number of channels and has an active fraction well above 95\%. For this subdetector, channels that are not included or masked are accounted for, as well as channels that are identified as out-of-sync or irresponsible by the back end electronics, or as too noisy or inefficient from further analysis.
+
+\begin{figure}[ht]
+  \centering
+ \includegraphics[width=\textwidth]{activefraction}
+ \caption{Fraction of active channels per subdetector, compared for the end of data taking in 2015, and the beginning  and end of data taking in 2016. Figure taken from~\cite{twiki:active}.}
+ \label{fig:activechannels}
 \end{figure}
 
 \subsubsection{Pre-amplifier saturation in the APV25 chip}
@@ -285,24 +260,23 @@ During Run 2, the instantaneous luminosity delivered by the \ac{LHC} increased c
 \begin{figure}[ht]
   \centering
  \includegraphics[width=.9\textwidth]{APVsaturation_SOverN}
- \caption{The signal-to-noise ratio for clusters on reconstructed tracks in the first layer of the \ac{TOB} for a run before (blue) and after (black) the change of pre-amplifier drain speed.}
+ \caption{The signal-to-noise ratio for clusters on reconstructed tracks in the first layer of the \ac{TOB} for a run before (blue) and after (black) the change of pre-amplifier drain speed. Figure taken from~\cite{Erik}.}
  \label{fig:SOverN}
 \end{figure}
   
 \begin{figure}[ht]
   \centering
  \includegraphics[width=.6\textwidth]{nhits_perRunPeriod}
-%  \includegraphics[width=.47\textwidth]{ChF_perRunPeriod}
  \caption{The number of hits per track for run periods B, D, and F, showing the effect of the increasing instantaneous luminosity.}
  \label{fig:nhits}
 \end{figure}
 
-The origin of this inefficiency was eventually tracked down to saturation effects in the pre-amplifier of the APV25 chip. The pre-amplifier decay time changes significantly with temperature. As the operating temperature of the strip tracker was lowered from $+4$\degree C to $-15$\degree C coolant temperature during LS1, the decay time was no longer sufficient to cope with the high luminosities. The dynamic inefficiency was cured in August 2016 by changing the pre-amplifier drain speed. This lead among others to the recovery of the muon efficiency, which showed a large drop for the highest luminosities before the change and an essentially flat behaviour afterwards, as demonstrated in Figure~\ref{fig:muoneff}.
+The origin of this inefficiency was eventually tracked down to saturation effects in the pre-amplifier of the APV25 chip. The pre-amplifier decay time changes significantly with temperature. As the operating temperature of the strip tracker was lowered from $+4$\degree C to $-15$\degree C coolant temperature during LS1, the decay time was no longer sufficient to cope with the high luminosities. The dynamic inefficiency was cured in August 2016 by changing the pre-amplifier drain speed. This led among other things to the recovery of the muon efficiency, which showed a large drop for the highest luminosities before the change and an essentially flat behaviour afterwards, as demonstrated in Figure~\ref{fig:muoneff}. This is a crucial effect, for example for the analysis described in Chapter~\ref{ch:SIMPs}, where the difference between the two drain speed settings is clearly visible.
   
 \begin{figure}[ht]
   \centering
  \includegraphics[width=.6\textwidth]{APVsaturation_muoneff}
- \caption{The muon efficiency as a function of the instantaneous luminosity for before (orange) and after (black) the change of pre-amplifier drain speed which cured the dynamic inefficiency.}
+ \caption{The muon efficiency as a function of the instantaneous luminosity for before (orange) and after (black) the change of pre-amplifier drain speed which cured the dynamic inefficiency. Figure taken from~\cite{Erik}.}
  \label{fig:muoneff}
 \end{figure}
 
