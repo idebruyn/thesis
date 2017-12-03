@@ -82,7 +82,7 @@ Finally, the events in the photon control region are selected with a single phot
 \section{Event selection}
 \label{sec:selection}
 
-Once the events have been fully reconstructed and the jets in the event have been corrected as described in Section~\ref{sec:jet_reconstruction}, an event selection is applied in order to efficiently select signal events and reduce the contribution from backgrounds, such as the production of a leptonically decaying $W$ boson in association with jets, semileptonic diboson decays, QCD multijets, and top quark production. The background contribution coming from events with a $Z$ boson produced together with a number of jets, where the $Z$ boson decays to two neutrinos, is irreducible as it produces exactly the same signature as the expected signal. The missing transverse momentum $E_T^{miss}$ is required to be larger than \SI{200}{GeV} in order to be safely above the trigger turn-on. Additionally, the leading jet is required to have $p_T > \SI{100}{GeV}$, and $|\eta| < 2.5$. A cut on the difference in azimuthal angle between the $E_T^{miss}$ and the first four leading jets of $\Delta\phi(jet, E_T^{miss}) > 0.5$ is also applied. This is done to suppress the QCD background from mismeasurements of jet momentum or detector noise, which could introduce missing transverse momentum in the event, in the same direction as the mismeasured jet. The events are further cleaned by applying quality filters to remove events coming from beam or instrumental backgrounds. Finally, events containing a lepton, a photon, or a b-jet are vetoed as well. Figure~\ref{fig:MET} shows the $E_T^{miss}$ distribution for data and MC, after applying the described selection.
+Once the events have been fully reconstructed and the jets in the event have been corrected as described in Section~\ref{sec:jet_reconstruction}, an event selection is applied in order to efficiently select signal events and reduce the contribution from backgrounds, such as the production of a leptonically decaying $W$ boson in association with jets, semileptonic diboson decays, QCD multijets, and top quark production. The background contribution coming from events with a $Z$ boson produced together with a number of jets, where the $Z$ boson decays to two neutrinos, is irreducible as it produces exactly the same signature as the expected signal. The missing transverse momentum $E_T^{miss}$ is required to be larger than \SI{200}{GeV} in order to be safely above the trigger turn-on. Additionally, the leading jet is required to have $p_T > \SI{100}{GeV}$ in order to balance the missing transverse momentum, and $|\eta| < 2.5$. A cut on the difference in azimuthal angle between the $E_T^{miss}$ and the first four leading jets of $\Delta\phi(jet, E_T^{miss}) > 0.5$ is also applied. This is done to suppress the QCD background from mismeasurements of jet momentum or detector noise, which could introduce missing transverse momentum in the event, in the same direction as the mismeasured jet. The events are further cleaned by applying quality filters to remove events coming from beam or instrumental backgrounds. Finally, events containing a lepton, a photon, or a b-jet are vetoed as well. Figure~\ref{fig:MET} shows the $E_T^{miss}$ distribution for data and MC, after applying the described selection.
 
 \begin{figure}[ht]
   \centering
@@ -105,15 +105,24 @@ The dominant background comes from events with a $Z$ boson produced together wit
 \subsection{The \boldmath$Z$ and \boldmath$W$ background estimation}
 \label{sec:main_bkgd}
 
-The traditional control region for the $Z$ boson background is the dimuon control region. This region is dominated by $Z\rightarrow\mu\mu$ events, which are very similar to the $Z(\nu\nu)$ + jets background events, the only difference being the decay mode. The production mode and kinematics in the control region are very similar, as well as the acceptance. However, the branching ratio of the $Z$ boson into two muons is 6 times smaller than the branching ratio to two neutrinos. As a result of this and due to the muon selection efficiency, the dimuon control region contains about 10 times less $Z$ boson events than the signal region. In order to improve this statistical limitation, other control regions have been added as well.
+The traditional control region for the $Z$ boson background is the dimuon control region. This region is dominated by $Z\rightarrow\mu\mu$ events, which are very similar to the $Z(\nu\nu)$ + jets background events, the only difference being the decay mode. The production mode and kinematics in the control region are very similar, as well as the acceptance. However, the branching ratio of the $Z$ boson into two muons is 6 times smaller than the branching ratio to two neutrinos. As a result of this, and due to the muon selection efficiency, the dimuon control region contains about 10 times less $Z$ boson events than the signal region. In order to improve this statistical limitation, other control regions have been added as well.
 
-The yield of $Z(\nu\nu)$ and $W(l\nu)$ + jets events in the signal region is therefore estimated from five control regions by using the ratio between data and MC in the control region, per bin of the hadronic recoil distribution. For the prediction using $Z\rightarrow \mu\mu$ events in the dimuon control region for example, the predicted yield of $Z\rightarrow\nu\nu$ events is given by
+The yield of $Z(\nu\nu)$ and $W(l\nu)$ + jets events in the signal region is therefore estimated from five control regions by using the ratio between data and MC in the control region, per bin of the hadronic recoil distribution. As illustrated in Figure~\ref{fig:CR}, the $W(l\nu)$ + jets background is estimated from the single lepton control regions, and the $Z(\nu\nu)$ + jets background is predicted from the dilepton and photon + jets control regions. Five transfer factors are therefore needed to connect the control regions to the signal region. An additional transfer factor is used between the $Z(\nu\nu)$ + jets and $W(l\nu)$ + jets backgrounds to represent the constraint between these two backgrounds. 
+
+\begin{figure}[ht]
+  \centering
+ \includegraphics[width=\textwidth]{bkgd_estimation.pdf} 
+ \caption{Schematic overview of the five control regions used to estimate the $Z(\nu\nu)$ and $W(l\nu)$ + jets backgrounds with the transfer factors.}
+ \label{fig:CR}
+\end{figure}
+
+For the prediction using $Z\rightarrow \mu\mu$ events in the dimuon control region for example, the predicted yield of $Z\rightarrow\nu\nu$ events is given by
 \begin{align}
  N_{Z(\nu\nu)} &= \frac{N_{Z(\mu\mu)}^{data}}{N_{Z(\mu\mu)}^{MC}}\ N_{Z(\nu\nu)}^{MC}\\
  &= \frac{N_{\mu\mu}^{data} - N_{Bkgd}}{N_{Z(\mu\mu)}^{MC}}\ N_{Z(\nu\nu)}^{MC} \\
  &= \left(N_{\mu\mu}^{data} - N_{Bkgd}\right)\ R_{Z(\mu\mu)},
 \end{align}
-where the number of $Z(\mu\mu)$ + jets events in data $N_{Z(\mu\mu)}^{data}$ is given by the number events in the dimuon sample, removing the number of background events, and $N_{Z(\mu\mu/\nu\nu)}^{MC}$ represent the number of $Z(\mu\mu/\nu\nu)$ + jets events in MC. The transfer factors, denoted by $R$, are derived from simulation and take into account the impact of lepton acceptance and efficiency, as well as the additional $E_T^{miss}$ requirement for the single electron control region. They also include the difference in branching ratio and the relation between the differential cross sections of the photon, $W$, and $Z$ boson production as a function of the boson $p_T$. The transfer factors are computed as a function of the hadronic recoil, and are shown for the five different control regions in Figure~\ref{fig:TF}. Furthermore, the $Z/W$ ratio shown in the bottom right plot of Figure~\ref{fig:TF} provides an additional constraint since the single lepton control regions are also used to  estimate the $Z(\nu\nu)$ + jets background.
+where the number of $Z(\mu\mu)$ + jets events in data $N_{Z(\mu\mu)}^{data}$ is given by the number events in the dimuon sample, removing the number of background events, and $N_{Z(\mu\mu/\nu\nu)}^{MC}$ represent the number of $Z(\mu\mu/\nu\nu)$ + jets events in MC. The five transfer factors, denoted by $R$, are derived from simulation and take into account the impact of lepton acceptance and efficiency, as well as the additional $E_T^{miss}$ requirement for the single electron control region. They also include the difference in branching ratio and the relation between the differential cross sections of the photon, $W$, and $Z$ boson production as a function of the boson $p_T$. The transfer factors are computed as a function of the hadronic recoil, and are shown in Figure~\ref{fig:TF}. Furthermore, the $Z/W$ ratio shown in the bottom right plot of Figure~\ref{fig:TF} provides an additional constraint between the $Z(\nu\nu)$ + jets and $W(l\nu)$ + jets backgrounds.
 
 \begin{figure}[p]
   \centering
@@ -186,7 +195,7 @@ Finally, when the leptons in $Z(ll)$ + jets events are lost or out of the detect
 \section{Systematic uncertainties}
 \label{sec:syst}
 
-For the main backgrounds, multiple systematic uncertainties on the transfer factors are taken into account. Systematic uncertainties are added for the muon efficiency, the electron efficiency, the lepton veto, the photon efficiency, and the photon purity in the photon + jets sample. 
+For the main backgrounds, multiple systematic uncertainties on the transfer factors are taken into account. Systematic uncertainties are added for the selection efficiency of muons, electrons, tau leptons, and photons, and for the photon purity in the photon + jets sample. Additionally, systematic uncertainties are added to take into account the electron an photon triggers. These uncertainties are fully correlated across the bins in recoil. The uncertainty on the modelling of the $E_T^{miss}$ is dominated by the jet energy scale uncertainty, varying between 3 and 5\%.
 
 Uncertainties are also added from theory, to take into account variations of the factorisation and renormalisation scales, PDF uncertainties, and the NLO electroweak corrections~\cite{Kuhn:2005gv, Kallweit:2015fta, Kallweit:2014xda, Kallweit:2015dum}. The former 3 uncertainties are shown in Figure~\ref{fig:kfactors_unc} for the $Z$ + jets, $W$ + jets, and photon + jets samples. The  uncertainties are then propagated to the transfer factors, and are displayed in Figure~\ref{fig:transfer_factors_unc}. To evaluate the PDF uncertainty, the samples are reweighted with event-by-event scale factors representing the shift in the kinematic distributions from variations in the PDF. The transfer factors are then produced for each variation, and the RMS of the variation is taken as PDF uncertainty. Similarly, the renormalisation and factorisation scales are varied up and down by a factor 2, and the uncertainties are derived from the resulting transfer factors. For the electroweak corrections, the full correction is taken as an uncertainty.
 
@@ -207,14 +216,14 @@ Uncertainties are also added from theory, to take into account variations of the
  \label{fig:transfer_factors_unc}
 \end{figure}
 
-For the remaining sub-dominant backgrounds, systematic uncertainties are included to take into account the uncertainties from the jet energy scale and the jet energy resolution of the jets. Additionally, systematic uncertainties  of 10\%, 29\%, and 50\% are added to account for the uncertainty on the production cross section of the top, diboson, and QCD processes, respectively. For the top quark background, a systematic uncertainty of 4\% is included as well, due to the uncertainty on the b-tagging applied for the b-jet veto. Finally, a systematic uncertainty of 5.5\% is added for all backgrounds derived from MC simulations, to take into account the uncertainty on the luminosity measurement.
+The overall uncertainty on the QCD background varies between 50\% and 150\% depending on the $E_T^{miss}$ region, and includes variations in the jet response and the statistical uncertainty on the transfer factors. The remaining subdominant top quark and diboson backgrounds are obtained directly from simulation. A systematic uncertainties  of 20\% is taken into account for the uncertainty on the production cross section of these processes. Additionally, a systematic uncertainty is added due to the uncertainty on the b-tagging applied for the b-jet veto, which amounts to 6\% for the top quark background an 2\% for the diboson background. The uncertainty on the modelling of the $E_T^{miss}$ in simulation varies between 2\% and 5\%, depending on the $E_T^{miss}$. Finally, a systematic uncertainty of 2.7\%~\cite{CMS:2016eto} is added for all backgrounds derived from MC simulations, to take into account the uncertainty on the luminosity measurement.
 
-Lastly, for the signal models described in Section~\ref{sec:monojet_models} and simulated as summarised in Section~\ref{sec:monojet_sim}, systematic uncertainties are included for the luminosity and to take into account the uncertainties from the jet energy scale and the jet energy resolution. The systematic uncertainties coming from variations of the factorisation and renormalisation scales and PDF uncertainties amount to 20\% for the vector and axial-vector signal samples and 30\% for the scalar and pseudoscalar signals.
+Lastly, for the signal models described in Section~\ref{sec:monojet_models} and simulated as summarised in Section~\ref{sec:monojet_sim}, systematic uncertainties are included for the luminosity measurement (2.7\%), the b-jet veto (2\%), and the modelling of the $E_T^{miss}$ distribution in simulation (2\% to 5\%). The systematic uncertainties coming from variations of the factorisation and renormalisation scales and PDF uncertainties amount to 20\% for the vector and axial-vector signal samples and 30\% for the scalar and pseudoscalar signals.
 
 \section{Results}
 \label{sec:results}
 
-The results are extracted by performing a binned fit to the missing momentum spectrum, fitting simultaneously over the five control regions and the signal region, under a given signal hypothesis. This is done using the $CL_S$ criterion~\cite{CLS1,CLS2} in the asymptotic approximation, described in Section~\ref{sec:limits}, using the RooStat-based Combine tool. The systematic uncertainties described in Section~\ref{sec:syst} are modelled as nuisance parameters and their uncertainties are propagated as shape and normalization variations of the $Z(\nu\nu)$ + jets and $W(l\nu)$ + jets background. In Figure~\ref{fig:nuisance}, the nuisance parameters and their normalised uncertainties are shown before and after the fit to the data in the control regions. Before the fit they are all centred at 0 and have an uncertainty of 1. After the fit, the two largest deviations originate from the statistical uncertainty on the $Z/W$ transfer factor and the uncertainty on the muon scale factor, but no significant tension is present in the fit and most nuisance parameters are not biased or constrained by the fit.
+The results are extracted by performing a binned fit to the missing momentum spectrum, fitting simultaneously over the five control regions and the signal region, under a given signal hypothesis. This is done using the $CL_S$ criterion~\cite{CLS1,CLS2} in the asymptotic approximation, described in Section~\ref{sec:limits}, using the RooStat-based~\cite{Moneta:2010pm} Combine tool~\cite{combine}. The systematic uncertainties described in Section~\ref{sec:syst} are modelled as nuisance parameters and their uncertainties are propagated as shape and normalization variations of the $Z(\nu\nu)$ + jets and $W(l\nu)$ + jets background. In Figure~\ref{fig:nuisance}, the nuisance parameters and their normalised uncertainties are shown before and after the fit to the data in the control regions. {\color{red} This is still the plot from the 2.1/fb analysis, but the new one from 2.3/fb is a lot longer due to the many MET bins and is unreadable. Is it ok to just leave it out?} Before the fit they are all centred at 0 and have an uncertainty of 1. After the fit, the two largest deviations originate from the statistical uncertainty on the $Z/W$ transfer factor and the uncertainty on the muon scale factor, but no significant tension is present in the fit and most nuisance parameters are not biased or constrained by the fit.
 The photon + jets control region, which has the largest yields, drives the fit and the post-fit prediction therefore corresponds well to the data. A good agreement is obtained in all control regions, and the overall change in the transfer factors is less than 10\%.
 
 \begin{figure}[p]
@@ -243,14 +252,78 @@ The photon + jets control region, which has the largest yields, drives the fit a
 %  \label{fig:postfit_2}
 % \end{figure}
 
-Table~\ref{tab:monojet_yields} gives the background prediction for the various background processes in bins of hadronic recoil, using a background-only fit. Correspondingly, the fit under the background-only hypothesis is shown in Figure~\ref{fig:results} and a good agreement is observed between the data and the prediction. The uncertainty on the hadronic recoil is below 10\% for all bins.
+Table~\ref{tab:monojet_yields_1} gives the background prediction for the various background processes in bins of hadronic recoil, using a background-only fit. Correspondingly, the fit under the background-only hypothesis is shown in Figure~\ref{fig:results} and a good agreement is observed between the data and the prediction. The uncertainty on the hadronic recoil is below 10\% for all bins.
 
-\begin{table}[ht]
+% \begin{table}[ht]
+%   \centering
+%  \includegraphics[width=\textwidth]{yields.pdf} 
+%  \caption{Post-fit background predictions in the signal region and observed yield. The predictions and uncertainties are obtained from the background-only simultaneous fit in the signal and control regions.}
+%  \label{tab:monojet_yields}
+% \end{table}
+
+\begin{landscape}
+
+\begin{table}[p]
   \centering
- \includegraphics[width=\textwidth]{yields.pdf} 
- \caption{Post-fit background predictions in the signal region and observed yield. The predictions and uncertainties are obtained from the background-only simultaneous fit in the signal and control regions.}
- \label{tab:monojet_yields}
+\caption{Pre-fit and post-fit background predictions in the signal region and observed yield. The predictions and uncertainties are obtained from the background-only simultaneous fit in the signal and control regions.}
+\label{tab:monojet_yields_1}
+\scriptsize
+\begin{subtable}{}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{| l | c | c | c | c | c | c | c | c | c | c | c | c |}
+\hline
+\multirow{3}{*}{process} &  $E_T^{miss}$ &  $E_T^{miss}$ &  $E_T^{miss}$ &  $E_T^{miss}$ &  $E_T^{miss}$ &  $E_T^{miss}$ &  $E_T^{miss}$ &  $E_T^{miss}$ &  $E_T^{miss}$ &  $E_T^{miss}$ &  $E_T^{miss}$ &  $E_T^{miss}$  \\
+ & [200 - 230] & [230 - 260] & [260 - 290] & [290 - 320] & [320 - 350] & [350 - 390] & [390 - 430] & [430 - 470] & [470 - 510] & [510 - 550] & [550 - 590] & [590 - 640]  \\
+ & GeV & GeV & GeV & GeV & GeV & GeV & GeV & GeV & GeV & GeV & GeV & GeV \\
+\hline
+  $Z(\nu\nu)$ + jets & 497 & 266 & 149 & 83.9 & 49.9 & 30.1 & 17.1 & 9.54 & 6.19 & 4.00 & 2.49 & 1.55\\
+  $W(l\nu)$ + jets & 399 & 193 & 95.6 & 50.7 & 27.3 & 13.9 & 6.87 & 3.86 & 2.18 & 1.30 & 0.73 & 0.38\\
+  $Z(ll)$ + jets & 6.88 & 3.10 & 1.26 & 0.61 & 0.33 & 0.10 & 0.05 & 0.02 & 0.01 & 0.01 & 0 & 0 \\
+  top & 18.8 & 8.92 & 3.85 & 1.89 & 1.12 & 0.61 & 0.24 & 0.23 & 0.01 & 0.07 & 0.02 & 0\\
+  QCD & 16.9 & 10.3 & 1.28 & 0.99 & 0.17 & 0.10 & 0.13 & 0.41 & 0.01 & 0 & 0.03 & 0\\
+  dibosons & 8.36 & 5.23 & 2.58 & 1.43 & 0.85 & 0.55 & 0.35 & 0.17 & 0.13 & 0.05 & 0.05 & 0.03\\
+  photon + jets & 7.67 & 3.36 & 2.12 & 0.99 & 0.66 & 0.32 & 0.21 & 0.12 & 0.09 & 0.05 & 0.05 & 0.01 \\
+\hline
+  total post-fit & 955 $\pm$ 6 & 489 $\pm$ 3 & 256 $\pm$ 2 & 141 $\pm$ 2 & 80.3 $\pm$ 1.2 & 45.7 $\pm$ 0.8 & 25.0 $\pm$ 0.6 & 14.4 $\pm$ 0.4 & 8.62 $\pm$ 0.32 & 5.49 $\pm$ 0.24 & 3.37 $\pm$ 0.17 & 1.97 $\pm$ 0.11 \\
+\hline
+  total pre-fit & 925 & 470 & 240 & 136 & 79.5 & 45.4 & 24.5 & 14.7 & 8.45 & 5.30 & 3.37 & 2.02\\
+\hline
+\hline
+  observed & 953 & 492 & 259 & 140 & 78.8 & 46.9 & 25.2 & 13.6 & 8.73 & 5.40 & 3.55 & 2.22\\
+\hline
+\end{tabular}
+\end{subtable}
+\vspace*{.7cm}
+% \caption{Pre-fit and post-fit background predictions in the signal region and observed yield. The predictions and uncertainties are obtained from the background-only simultaneous fit in the signal and control regions.}
+% \label{tab:monojet_yields_2}
+\begin{subtable}{}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{| l | c | c | c | c | c | c | c | c | c | c |}
+\hline
+\multirow{3}{*}{process} &  $E_T^{miss}$ &  $E_T^{miss}$ &  $E_T^{miss}$ &  $E_T^{miss}$ &  $E_T^{miss}$ &  $E_T^{miss}$ &  $E_T^{miss}$ &  $E_T^{miss}$ &  $E_T^{miss}$ &  $E_T^{miss}$  \\
+ & [640 - 690] & [690 - 740] & [740 - 790] & [790 - 840] & [840 - 900] & [900 - 960] & [960 - 1020] & [1020 - 1090] & [1090 - 1160] & $> 1160$  \\
+ & GeV & GeV & GeV & GeV & GeV & GeV & GeV & GeV & GeV & GeV \\
+\hline
+  $Z(\nu\nu)$ + jets & 0.90 & 0.56 & 0.44 & 0.27 & 0.16 & 0.09 & 0.06 & 0.04 & 0.02 & 0.02\\
+  $W(l\nu)$ + jets & 0.22 & 0.12 & 0.11 & 0.06 & 0.03 & 0.02 & 0.01 & 0.01 & 0 & 0\\
+  $Z(ll)$ + jets & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+  top & 0 & 0 & 0 & 0.01 & 0 & 0 & 0 & 0 & 0 & 0\\
+  QCD & 0.01 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+  dibosons & 0.03 & 0.01 & 0 & 0 & 0 & 0.01 & 0 & 0 & 0 & 0\\
+  photon + jets  & 0 & 0.01 & 0.01 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+  total post-fit & 1.16 $\pm$ 0.08 & 0.70 $\pm$ 0.05 & 0.55 $\pm$ 0.05 & 0.34 $\pm$ 0.04 & 0.20 $\pm$ 0.02 & 0.11 $\pm$ 0.02 & 0.07 $\pm$ 0.02 & 0.05 $\pm$ 0.01 & 0.03 $\pm$ 0.01 & 0.02 $\pm$ 0.01\\
+\hline
+  total pre-fit  & 1.19 & 0.73 & 0.48 & 0.31 & 0.20 & 0.13 & 0.09 & 0.05 & 0.03 & 0.02\\
+\hline
+\hline
+  observed & 1.22 & 0.64 & 0.56 & 0.28 & 0.22 & 0.12 & O.05 & 0.01 & 0.03 & 0.03 \\
+\hline
+\end{tabular}
+\end{subtable}
 \end{table}
+
+\end{landscape}
 
 \begin{figure}[ht]
   \centering
@@ -279,22 +352,22 @@ A substantial difference in the next iteration of the 2016 analysis~\cite{Siruny
 
 \begin{figure}[p]
   \centering
- \includegraphics[width=.42\textwidth]{EXO-16-013_dimuon.png} \hspace{.3cm}
- \includegraphics[width=.42\textwidth]{EXO-16-037_dimuon.png} \\
- \includegraphics[width=.42\textwidth]{EXO-16-013_dielectron.png} \hspace{.3cm}
- \includegraphics[width=.42\textwidth]{EXO-16-037_dielectron.png} \\
- \includegraphics[width=.42\textwidth]{EXO-16-013_gamma.png}  \hspace{.3cm}
- \includegraphics[width=.42\textwidth]{EXO-16-037_gamma.png} 
+ \includegraphics[width=.4\textwidth]{EXO-16-013_dimuon.png} \hspace{.35cm}
+ \includegraphics[width=.4\textwidth]{EXO-16-037_dimuon.png} \\
+ \includegraphics[width=.4\textwidth]{EXO-16-013_dielectron.png} \hspace{.35cm}
+ \includegraphics[width=.4\textwidth]{EXO-16-037_dielectron.png} \\
+ \includegraphics[width=.4\textwidth]{EXO-16-013_gamma.png}  \hspace{.35cm}
+ \includegraphics[width=.4\textwidth]{EXO-16-037_gamma.png} 
  \caption{Comparison of the hadronic recoil $p_T$ distribution between the data and MC simulation in the dimuon (top), dielectron (middle), and photon + jets (bottom) control regions, showing the reduction in overall post-fit uncertainty (grey band) going from the early 2016 analysis (left) to the analysis using data from the first half of 2016 (right). The fit was performed simultaneously over all the control and signal regions, assuming the absence of any signal. The last bin includes all events with hadronic recoil $p_T > \SI{1160}{GeV}$. Figures taken from~\cite{CMS:2016tns} and~\cite{Sirunyan:2017hci}.}
  \label{fig:comparison}
 \end{figure}
 
 \begin{figure}[p]
   \centering
- \includegraphics[width=.42\textwidth]{EXO-16-013_singlemuon.png}  \hspace{.3cm}
- \includegraphics[width=.42\textwidth]{EXO-16-037_singlemuon.png} \\
- \includegraphics[width=.42\textwidth]{EXO-16-013_singleelectron.png}  \hspace{.3cm}
- \includegraphics[width=.43\textwidth]{EXO-16-037_singleelectron.png} \\
+ \includegraphics[width=.4\textwidth]{EXO-16-013_singlemuon.png}  \hspace{.35cm}
+ \includegraphics[width=.4\textwidth]{EXO-16-037_singlemuon.png} \\
+ \includegraphics[width=.4\textwidth]{EXO-16-013_singleelectron.png}  \hspace{.35cm}
+ \includegraphics[width=.4\textwidth]{EXO-16-037_singleelectron.png} \\
  \caption{Comparison of the hadronic recoil $p_T$ distribution between the data and MC simulation in the single muon (top) and single electron (bottom) control regions, showing the reduction in overall post-fit uncertainty (grey band) going from the early 2016 analysis (left) to the analysis using data from the first half of 2016 (right). The fit was performed simultaneously over all the control and signal regions, assuming the absence of any signal. The last bin includes all events with hadronic recoil $pT > \SI{1160}{GeV}$. Figures taken from~\cite{CMS:2016tns} and~\cite{Sirunyan:2017hci}.}
  \label{fig:comparison2}
 \end{figure}
@@ -366,6 +439,6 @@ The obtained limits can also be translated into 90\% CL upper limits on the dark
  \label{fig:DDlimits_2}
 \end{figure}
 
-For the vector and scalar mediators, the 90\% CL upper limits on the spin-independent cross section are compared to results from the CDMSLite~\cite{Agnese:2015nto}, LUX~\cite{Akerib:2015rjg}, PandaX-II~\cite{Tan:2016zwf}, and CRESST-II~\cite{Angloher:2015ewa} experiments. This shows that monojet limits are complementary to the results from the direct detection experiments at low dark matter masses. The 90\% CL upper limits on the spin-dependent cross section obtained for the axial-vector mediator are compared to the PICO-2L~\cite{Amole:2016pye}, PICO-60~\cite{Amole:2015pla}, IceCube~\cite{Aartsen:2016exj}, and Super Kamiokande experiments~\cite{Choi:2015ara}. In the case of the pseudoscalar mediator, the limits are compared to the indirect detection results from the Fermi-LAT experiment~\cite{Ackermann:2011wa,Abdo:2010ex}. In the considered scenario the dark matter annihilates into $b$ quark pairs in the centre of the galaxy, producing gamma rays.
+For the vector and scalar mediator cases, the derived 90\% CL upper limits on the spin-independent cross section are compared to the results from the CDMSLite~\cite{Agnese:2015nto}, LUX~\cite{Akerib:2015rjg}, CRESST-II~\cite{Angloher:2015ewa}, and PandaX-II~\cite{Tan:2016zwf} experiments. This shows that the monojet limits are complementary to the results from the direct detection experiments at low dark matter masses. The 90\% CL upper limits on the spin-dependent cross section for the axial-vector mediator are compared to the PICO-2L~\cite{Amole:2016pye}, PICO-60~\cite{Amole:2015pla}, IceCube~\cite{Aartsen:2016exj}, and Super Kamiokande experiments~\cite{Choi:2015ara}. In the case of the pseudoscalar mediator, the obtained limits are compared to the indirect detection results from the Fermi-LAT experiment~\cite{Ackermann:2011wa,Abdo:2010ex}. In the considered scenario the dark matter annihilates into $b$ quark pairs in the centre of the galaxy, producing gamma rays.
 
 \clearpage{\pagestyle{empty}\cleardoublepage}

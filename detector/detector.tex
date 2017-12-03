@@ -98,7 +98,7 @@ The innermost part of the \ac{CMS} detector, closest to the \ac{IP}, is the trac
 
 \begin{figure}[ht]
   \centering
- \includegraphics[width=.9\textwidth]{fig_cmstracker}
+ \includegraphics[width=\textwidth]{fig_cmstracker}
  \caption{A transverse view of the pixel and strip tracker detectors. Figure taken from~\cite{Chatrchyan:2008aa}.}
  \label{fig:cmstracker}
 \end{figure}
@@ -169,7 +169,7 @@ Figure~\ref{fig:hcal} shows a longitudinal quarter view of the different \ac{HCA
 
 \begin{figure}[ht]
   \centering
- \includegraphics[width=.8\textwidth]{hcal}
+ \includegraphics[width=.9\textwidth]{hcal}
  \caption{A quarter view of the \protect\acf{HCAL}, parallel to the beamline. The barrel (HB), endcap (HE), outer (HO), and forward (HF) detectors are indicated. Figure taken from~\cite{Chatrchyan:2008aa}.}
  \label{fig:hcal}
 \end{figure}
@@ -180,7 +180,7 @@ The expected transverse energy resolution for jets reconstructed from calorimete
 
 \begin{figure}[ht]
   \centering
- \includegraphics[width=.6\textwidth]{JER}
+ \includegraphics[width=.65\textwidth]{JER}
  \caption{The jet transverse energy resolution as a function of the jet transverse energy, for barrel jets ($|\eta| < 1.4$), endcap jets ($1.4 < |\eta| < 3.0$), and very forward jets ($3.0 < |\eta| < 5.0$). Figure taken from~\cite{Chatrchyan:2008aa}.}
  \label{fig:JER}
 \end{figure}
@@ -191,7 +191,7 @@ The outermost detector, located entirely on the outside of the solenoid, is a de
 
 \begin{figure}[ht]
   \centering
- \includegraphics[width=.9\textwidth]{muon_system_new}
+ \includegraphics[width=.95\textwidth]{muon_system_new}
  \caption{A transverse view of one quarter of \ac{CMS} showing the position of the 3 types of muon detectors. The \protect\acf{DT} are located in the barrel, the \protect\acf{CSC} in the endcaps, and the \protect\acf{RPC} in both regions up to $|\eta| < 1.8$. Figure taken from~\cite{Abbiendi:2015txa}.}
  \label{fig:muons}
 \end{figure}
@@ -233,6 +233,7 @@ The readout of the data proceeds as illustrated in Figure~\ref{fig:DAQ}. When an
 The \ac{HLT} software system is implemented in this filter farm, which uses more than \SI{15000}{} CPU cores for the final event selection. In this second step, the \ac{HLT} reduces the event rate further to \SI{1}{kHz}. The complete read-out data, including information from the pixel and strip tracker, are available for this step. New objects can therefore be reconstructed such as e.g. tau leptons and b-jets, as is done in the offline software, but speed-optimized.%http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7111380
 
 \subsection{CMS performance in Run 2}
+\label{sec:CMS_performance}
 
 The number of collisions recorded at the experiments will differ from the amount delivered by the \ac{LHC}. Data loss can be caused by e.g. problems with a particular subdetector, data acquisition, the trigger rate, or the infrastructure. During Run 2, CMS achieved a data taking efficiency of 89\% and 92\% in 2015 and 2016, respectively. The comparison between the delivered and recorded cumulative integrated luminosity in 2016 is shown in Figure~\ref{fig:CMSlumi}. Subsequently, the recorded data is certified by the offline \ac{DQM}, to ensure that the data are suited for physics analysis. The efficiency of this certification process with respect to the amount of recorded data was 80\% in 2015 and 96\% in 2016. This is shown in Figure~\ref{fig:CMSlumi} as well for 2016.
 

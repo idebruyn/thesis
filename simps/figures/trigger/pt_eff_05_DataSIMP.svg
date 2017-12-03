@@ -25,7 +25,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -131,7 +131,7 @@
                x="0"
                y="0"
                sodipodi:role="line"
-               id="tspan8578">Signal MC</tspan>
+               id="tspan8578">signal MC</tspan>
           </text>
         </g>
       </g>

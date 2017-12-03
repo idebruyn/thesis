@@ -28,12 +28,12 @@ The event structure at the \ac{LHC} is complicated by the composite nature of th
 
 \begin{itemize}
  \item[] \textbf{Hard scattering}\\
- In the hard interaction, two partons of the colliding protons, will interact with a certain probability at a given momentum transfer. This is parametrized by the \acp{PDF} $f(x, Q^2)$, were $x$ is the proton's momentum fraction and $Q^2$ is the momentum transfer scale. Experimentally determined \acp{PDF} are available from various groups, including e.g. CTEQ~\cite{Pumplin:2002vw}, MRST/MSTW~\cite{Martin:2009iq}, and NNPDF~\cite{Ball:2014uwa}. An example of such \acp{PDF} obtained by the NNPDF group is shown in Figure~\ref{fig:pdf}. The \acp{PDF} are then convoluted with the matrix element of the hard scattering, which is the process of interest where the two colliding partons create high-energetic final state particles. This is done using an event generator, such as \textsc{MadGraph5\_}a\textsc{MC@NLO} ~\cite{Alwall:2014hca} and \textsc{PowHeg}~\cite{Frixione:2007vw}. With \textsc{MadGraph5\_}a\textsc{MC@NLO} the matrix element can for many processes be calculated at tree-level or \ac{LO}, and since the addition of a\textsc{MC@NLO} at \ac{NLO} as well. This generator was used to produce most of the background processes for the Monojet analysis detailed in Chapter~\ref{ch:monojet} and for the \ac{SIMP} signal used in Chapter~\ref{ch:SIMPs}. \textsc{PowHeg} is able to generate events using \ac{NLO} computations, but only for a relatively limited number of physics processes. This generator was used to produce the monojet signal samples and the background processes from single-top production. Since \ac{NLO} calculations are more time-consuming, one can instead use the less precise method of scaling a \ac{LO} cross section to the \ac{NLO} level by using a so-called k-factor, defined as the ratio of the \ac{NLO} and \ac{LO} cross sections. However, these k-factors often need to be determined as a function of the relevant kinematic variables as they depend on the kinematic phase space and the probed energy scale.
+ In the hard interaction, two partons of the colliding protons, will interact with a certain probability at a given momentum transfer. This is parametrized by the \acp{PDF} $f(x, Q^2)$, were $x$ is the proton's momentum fraction and $Q^2$ is the momentum transfer scale. Experimentally determined \acp{PDF} are available from various groups, including e.g. CTEQ~\cite{Pumplin:2002vw}, MRST/MSTW~\cite{Martin:2009iq}, and NNPDF~\cite{Ball:2014uwa}. An example of such \acp{PDF} obtained by the NNPDF group is shown in Figure~\ref{fig:pdf}. This figure shows that the valence quarks in the proton, namely the up and down quarks it is made of, have a larger momentum fraction than the remaining sea quarks, which appear as virtual quark-antiquark pairs forming from from gluons and annihilate again, making them much less stable than the valence quarks. The \acp{PDF} are then convoluted with the matrix element of the hard scattering, which is the process of interest where the two colliding partons create high-energetic final state particles. This is done using an event generator, such as \textsc{MadGraph5\_}a\textsc{MC@NLO}~\cite{Alwall:2014hca} and \textsc{PowHeg}~\cite{Frixione:2007vw}. With \textsc{MadGraph5\_}a\textsc{MC@NLO} the matrix element can for many processes be calculated at tree-level or \ac{LO}, and since the addition of a\textsc{MC@NLO} at \ac{NLO} as well. This generator was used to produce most of the background processes for the Monojet analysis detailed in Chapter~\ref{ch:monojet} and for the \ac{SIMP} signal used in Chapter~\ref{ch:SIMPs}. \textsc{PowHeg} is able to generate events using \ac{NLO} computations, but only for a relatively limited number of physics processes. This generator was used to produce the monojet signal samples and the background processes from single-top production. Since \ac{NLO} calculations are more time-consuming, one can instead use the less precise method of scaling a \ac{LO} cross section to the \ac{NLO} level by using a so-called k-factor, defined as the ratio of the \ac{NLO} and \ac{LO} cross sections. However, these k-factors often need to be determined as a function of the relevant kinematic variables as they depend on the kinematic phase space and the probed energy scale.
 
 \begin{figure}[ht]
   \centering
  \includegraphics[width=.75\textwidth]{pdf.png} 
- \caption{The parton distribution functions times the momentum fraction $x$ at energy scales 10~GeV$^2$ (left) and 10~000~GeV$^2$ (right), obtained in NNLO NNPDF3.0 global analysis. Figures taken from~\cite{Ball:2014uwa}.}
+ \caption{The parton distribution functions multiplied by the momentum fraction $x$ at energy scales $Q^2 = \SI{10}{GeV^2}$ (left) and $Q^2 = \SI{10000}{GeV^2}$ (right), obtained in the NNLO NNPDF 3.0 global analysis. Figures taken from~\cite{Ball:2014uwa}.}
  \label{fig:pdf}
 \end{figure}
 
@@ -65,15 +65,16 @@ In addition to \ac{ISR} and \ac{FSR}, also beam remnants and multiple parton int
 \subsection{Generation of the monojet signals}
 \label{sec:monojet_sim}
 
-In the monojet analysis, the simplified models described in Section~\ref{sec:monojet_models} are considered. The used signal samples were generated with \textsc{PowHeg}, which can generate \ac{NLO} vector and axial-vector mediator production and \ac{LO} scalar and pseudoscalar production. The samples were also produced at \ac{LO} with MCFM~\cite{Campbell:2010ff} as a cross check. The scanned mediator masses are $m_{\phi} = 10, 20, 50, 100, 200, 300, 500, 1000, 2000,$ \SI{10000}{GeV}, for dark matter masses of $m_{\chi} = 1, 10, 50, 100, 150, 500, \SI{1000}{GeV}$, with $m_{\chi} \leq m_{\phi}$.
+In the monojet analysis, the simplified models described in Section~\ref{sec:monojet_models} are considered. The used signal samples were generated with \textsc{PowHeg}, which can generate \ac{NLO} vector and axial-vector mediator production and \ac{LO} scalar and pseudoscalar production. The samples were also produced at \ac{LO} with MCFM~\cite{Campbell:2010ff} as a cross check. The scanned mediator masses are $m_{\phi} = 10, 20, 50, 100, 200, 300, 500,$ $ 1000, 2000,$ \SI{10000}{GeV}, for dark matter masses of $m_{\chi} = 1, 10, 50, 100, 150, 500, \SI{1000}{GeV}$, with $m_{\chi} \leq m_{\phi}$.
 
 \subsection{Generation of the SIMP signal}
 \label{sec:simp_sim}
 
-For the generation of the \ac{SIMP} signal, the model Lagrangian given in equation~\ref{eq:SIMP_lagrangian} is implemented in \textsc{FeynRules 2.0}~\cite{Alloul:2013bka}. The matrix element is then calculated at \ac{LO} and events are generated using \textsc{Madgraph 5}. The subsequent parton shower and hadronisation is done with \textsc{Pythia 8}, using tune CUEP8M1. Several samples were produced, with \ac{SIMP} mass $m_{\chi} = 1, 10, 100, 200, 400, 700, \SI{1000}{GeV}$. The corresponding productions cross sections are given in Table~\ref{tab:signal_samples}. 
+For the generation of the \ac{SIMP} signal, the model Lagrangian given in equation~\ref{eq:SIMP_lagrangian} is implemented in \textsc{FeynRules 2.0}~\cite{Alloul:2013bka}. The matrix element is then calculated at \ac{LO} and events are generated using \textsc{Madgraph 5}. The subsequent parton shower and hadronisation is done with \textsc{Pythia 8}, using tune CUEP8M1. Several samples were produced, with \ac{SIMP} masses $m_{\chi} = 1, 10, 100, 200, 400, 700,$ \SI{1000}{GeV}. The corresponding productions cross sections are given in Table~\ref{tab:signal_samples}. 
 
 \begin{table}[ht]
   \centering
+\caption{Production cross section for each \ac{SIMP} mass, after $|\eta_{\chi}| < 2.5$ and $p_{\rm T}^{\chi} > 200$ GeV generator level cuts.}
 \begin{tabular}{| c | l |}
 \hline
 $m_\chi$ [GeV] & $\sigma_{\bar{\chi}\chi}$ [pb] \\
@@ -87,7 +88,6 @@ $m_\chi$ [GeV] & $\sigma_{\bar{\chi}\chi}$ [pb] \\
 1000 &   0.000571  \\
 \hline
 \end{tabular}
-\caption{Production cross section for each \ac{SIMP} mass, after $|\eta_{\chi}| < 2.5$ and $p_{\rm T}^{\chi} > 200$ GeV generator level cuts.}
 \label{tab:signal_samples}
 \end{table}
 
@@ -162,6 +162,7 @@ In general, the electron and photon candidates must satisfy identification crite
 \begin{table}[ht!]
 \centering
 \small
+\caption{Loose and tight electron identification criteria. The isolation is computed in a cone of $\Delta R < 0.3$ around the electron.}
 \begin{tabular}{|l|l|l||l|l|c|}
 \hline
 \multirow{2}{*}{variable}                             &  \multicolumn{2}{c||}{loose} &  \multicolumn{2}{c|}{tight} \\
@@ -173,14 +174,13 @@ $|\Delta \eta_{in}|$                                        & $< 0.0152  $     &
 $|\Delta \phi_{in}|$                                        & $< 0.216   $     & $< 0.237   $ & $< 0.0336  $     & $< 0.0918  $ \\
 H/E                                                         & $< 0.181   $     & $< 0.116   $ & $< 0.0597  $     & $< 0.0615  $ \\
 relative isolation			                    & $< 0.126   $     & $< 0.144   $ & $< 0.0354  $     & $< 0.0646  $ \\
-1/E - 1/p                                                   & $< 0.207   $     & $< 0.174   $ & $< 0.012   $     & $< 0.00999 $ \\
-$|\mathrm{d_{xy}(vtx)}|$                                    & $< 0.0564  $     & $< 0.222   $ & $< 0.0111  $     & $< 0.0351  $ \\
-$|\mathrm{d_{z}(vtx)}|$                                     & $< 0.472   $     & $< 0.921   $ & $< 0.0466  $     & $< 0.417   $ \\
+$|1/E - 1/p|\ [\mathrm{GeV}^{-1}]$                          & $< 0.207   $     & $< 0.174   $ & $< 0.012   $     & $< 0.00999 $ \\
+$|\mathrm{d_{xy}(vtx)}|$ [cm]                               & $< 0.0564  $     & $< 0.222   $ & $< 0.0111  $     & $< 0.0351  $ \\
+$|\mathrm{d_{z}(vtx)}|$ [cm]                                & $< 0.472   $     & $< 0.921   $ & $< 0.0466  $     & $< 0.417   $ \\
 expected inner missing hits                                 & $\leq 2$         & $\leq 3$     & $\leq 2$           & $\leq 1$   \\
 pass conversion veto                                        & yes              & yes          & yes              & yes        \\
 \hline
 \end{tabular}
-\caption{Loose and tight electron identification criteria. The isolation is computed in a cone of $\Delta R < 0.3$ around the electron.}
 \label{tab:ElectronID}
 \end{table}
 
@@ -191,6 +191,7 @@ Similarly, for the photons, both a cut-based identification and a multivariate a
 \begin{table}[ht!]
 \centering
 \footnotesize
+\caption{Loose and tight photon identification criteria. The isolation is computed in a cone of $\Delta R < 0.3$ around the photon.}
 \begin{tabular}{|l|l|l||l|c|}
 \hline
 \multirow{2}{*}{variable}                             &  \multicolumn{2}{c||}{loose} & tight \\
@@ -199,14 +200,15 @@ Similarly, for the photons, both a cut-based identification and a multivariate a
 \hline
 full 5x5 $\sigma_{i\eta i\eta}$            & $< 0.0102$                                                  & $< 0.0274$    & $< 0.0102$     \\
 H/E                                        & $< 0.05$                                                    & $< 0.05$     & $< 0.05$      \\
-charged hadron isolation                   & $< 3.32$                                                    & $< 1.97$    & $< 1.37$    \\
-\multirow{2}{*}{neutral hadron isolation}  & $< 1.92 + 0.014\times p_T$ & $< 11.86 + 0.0139\times p_T$ & $< 1.06 + 0.014\times p_T$  \\
-					   & $\qquad +1.9\times 10^{-5} \times {p_T}^2$ 			 & $\qquad +2.5\times 10^{-5} \times {p_T}^2$ & $\qquad +1.9\times 10^{-5} \times {p_T}^2$ \\
+charged hadron                   & \multirow{2}{*}{$< 3.32$}  & \multirow{2}{*}{$< 1.97$}    & \multirow{2}{*}{$< 1.37$}    \\
+ isolation        &     &      &   \\
+neutral hadron  & $< 1.92 + 0.014\times p_T$ & $< 11.86 + 0.0139\times p_T$ & $< 1.06 + 0.014\times p_T$  \\
+isolation          & $\quad +1.9\times 10^{-5} \times {p_T}^2$  & $\quad +2.5\times 10^{-5} \times {p_T}^2$ & $\quad +1.9\times 10^{-5} \times {p_T}^2$ \\
 photon isolation                           & $< 0.81 + 0.0053\times p_T$                                 & $< 0.83 + 0.0034\times p_T$ & $< 0.28 + 0.0053\times p_T$   \\
-conversion safe electron veto              & yes                                                         & yes        & yes       \\
+conversion safe             & \multirow{2}{*}{yes}                                                         & \multirow{2}{*}{yes}        & \multirow{2}{*}{yes}       \\
+electron veto              &      &   &  \\
 \hline
 \end{tabular}
-\caption{Loose and tight photon identification criteria. The isolation is computed in a cone of $\Delta R < 0.3$ around the photon.}
 \label{tab:PhotonID}
 \end{table}
 
@@ -228,9 +230,9 @@ When using muons for physics analysis, some identification criteria are generall
 
 The loose identification only requires the muons to be either global or tracker-only muons, and to be identified by the \ac{PF} algorithm as a muon. As a result, it is highly efficient for both prompt muons and muons from quark decays. In analyses with prompt muons, this identification is therefore often complemented by an impact parameter cut, associating the muon to the primary vertex.
 
-For the tight identification, the muon is required to be a global muon and to be identified by the \ac{PF} algorithm as a muon. The normalized $\chi^2$ of the global muon track fit should be smaller than 10 to suppress hadronic punch through and muons from hadron decays in flight. To further suppress these contributions at least one muon chamber hit should be included in the global muon track fit and muon segments should be found in at least two muon stations. Cosmic muons and tracks from pileup are suppressed by requiring the tracker track to have $|d_{xy}| < \SI{2}{mm}$ and $|d_z| < \SI{5}{mm}$, with $d_{xy}$ the traverse impact parameter and $d_z$ the longitudinal distance with respect to the primary vertex. Finally, at least one pixel hit is required, as well as hits in at least 5 tracker layers, in order to guarantee a good $p_T$ measurement.
+For the tight identification, the muon is required to be a global muon and to be identified by the \ac{PF} algorithm as a muon. The normalized $\chi^2$ of the global muon track fit should be smaller than 10 to suppress hadronic punch through and muons from hadron decays in flight. To further suppress these contributions at least one muon chamber hit should be included in the global muon track fit and muon segments should be found in at least two muon stations. Cosmic muons and tracks from pileup are suppressed by requiring the tracker track to have $|d_{xy}| < \SI{2}{mm}$ and $|d_z| < \SI{5}{mm}$, with $d_{xy}$ the traverse impact parameter and $d_z$ the longitudinal distance with respect to the primary vertex. Finally, at least one pixel hit is required, as well as hits in at least 5 tracker layers, in order to ensure a good $p_T$ measurement.
 
-In the case of the monojet analysis described in Chapter~\ref{ch:monojet}, the loose muon identification is used to select muons for the muon veto. An additional isolation cut is of 0.2 applied in order to select only prompt muons. The isolation value is computed as the sum of the transverse momenta of all charged hadrons associated to the primary vertex, neutral hadrons, and photons in a cone of $\Delta R < 0.4$ around the muon, relative to the $p_T$ of the muon. The tight muon identification is used as well, to select events in the dimuon and single muon control regions. 
+In the case of the monojet analysis described in Chapter~\ref{ch:monojet}, the loose muon identification is used to select muons for the muon veto. An additional isolation cut of 0.2 is applied in order to reject muons inside jets. The isolation value is computed as the sum of the transverse momenta of all charged hadrons associated to the primary vertex, neutral hadrons, and photons in a cone of $\Delta R < 0.4$ around the muon, relative to the $p_T$ of the muon. The tight muon identification is used as well, to select events in the dimuon and single muon control regions. 
 
 \subsection{Particle flow}
 \label{sec:PF}
@@ -301,13 +303,13 @@ Both jet and pileup jet identification are used in the monojet analysis describe
 \subsection{Identification of b-jets}
 \label{sec:btagging}
 
-For the identification of jets originating from $b$ quarks, the long lifetime of the b hadrons arising from the hadronisation of $b$ quarks is exploited. The b hadrons will therefore decay at a position that is displaced with respect to the primary interaction vertex. The b-jets can then be identified by looking for the presence of displaced tracks from which a secondary vertex may be reconstructed. Additionally, the b hadrons have a probability of 20\% to decay into muons or electrons. Consequently, the presence of these charged leptons can be used as well for b-jet identification techniques.
+For the identification of jets originating from $b$ quarks, the long lifetime of the B hadrons arising from the hadronisation of $b$ quarks is exploited. The B hadrons will therefore decay at a position that is displaced with respect to the primary interaction vertex. The b-jets can then be identified by looking for the presence of displaced tracks from which a secondary vertex may be reconstructed. Additionally, the B hadrons have a probability of 20\% to decay into muons or electrons. Consequently, the presence of these charged leptons can be used as well for b-jet identification techniques.
 
-Within the \ac{CMS} collaboration, two different algorithms are being used during Run 2, namely the Jet Probability and the Combined Secondary Vertex taggers~\cite{Chatrchyan:2012jua}. In this thesis, the latter is used to identify b-jets, combining the information from displaced tracks and secondary vertices in a multivariate technique. Jets are then identified or ``tagged'' as b-jets by applying a cut on the discriminator output. Three standard operating points are defined, denoted as ``loose'', ``medium'', and ``tight'', corresponding to a misidentification probability of 10\%, 1\%, and 0.1\% for light jets with $p_T > 30$~GeV, respectively.
+Within the \ac{CMS} collaboration, two different algorithms are being used during Run 2, namely the Jet Probability and the Combined Secondary Vertex taggers~\cite{Chatrchyan:2012jua}. In this thesis, the latter is used to identify b-jets, combining the information from displaced tracks and secondary vertices in a multivariate technique. Jets are then identified or ``tagged'' as b-jets by applying a cut on the discriminator output. Three standard operating points are defined, denoted as ``loose'', ``medium'', and ``tight'', corresponding to a misidentification probability of 10\%, 1\%, and 0.1\% for light jets with $p_T > 30$~GeV, respectively. In the monojet analysis described in Chapter~\ref{ch:monojet}, the loose working point is used to veto b-jets.
 \subsection{Reconstruction of tau leptons}
 \label{sec:tauID}
 
-Tau leptons can decay into either a charged lepton and two neutrinos, or a few hadrons and one neutrino. The hadronic decays of the tau lepton can be separated from quark or gluon jets by the analysing the decay products. With the \ac{PF} algorithm, it is possible to resolve the particles originating from the tau decay and to determine its isolation. Hadronic tau decays are reconstructed using the hadrons-plus-strips (HPS) algorithm~\cite{Khachatryan:2015dfa} by using those particles as input. The jet constituent particles are combined into candidates compatible with one of the main hadronic tau decay modes, $\tau^- \rightarrow h^- \nu_{\tau}$, $\tau^- \rightarrow h^- \pi^0 \nu_{\tau}$, $\tau^- \rightarrow h^- \pi^0 \pi^0 \nu_{\tau}$, and $\tau^- \rightarrow h^- h^+ h^- \nu_{\tau}$. This \ac{PF} reconstruction of the tau decay products has significantly improved the reconstruction and identification of the tau leptons compared to the previous method which only took the energy deposits in the calorimeters into account.
+Tau leptons can decay into either a charged lepton and two neutrinos, or a few hadrons and one neutrino. The hadronic decays of the tau lepton can be separated from quark or gluon jets by analysing the decay products. With the \ac{PF} algorithm, it is possible to resolve the particles originating from the tau decay and to determine its isolation. Hadronic tau decays are reconstructed using the hadrons-plus-strips (HPS) algorithm~\cite{Khachatryan:2015dfa} by using those particles as input. The jet constituent particles are combined into candidates compatible with one of the main hadronic tau decay modes, $\tau^- \rightarrow h^- \nu_{\tau}$, $\tau^- \rightarrow h^- \pi^0 \nu_{\tau}$, $\tau^- \rightarrow h^- \pi^0 \pi^0 \nu_{\tau}$, and $\tau^- \rightarrow h^- h^+ h^- \nu_{\tau}$, where $h$ represents a charged hadron. This \ac{PF} reconstruction of the tau decay products has significantly improved the reconstruction and identification of the tau leptons compared to the previous method which only took the energy deposits in the calorimeters into account.
 
 \subsection{Missing transverse momentum reconstruction}
 \label{sec:MET}
@@ -334,7 +336,7 @@ The \ac{SIMP} events generated as described in Section~\ref{sec:simp_sim} are th
 
 In the first approach, the \acp{SIMP} were incorporated by adding an additional step to the standard reconstruction described in Section~\ref{sec:reconstruction}. In this additional step the \acp{SIMP} are directly converted to neutral \ac{PF} candidates and merged with the rest of the \ac{PF} candidates. Additionally, the new \ac{PF} candidates are smeared with \ac{JER} distributions obtained from a sample produced using neutrons instead of \acp{SIMP}. Neutrons were chosen because of their resemblance to the \acp{SIMP} as single neutral particles generating a hadronic shower. 
 
-In order to produce this neutron sample, the same additional custom step is applied, but in this case the neutrons will also be correctly reconstructed by the standard reconstruction. The reconstructed \ac{PF} candidates that are matched to the generated neutrons are therefore removed before injecting the converted generated neutrons to the collection of \ac{PF} candidates. The applied \ac{JER} distributions are derived by comparing the resulting uncorrected \ac{PF} jets with the corresponding neutrons in sample produced with the standard reconstruction using the the full \textsc{Geant} simulation. The resolution is computed in bins of $\eta$ and $p_T$, and an example is shown in Figure~\ref{fig:neutron_res} for central neutrons with low and high transverse momentum. 
+In order to produce this neutron sample used to derived the \ac{JER}, the same additional custom step is applied, but in this case the neutrons will also be correctly reconstructed by the standard reconstruction. As a result, the neutrons will be present in the standard reconstruction and will be added a second time converting them into neutral \ac{PF} candidates. The standard reconstructed \ac{PF} candidates that are matched to the generated neutrons are therefore removed before injecting the converted generated neutrons to the collection of \ac{PF} candidates. The \ac{JER} distributions are then derived by comparing the resulting uncorrected \ac{PF} jets with the corresponding neutrons in sample produced with the standard reconstruction using the the full \textsc{Geant} simulation. The resolution is computed in bins of $\eta$ and $p_T$, and an example is shown in Figure~\ref{fig:neutron_res} for central neutrons with low and high transverse momentum. 
 
 After applying this smearing, the jets are processed with the standard sequence of \ac{CHS}, jet clustering, L1FastJet, and L2/L3 corrections described in Section~\ref{sec:jet_reconstruction}.
 
