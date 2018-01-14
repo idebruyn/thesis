@@ -226,8 +226,8 @@ Next, the test is performed with reconstructed jets, as shown in the left plot o
 The test of the method is also performed in inclusive bins, as used in the signal region event selection, by applying the same cut on the ChF of both jets. This is shown in the right plot of Figure~\ref{fig:closuretest}, with the applied ChF cut on the x-axis. For the MC truth, the statistical uncertainty is determined  per HT-binned \ac{QCD} sample, using asymmetric vertical bars with correct coverage for event counts with Poisson variates when less than 10 events remain, and the square root of the remaining number of events otherwise. In this way, the statistical uncertainty correctly reflects the contribution of HT bins with few or no events left. The total statistical uncertainty in the MC truth is then calculated by multiplying the uncertainty per HT bin by the corresponding weight for this HT bin, and adding them quadratically. The uncertainties on the 1- and 2-leg predictions are much smaller, as the statistical uncertainties from the efficiencies is negligible. The systematic uncertainty on the background prediction is then defined as the difference between the MC truth and the prediction, unless it is smaller than the statistical uncertainty on the MC truth. In that case, the uncertainty on the MC truth is taken as systematic uncertainty. For most ChF cut values, the statistical uncertainty dominates. As a result the background prediction is limited by the MC sample size.
 
 \begin{figure}[ht]
-  \includegraphics[width=0.52\textwidth]{figures/closure_test_QCD_exclusive_filters.pdf}%
-  \includegraphics[width=0.48\textwidth]{figures/closure_test.pdf}\hfill
+  \includegraphics[width=0.5\textwidth]{figures/closure_test_QCD_exclusive_filters.pdf}%
+  \includegraphics[width=0.5\textwidth]{figures/closure_test_ratiolog.pdf}
   \caption{Test of the background prediction method with simulated events, using an exclusive (left) or inclusive (right) binning in ChF. The number of events is scaled to $16.1\, \mathrm{fb}^{-1}$, corresponding to the amount of data used for this analysis.}
   \label{fig:closuretest}
 \end{figure}
@@ -236,9 +236,9 @@ The \ac{QCD} background prediction in data is shown in Figure~\ref{fig:predictio
 
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=0.5\textwidth]{figures/data_vs_prediction_BF_filters.pdf}\hfill%
+  \includegraphics[width=0.5\textwidth]{figures/data_vs_prediction_BF_unblinded.pdf}\hfill%
   \includegraphics[width=0.5\textwidth]{figures/data_vs_prediction_GH_filters.pdf}
-  \caption{The 1- and 2-leg predictions from data, as well as the data (above ChF = 0.2) as a function of the exclusive ChF bins, for run periods B-F (left) and G-H (right).}
+  \caption{The 1- and 2-leg predictions from data, as well as the data as a function of the exclusive ChF bins, for run periods B-F (left) and G-H (right).}
   \label{fig:prediction}
 \end{figure}
 

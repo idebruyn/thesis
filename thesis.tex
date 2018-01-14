@@ -4,7 +4,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %% PACKAGE LOADING TIME %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \usepackage{siunitx}
 %\usepackage{lscape}
 \usepackage{textcomp,gensymb}
@@ -62,6 +61,14 @@
 \usepackage{tablefootnote}
 \usepackage{pdflscape}
 
+\makeatletter
+\def\bstctlcite{\@ifnextchar[{\@bstctlcite}{\@bstctlcite[@auxout]}}
+\def\@bstctlcite[#1]#2{\@bsphack
+  \@for\@citeb:=#2\do{%
+    \edef\@citeb{\expandafter\@firstofone\@citeb}%
+    \if@filesw\immediate\write\csname #1\endcsname{\string\citation{\@citeb}}\fi}%
+  \@esphack}
+\makeatother
 % \usepackage{hypcap} % fix the links
 
 \pdfsuppresswarningpagegroup=1
@@ -83,11 +90,15 @@
 %%%%%%%%%%%%%%%%%%%%
 
 \usepackage[]{lineno}
-\linenumbers
+% \linenumbers
+
+% \usepackage{hyperref}
+% \hypersetup{colorlinks,urlcolor=blue, linkcolor=[rgb]{0.8,0,0},citecolor=[rgb]{0,0.5,0}}
 
 \setlength{\headheight}{15pt}
 
 \begin{document}
+\bstctlcite{IEEEexample:BSTcontrol}
 \graphicspath{{fig/}}
 \restylefloat{figure}
 \restylefloat{table}
@@ -96,6 +107,8 @@
 %%   FRONT PAGE       %%
 %%%%%%%%%%%%%%%%%%%%%%%%
 % 
+% \hypersetup{pageanchor=false}
+
  \thispagestyle{empty}   % no headings for this page
 % 
 % % Header
@@ -138,8 +151,51 @@ Prof. Dr. Steven Lowette}
  December 2017}\
  
  \end{center}
+ 
+\clearpage
+\thispagestyle{empty}
+% \newpage
+% \null
+\large
+ \noindent
+Doctoral examination commission:\\
+
+ \noindent
+Prof. Dr. Alexander Sevrin (VUB, \textit{chair})\\
+Prof. Dr. Jorgen D'Hondt (VUB, \textit{secretary})\\
+Prof. Dr. Steven Lowette (VUB, \textit{promotor})\\
+Prof. Dr. Dominique Maes (VUB)\\
+Dr. Krijn De Vries (VUB)\\
+Prof. Dr. Albert De Roeck (CERN, UA)\\
+Prof. Dr. Fabio Maltoni (UCL)\\
+
+% 
+% 
+% \vfill
+% % \begin{tabular}{l @{\hspace{1cm}} l l}
+% % 	Date of Hand-in: & \dateHandIn &\\
+% % 	Date of Private Defense: & \dateDefense &
+% % \end{tabular}
+% \vspace{10mm}
+% 
+\vfill
+ \noindent
+\textcopyright\ 2017 Isabelle De Bruyn\\
+
+ \noindent
+All rights reserved. No parts of this book may be reproduced or transmitted in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior written permission of the author.
+\normalsize
+% % \newpage
+% % \thispagestyle{empty}
+% % \mbox{}
+% \cleardoublepage{}
+% 
+% \setlength{\topmargin}{0mm}
+% \normalsize%\rm
 
 \clearpage{\pagestyle{empty}\cleardoublepage}
+
+
 
 %% ACKNOWLEDGMENT   %%
 %%%%%%%%%%%%%%%%%%%%%%%
@@ -170,9 +226,9 @@ Prof. Dr. Steven Lowette}
 
 %%   TOC, LIST OF FIGURES, LIST OF TABLES, ACRONYMS     %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \hypersetup{pageanchor=true}
 
 \renewcommand{\contentsname}{Table of Contents} % original name = Contents
-
 \tableofcontents
 \clearpage{\pagestyle{empty}\cleardoublepage}
 
@@ -205,8 +261,9 @@ Prof. Dr. Steven Lowette}
 
 \renewcommand\evenpagerightmark{{\scshape\small} References}
 \renewcommand\oddpageleftmark{{\scshape\small References}}
-\bibliographystyle{phdbib}
+\bibliographystyle{IEEEtran}
 \bibliography{PhD}
+\addcontentsline{toc}{chapter}{References}
 
 
 %\addcontentsline{toc}{section}{}
@@ -230,6 +287,7 @@ Prof. Dr. Steven Lowette}
 \renewcommand\evenpagerightmark{{\scshape\small} List of Acronyms}
 \renewcommand\oddpageleftmark{{\scshape\small List of Acronyms}}
 \include{phdacronyms}
+\addcontentsline{toc}{chapter}{List of Acronyms}
 
 \clearpage      % clear the current page
 \thispagestyle{empty}   % prevent header on this (empty -> next line) page
