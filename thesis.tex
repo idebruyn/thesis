@@ -152,6 +152,9 @@ Prof. Dr. Steven Lowette}
  
  \end{center}
  
+ 
+\clearpage{\pagestyle{empty}\cleardoublepage}
+ 
 \clearpage
 \thispagestyle{empty}
 % \newpage
@@ -194,7 +197,6 @@ All rights reserved. No parts of this book may be reproduced or transmitted in a
 % \normalsize%\rm
 
 \clearpage{\pagestyle{empty}\cleardoublepage}
-
 
 
 %% ACKNOWLEDGMENT   %%
@@ -259,13 +261,13 @@ All rights reserved. No parts of this book may be reproduced or transmitted in a
 
 \clearpage
 
-\renewcommand\evenpagerightmark{{\scshape\small} References}
+\renewcommand\evenpagerightmark{{\scshape\small References}}
 \renewcommand\oddpageleftmark{{\scshape\small References}}
 \bibliographystyle{IEEEtran}
 \bibliography{PhD}
 \addcontentsline{toc}{chapter}{References}
 
-
+\clearpage{\pagestyle{empty}\cleardoublepage} 
 %\addcontentsline{toc}{section}{}
 
 % \appendix
@@ -284,15 +286,20 @@ All rights reserved. No parts of this book may be reproduced or transmitted in a
 % \listoftables
 % \clearpage{\pagestyle{empty}\cleardoublepage}
 
-\renewcommand\evenpagerightmark{{\scshape\small} List of Acronyms}
+\renewcommand\evenpagerightmark{{\scshape\small List of Acronyms}}
 \renewcommand\oddpageleftmark{{\scshape\small List of Acronyms}}
 \include{phdacronyms}
 \addcontentsline{toc}{chapter}{List of Acronyms}
+\clearpage{\pagestyle{empty}\cleardoublepage} 
 
-\clearpage      % clear the current page
-\thispagestyle{empty}   % prevent header on this (empty -> next line) page
-\mbox{}         % to insert a not empty page, so that there is min. 1 blank page before next chapter
+\include{acknowledgements}
+\addcontentsline{toc}{chapter}{Acknowledgements}
+
+% \clearpage      % clear the current page
+% \thispagestyle{empty}   % prevent header on this (empty -> next line) page
+% \mbox{}         % to insert a not empty page, so that there is min. 1 blank page before next chapter
 \clearpage{\pagestyle{empty}\cleardoublepage}   % clear the current page and start on the right side
+
 
 %\renewcommand{\tablename}{Table}
 
