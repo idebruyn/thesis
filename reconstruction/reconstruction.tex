@@ -22,7 +22,7 @@ The event structure at the \ac{LHC} is complicated by the composite nature of th
 \begin{figure}[ht]
   \centering
  \includegraphics[width=.9\textwidth]{event.png} 
- \caption{Illustration of an event showing the hard scattering, parton shower, hadronisation, and underlying event. Figure taken from~\cite{Hoche:2014rga}.}
+ \caption{Illustration of an event showing the hard scattering and the ensuing parton shower (red), the hadronisation (green) with hadron decays (dark green) and radiated photons (yellow), and the underlying event coming from beam remnants (blue) and multiple parton interactions (purple). Figure taken from~\cite{Hoche:2014rga}.}
  \label{fig:event}
 \end{figure}
 
@@ -33,7 +33,7 @@ The event structure at the \ac{LHC} is complicated by the composite nature of th
 \begin{figure}[ht]
   \centering
  \includegraphics[width=.75\textwidth]{pdf.png} 
- \caption{The parton distribution functions multiplied by the momentum fraction $x$ at energy scales $Q^2 = \SI{10}{GeV^2}$ (left) and $Q^2 = \SI{10000}{GeV^2}$ (right), obtained in the NNLO NNPDF 3.0 global analysis. Figures taken from~\cite{Ball:2014uwa}.}
+ \caption{The parton distribution functions multiplied by the momentum fraction $x$ at energy scales $Q^2 = \SI{10}{GeV^2}$ (left) and $Q^2 = \SI{10000}{GeV^2}$ (right) for the different valence and sea quarks and the gluons present in a proton, obtained in the NNLO NNPDF 3.0 global analysis. Figures taken from~\cite{Ball:2014uwa}.}
  \label{fig:pdf}
 \end{figure}
 
@@ -290,7 +290,7 @@ A reliable determination of the jet energy is not straightforward, since many ef
 \begin{figure}[ht]
   \centering
  \includegraphics[width=.85\textwidth]{JEC.pdf} 
- \caption{Graphical overview of the factorised approach used at \ac{CMS} to apply jet energy corrections.}
+ \caption{Graphical overview of the factorised approach used at \ac{CMS} to apply jet energy corrections to data and simulated events.}
  \label{fig:JEC}
 \end{figure}
 
@@ -358,7 +358,7 @@ After applying this smearing, the jets are processed with the standard sequence 
  \label{fig:neutron_res}
 \end{figure}
 
-In order to validate this method, the custom and standard neutron samples are used to compare the two leading generator-level jets to the new jets from the custom sample, denoted as P2PF jets, and the \ac{PF} jets from the standard sample. This is illustrated in Figure~\ref{fig:neutron_corr}, where the $p_T$ of the generated neutrons is shown on the horizontal axis, and the $p_T$ of the reconstructed jet is shown on the vertical axis. The left plot shows the standard neutron sample produced with the full \textsc{Geant} simulation, while the right plot shows the custom neutron sample where the neutron was directly converted into a neutral \ac{PF} candidate. The \ac{JER} distributions are also compared in Figure~\ref{fig:neutron_res_corr} and fitted with a Crystal Ball function, showing compatible parameters.
+In order to validate this method, the custom and standard neutron samples are used to compare the two leading generator-level jets to the new jets from the custom sample, denoted as P2PF jets, and the \ac{PF} jets from the standard sample. This is illustrated in Figure~\ref{fig:neutron_corr}, where the $p_T$ of the generated neutrons is shown on the horizontal axis, and the $p_T$ of the reconstructed jet is shown on the vertical axis. The left plot shows the standard neutron sample produced with the full \textsc{Geant} simulation, while the right plot shows the custom neutron sample where the neutron was directly converted into a neutral \ac{PF} candidate. The \ac{JER} distributions are also compared in Figure~\ref{fig:neutron_res_corr} and fitted with a Crystal Ball function, showing compatible parameters as can be seen from the black and red boxes in the plot.
 
 \begin{figure}[ht]
   \centering
@@ -371,7 +371,7 @@ In order to validate this method, the custom and standard neutron samples are us
 \begin{figure}[ht]
   \centering
  \includegraphics[width=.75\textwidth]{pt_neutron_gun_res_fit_005.pdf} 
- \caption{The jet energy resolution of the corrected P2PF jets (red) and \ac{PF} jets (black), fitted with a Crystal Ball function.}
+ \caption{The jet energy resolution of the corrected P2PF jets (red) and \ac{PF} jets (black), fitted with a Crystal Ball function. The obtained parameters for the two fits are in good agreement, showing that the used procedure can accurately simulate \acp{SIMP} in a realistic detector, assuming \acp{SIMP} are neutron-like.}
  \label{fig:neutron_res_corr}
 \end{figure}
 
