@@ -1,5 +1,5 @@
 % \documentclass[9pt,a5paper,twoside,dutch,english]{book}                % options used for 'Hoofdstuk' or 'Chapter'
- \documentclass[11pt,b5paper,twoside,dutch,english]{book}
+ \documentclass[10pt,a4paper,twoside,dutch,english]{book}
  
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %% PACKAGE LOADING TIME %%
@@ -219,22 +219,22 @@ All rights reserved. No parts of this book may be reproduced or transmitted in a
 
 \clearpage{\pagestyle{empty}\cleardoublepage}
 
-\include{CV}
 \addcontentsline{toc}{chapter}{Author's Contribution}
+\include{CV}
 
 \clearpage{\pagestyle{empty}\cleardoublepage}
 
 \selectlanguage{english}
-\include{summary_english}
 \addcontentsline{toc}{chapter}{Summary}
+\include{summary_english}
 
 \clearpage{\pagestyle{empty}\cleardoublepage}
 
 % 	%% SUMMARY IN DUTCH       %%
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \selectlanguage{dutch}
-\include{summary_dutch}
 \addcontentsline{toc}{chapter}{Samenvatting}
+\include{summary_dutch}
 
 \clearpage{\pagestyle{empty}\cleardoublepage}
 
@@ -276,8 +276,8 @@ All rights reserved. No parts of this book may be reproduced or transmitted in a
 \renewcommand\evenpagerightmark{{\scshape\small References}}
 \renewcommand\oddpageleftmark{{\scshape\small References}}
 \bibliographystyle{IEEEtran}
-\bibliography{PhD}
 \addcontentsline{toc}{chapter}{References}
+\bibliography{PhD}
 
 \clearpage{\pagestyle{empty}\cleardoublepage} 
 %\addcontentsline{toc}{section}{}
@@ -300,14 +300,14 @@ All rights reserved. No parts of this book may be reproduced or transmitted in a
 
 \renewcommand\evenpagerightmark{{\scshape\small List of Acronyms}}
 \renewcommand\oddpageleftmark{{\scshape\small List of Acronyms}}
-\include{phdacronyms}
 \addcontentsline{toc}{chapter}{List of Acronyms}
+\include{phdacronyms}
 \clearpage{\pagestyle{empty}\cleardoublepage} 
 
 \renewcommand\evenpagerightmark{{\scshape\small Acknowledgements}}
 \renewcommand\oddpageleftmark{{\scshape\small Acknowledgements}}
-\include{acknowledgements}
 \addcontentsline{toc}{chapter}{Acknowledgements}
+\include{acknowledgements}
 
 % \clearpage      % clear the current page
 % \thispagestyle{empty}   % prevent header on this (empty -> next line) page
