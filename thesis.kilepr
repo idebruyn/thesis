@@ -4,7 +4,7 @@ img_extIsRegExp=false
 img_extensions=.eps .jpg .jpeg .png .pdf .ps .fig .gif
 kileprversion=2
 kileversion=2.1.3
-lastDocument=detector/detector.tex
+lastDocument=acknowledgements.tex
 masterDocument=
 name=Thesis
 pkg_extIsRegExp=false
@@ -15,6 +15,13 @@ src_extensions=.tex .ltx .latex .dtx .ins
 [Tools]
 MakeIndex=
 QuickBuild=
+
+[document-settings,item:CV.tex]
+Bookmarks=
+Encoding=UTF-8
+Highlighting=LaTeX
+Indentation Mode=normal
+Mode=LaTeX
 
 [document-settings,item:acknowledgements.tex]
 Bookmarks=
@@ -107,6 +114,16 @@ Highlighting=LaTeX
 Indentation Mode=normal
 Mode=LaTeX
 
+[item:CV.tex]
+archive=true
+column=768
+encoding=UTF-8
+highlight=LaTeX
+line=18
+mode=LaTeX
+open=false
+order=-1
+
 [item:acknowledgements.tex]
 archive=true
 column=10
@@ -129,30 +146,30 @@ order=0
 
 [item:detector/detector.tex]
 archive=true
-column=85
+column=176
 encoding=UTF-8
 highlight=LaTeX
-line=47
+line=194
 mode=LaTeX
-open=true
+open=false
 order=4
 
 [item:intro/intro.tex]
 archive=true
-column=369
+column=1273
 encoding=UTF-8
 highlight=LaTeX
-line=27
+line=31
 mode=LaTeX
 open=false
 order=2
 
 [item:monojet/monojet.tex]
 archive=true
-column=407
+column=180
 encoding=UTF-8
 highlight=LaTeX
-line=445
+line=214
 mode=LaTeX
 open=false
 order=3
@@ -189,20 +206,20 @@ order=1
 
 [item:reconstruction/reconstruction.tex]
 archive=true
-column=174
+column=288
 encoding=UTF-8
 highlight=LaTeX
-line=96
+line=373
 mode=LaTeX
-open=true
+open=false
 order=2
 
 [item:simps/simps.tex]
 archive=true
-column=300
+column=150
 encoding=UTF-8
 highlight=LaTeX
-line=336
+line=200
 mode=LaTeX
 open=false
 order=4
@@ -229,23 +246,29 @@ order=-1
 
 [item:theory/theory.tex]
 archive=true
-column=172
+column=1092
 encoding=UTF-8
 highlight=LaTeX
-line=258
+line=102
 mode=LaTeX
-open=true
+open=false
 order=3
 
 [item:thesis.tex]
 archive=true
-column=46
+column=0
 encoding=UTF-8
 highlight=LaTeX
-line=292
+line=225
 mode=LaTeX
 open=true
 order=0
+
+[view-settings,view=0,item:CV.tex]
+CursorColumn=768
+CursorLine=18
+JumpList=
+ViMarks=.,2,152,[,2,144,],2,152
 
 [view-settings,view=0,item:acknowledgements.tex]
 CursorColumn=10
@@ -260,22 +283,22 @@ JumpList=
 ViMarks=.,50,195,[,50,193,],50,195
 
 [view-settings,view=0,item:detector/detector.tex]
-CursorColumn=85
-CursorLine=47
+CursorColumn=176
+CursorLine=194
 JumpList=
-ViMarks=.,198,379,[,198,379,],198,379
+ViMarks=.,194,175,[,194,175,],194,175
 
 [view-settings,view=0,item:intro/intro.tex]
-CursorColumn=369
-CursorLine=27
+CursorColumn=1273
+CursorLine=31
 JumpList=
-ViMarks=.,27,368,[,27,359,],27,368
+ViMarks=.,31,1272,[,31,1269,],31,1272
 
 [view-settings,view=0,item:monojet/monojet.tex]
-CursorColumn=407
-CursorLine=445
+CursorColumn=180
+CursorLine=214
 JumpList=
-ViMarks=.,445,406,[,445,404,],445,406
+ViMarks=.,214,179,[,214,172,],214,179
 
 [view-settings,view=0,item:page_layout_definition.tex]
 CursorColumn=41
@@ -290,16 +313,16 @@ JumpList=
 ViMarks=.,46,28,[,46,28,],46,28
 
 [view-settings,view=0,item:reconstruction/reconstruction.tex]
-CursorColumn=174
-CursorLine=96
+CursorColumn=288
+CursorLine=373
 JumpList=
-ViMarks=.,96,174,[,96,174,],96,174
+ViMarks=.,373,0,[,373,0,],373,0
 
 [view-settings,view=0,item:simps/simps.tex]
-CursorColumn=300
-CursorLine=336
+CursorColumn=150
+CursorLine=200
 JumpList=
-ViMarks=.,336,299,[,336,288,],336,299
+ViMarks=.,200,149,[,200,103,],200,149
 
 [view-settings,view=0,item:summary_dutch.tex]
 CursorColumn=172
@@ -314,13 +337,13 @@ JumpList=
 ViMarks=.,3,176,[,3,176,],3,176
 
 [view-settings,view=0,item:theory/theory.tex]
-CursorColumn=172
-CursorLine=258
+CursorColumn=1092
+CursorLine=102
 JumpList=
-ViMarks=.,258,185,[,258,185,],258,185
+ViMarks=.,102,1091,[,102,1091,],102,1091
 
 [view-settings,view=0,item:thesis.tex]
-CursorColumn=46
-CursorLine=292
+CursorColumn=0
+CursorLine=225
 JumpList=
-ViMarks=.,292,0,[,292,0,],292,45
+ViMarks=.,224,45,[,225,0,],-1,-1
