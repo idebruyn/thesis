@@ -62,6 +62,7 @@ Several triggers have been designed specifically for this analysis, as shown in 
 \renewcommand{\arraystretch}{1.3}
 \begin{table}[ht]
   \centering
+  \setlength{\tabcolsep}{4pt}
   \caption{Summary of the triggers designed for this analysis, with the corresponding integrated luminosity collected for each trigger.}
   \begin{tabular}{| l | c | c |}
     \hline
@@ -78,7 +79,7 @@ Several triggers have been designed specifically for this analysis, as shown in 
   \label{tab:triggers}
 \end{table}
 
-These triggers were designed to select events containing jets with a low ChF, but keeping the jet $p_T$ threshold as low as possible, while taking the limited trigger rate into account. Their performance was tested using simulated \ac{QCD} events before using them in data taking. The trigger efficiency of \texttt{HLT\_DiCentralPFJet330\_CFMax0p5} as a function of $p_{T}$ and ChF is shown in Figure~\ref{fig:efficiencies_qcd_data}, using data and simulated \ac{QCD} events. The plot on the left shows the efficiency as a function of $p_T$, which quickly reaches a plateau at 100\% around \SI{350}{GeV}, as expected. The efficiency as a function of ChF is shown on the right and also shows a plateau at 100\% for low ChF. The slope of the turn-on is however less steep and only reaches the plateau around 0.35, for a threshold at ChF = 0.5 at trigger level. The signal efficiency measurement was first tried by taking a photon + jet sample, as photons could also mimic neutral jets. The photon was matched to the leading jet within a $\Delta R$ cone, and the efficiency was measured at low ChF. However, as the jet is reconstructed with a large electromagnetic energy fraction (EMF), it does not mimic the \ac{SIMP} signal correctly. 
+These triggers were designed to select events containing jets with a low ChF, but keeping the jet $p_T$ threshold as low as possible, while taking the limited trigger rate into account. Their performance was tested using simulated \ac{QCD} events before using them in data taking. Figure~\ref{fig:efficiencies_qcd_data} shows the trigger efficiency of the \texttt{HLT\_DiCentralPFJet330\_CFMax0p5} trigger as a function of $p_{T}$ and ChF, using data and simulated \ac{QCD} events. The plot on the left shows the efficiency as a function of $p_T$, which quickly reaches a plateau at 100\% around \SI{350}{GeV}, as expected. The efficiency as a function of ChF is shown on the right and also shows a plateau at 100\% for low ChF. The slope of the turn-on is however less steep and only reaches the plateau around 0.35, for a threshold at ChF = 0.5 at trigger level. The signal efficiency measurement was first tried by taking a photon + jet sample, as photons could also mimic neutral jets. The photon was matched to the leading jet within a $\Delta R$ cone, and the efficiency was measured at low ChF. However, as the jet is reconstructed with a large electromagnetic energy fraction (EMF), it does not mimic the \ac{SIMP} signal correctly. 
 
 \begin{figure}[ht]
   \centering
@@ -88,7 +89,7 @@ These triggers were designed to select events containing jets with a low ChF, bu
   \label{fig:efficiencies_qcd_data}
 \end{figure}
 
-Instead, one of the neutron signal samples described in Section~\ref{sec:SIMPs} was used, generated with a \ac{SIMP} mass of \SI{700}{GeV}. The obtained trigger efficiency as a function of $p_{T}$ and ChF is shown in Figure~\ref{fig:efficiencies_simp_data} for \texttt{HLT\_DiCentralPFJet330\_CFMax0p5}, comparing the data and the signal-like events. This shows that the trigger reaches a plateau at only 60\% signal efficiency. The origin of the inefficiency was found to come from a hidden requirement asking at least one charged particle in the jets. This explains why the trigger efficiencies turn on at the expected values when using data or simulated \ac{QCD} events, where jets nearly always contain some tracks, while it is largely inefficient in signal-like simulation which generates neutral jets.
+Instead, one of the neutron signal samples described in Section~\ref{sec:SIMPs} was used, generated with a \ac{SIMP} mass of \SI{700}{GeV}. The obtained trigger efficiency for \texttt{HLT\_DiCentralPFJet330\_CFMax0p5} as a function of $p_{T}$ and ChF is shown in Figure~\ref{fig:efficiencies_simp_data}, comparing the data and the signal-like events. This shows that the trigger reaches a plateau at only 60\% signal efficiency. The origin of the inefficiency was found to come from a hidden requirement asking at least one charged particle in the jets. This explains why the trigger efficiencies turn on at the expected values when using data or simulated \ac{QCD} events, where jets nearly always contain some tracks, while it is largely inefficient in signal-like simulation which generates neutral jets.
 
 \begin{figure}[ht]
   \centering
@@ -106,7 +107,7 @@ where Obs in this case is the $p_T$ spectrum of the leading jet for events that 
 
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=0.75\textwidth]{figures/trigger/pt_HLT_PFJet450_new.pdf}
+  \includegraphics[width=0.85\textwidth]{figures/trigger/pt_HLT_PFJet450_new.pdf}
   \caption{The \texttt{HLT\_PFJet450} trigger efficiency turn-on as a function of the offline leading jet $p_T$, for data, \ac{QCD} events, and the signal-like events. The $p_T$ cut used in the event selection is shown with a green dashed line.}
   \label{fig:ptturnon}
 \end{figure}
@@ -126,6 +127,7 @@ Table~\ref{tab:cutflow} shows the number of events remaining in data, for simula
 \renewcommand{\arraystretch}{1.4}
 \begin{table}[ht]
   \centering
+  \setlength{\tabcolsep}{4pt}
   \footnotesize
 \caption{Number of events remaining after the listed selection cuts in data, QCD events, and 2 signal samples.}
 \begin{tabular}{| l | r | r | r | r |}
@@ -146,7 +148,7 @@ MET filters & 528614 & 582184 & 493 & 4.7 \\
 \label{tab:cutflow}
 \end{table}
 
-\begin{figure}[ht]
+\begin{figure}[p]
   \centering
   \includegraphics[width=0.5\textwidth]{figures/jetpt1_neutrons}\hfill%
   \includegraphics[width=0.5\textwidth]{figures/jetpt2_neutrons}
@@ -187,7 +189,7 @@ The \ac{QCD} multijet background is estimated from data, since the simulation do
 
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=0.7\textwidth]{figures/bkgd_estimation_dataMC.pdf}\hfill%
+  \includegraphics[width=0.85\textwidth]{figures/bkgd_estimation_dataMC.pdf}\hfill%
   \caption{Data-MC comparison of the charged energy fraction of the leading jet, tagging events with subleading jet ChF $>$ 0.5, showing that the simulation cannot accurately reproduce the data.}
   \label{fig:dataMC}
 \end{figure}
@@ -223,7 +225,7 @@ As a first check, the test was also performed at the generator level, using the 
 
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=0.75\textwidth]{figures/closure_test_QCD_GenJets_exclusive_correct.pdf}\hfill%
+  \includegraphics[width=0.8\textwidth]{figures/closure_test_QCD_GenJets_exclusive_correct.pdf}\hfill%
   \caption{Test of the background prediction method using the GenJets in simulated events. The number of events is scaled to $16.1\, \mathrm{fb}^{-1}$, corresponding to the amount of data used for this analysis.}
   \label{fig:closuretest_GenJets}
 \end{figure}
@@ -261,7 +263,7 @@ To first order, the measured ChF cut efficiencies should absorb the effects of t
 
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=0.75\textwidth]{figures/data_vs_prediction_RunE_reweighted_exclusivebinning.pdf}\hfill%
+  \includegraphics[width=0.8\textwidth]{figures/data_vs_prediction_RunE_reweighted_exclusivebinning.pdf}\hfill%
   \caption{The 1- and 2-leg predictions from data, as well as the data (above ChF = 0.2) as a function of the exclusive ChF bins for run period E, reweighting the 2-leg prediction to data based on the number of vertices in the event, per ChF bin.}
   \label{fig:BF_reweighted}
 \end{figure}
@@ -289,6 +291,7 @@ A cut of $\mathrm{ChF} < 0.05$ is chosen as the final signal region selection, t
 \renewcommand{\arraystretch}{1.3}
 \begin{table}[ht]
   \centering
+  \setlength{\tabcolsep}{5pt}
   \footnotesize
 \caption{Number of predicted (using the 1-leg prediction from data) and observed events for several inclusive cuts on the ChF of both jets. The expected number of signal events is also given for the $m_{\chi} = 1$ GeV and $m_{\chi} = 1000$~GeV scenarios.}
 \begin{tabular}{| c | r@{$\,\,$}r@{$\,\,$}r@{$\,\,$}r@{$\,\,$}r | r@{$\,\,$}r@{$\,\,$}r | r | r | r |}
@@ -320,14 +323,14 @@ Figure~\ref{fig:SIMP_limit_unblinded} shows the expected and observed limits whe
 
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=0.85\textwidth]{figures/ExclusionLimitGH_xsecVsM_ChF0p05_1leg_HybridNew_gmN_neutrons.pdf}\hfill%
+  \includegraphics[width=0.9\textwidth]{figures/ExclusionLimitGH_xsecVsM_ChF0p05_1leg_HybridNew_gmN_neutrons.pdf}\hfill%
   \caption{The expected limits on the production cross section, obtained without looking in the signal region, for \ac{SIMP} masses between 1 and 1000~GeV, with $1\sigma$ and $2\sigma$ bands is shown, as well as the theoretical prediction (red), with respect to the generator level cuts ($p_T^{\chi} > 200$~GeV and $|\eta_{\chi}| < 2.5$).}
   \label{fig:SIMP_limit}
 \end{figure}
 
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=0.85\textwidth]{figures/ExclusionLimitGH_xsecVsM_ChF0p05_1leg_HybridNew_gmN_neutrons_unblinded.pdf}\hfill%
+  \includegraphics[width=0.9\textwidth]{figures/ExclusionLimitGH_xsecVsM_ChF0p05_1leg_HybridNew_gmN_neutrons_unblinded.pdf}\hfill%
   \caption{The expected and observed limits on the production cross section for \ac{SIMP} masses between 1 and 1000~GeV, with $1\sigma$ and $2\sigma$ bands is shown, as well as the theoretical prediction (red), with respect to the generator level cuts ($p_T^{\chi} > 200$~GeV and $|\eta_{\chi}| < 2.5$).}
   \label{fig:SIMP_limit_unblinded}
 \end{figure}

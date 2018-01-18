@@ -127,14 +127,14 @@ where the number of $Z(\mu\mu)$ + jets events in data $N_{Z(\mu\mu)}^{data}$ is 
 \begin{figure}[p]
   \centering
  \vspace{.3cm}
- \includegraphics[width=.49\textwidth]{dimuon_TF.png} 
- \includegraphics[width=.5\textwidth]{single_muon_TF.png} \\
+ \includegraphics[width=.48\textwidth]{dimuon_TF.png} 
+ \includegraphics[width=.49\textwidth]{single_muon_TF.png} \\
  \vspace{.4cm}
- \includegraphics[width=.49\textwidth]{dielectron_TF.png} 
- \includegraphics[width=.5\textwidth]{single_electron_TF.png} \\
+ \includegraphics[width=.48\textwidth]{dielectron_TF.png} 
+ \includegraphics[width=.49\textwidth]{single_electron_TF.png} \\
  \vspace{.2cm}
- \includegraphics[width=.49\textwidth]{gamma_TF.png} 
- \includegraphics[width=.5\textwidth]{ZW_ratio.png} 
+ \includegraphics[width=.48\textwidth]{gamma_TF.png} 
+ \includegraphics[width=.49\textwidth]{ZW_ratio.png} 
  \caption{Transfer factors for the dimuon (top left), single muon (top right), dielectron (middle left), single electron (middle right), and photon + jets (bottom left) control regions. The ratio of the $Z$ and $W$ transfer factors is shown in the bottom right plot.}
  \label{fig:TF}
 \end{figure}
@@ -168,7 +168,7 @@ While QCD multijet background events are generally well balanced in the transver
 
 The yield is predicted using 
 %by combining two different approaches, namely the ``rebalance and smear'' technique and the $\Delta\phi$ extrapolation method. The rebalance and smear technique minimises the missing transverse momentum through a kinematic using the jet resolutions. The event is then rebalanced by varying each jet and the remaining hadronic recoil within their computed uncertainties. The resulting jets are then smeared with the measured jet resolution, and the prediction for the QCD $E_T^{miss}$ distribution is obtained. The used data for this method are selected based on jets and applying a cut on the $H_T$ present in the event. 
-the $\Delta\phi$ extrapolation method, the QCD background is estimated in data selected using the signal triggers and applying the event selection, but inverting the $\Delta\phi$ selection cut and instead requiring $\min\Delta\phi(jet, E_T^{miss}) < 0.5$. An extrapolation is then made to the signal region using transfer factors derived from simulated events generated at \ac{LO} with \textsc{MadGraph} in several bins of $H_T$. The obtained estimation using this method yields a contribution that is a factor 2 larger than the prediction from simulation, 
+the $\Delta\phi$ extrapolation method. This is done by estimating the QCD background in data selected using the signal triggers and applying the event selection, but inverting the $\Delta\phi$ selection cut and instead requiring $\min\Delta\phi(jet, E_T^{miss}) < 0.5$. An extrapolation is then made to the signal region using transfer factors derived from simulated events generated at \ac{LO} with \textsc{MadGraph} in several bins of $H_T$. The obtained estimation using this method yields a contribution that is a factor 2 larger than the prediction from simulation, 
 %which agrees well with the the rebalance and smear technique, 
 as can be seen in Figure~\ref{fig:QCD_prediction}.
 
@@ -228,7 +228,7 @@ The photon + jets control region, which has the largest yields, drives the fit a
 
 \begin{figure}[ht]
   \centering
- \includegraphics[width=.45\textwidth]{nuisance_new.png} 
+ \includegraphics[width=.44\textwidth]{nuisance_new.png} 
  \caption{The post-fit nuisance parameters and their uncertainties, compared to the pre-fit values.}
  \label{fig:nuisance}
 \end{figure}
@@ -263,13 +263,14 @@ Table~\ref{tab:monojet_yields_1} gives the background prediction for the various
 
 \begin{landscape}
 
-\begin{table}[p]
+\begin{table}[ht]
   \centering
+  \setlength{\tabcolsep}{3pt}
 \caption{Pre-fit and post-fit background predictions in the signal region and observed yield given as number of events divided by the bin width, per $E_T^{miss}$ bin. The predictions and uncertainties are obtained from the background-only simultaneous fit in the signal and control regions.}
 \label{tab:monojet_yields_1}
 \scriptsize
 \begin{subtable}{}
-\renewcommand{\arraystretch}{1.3}
+\renewcommand{\arraystretch}{1.2}
 \begin{tabular}{| l | c | c | c | c | c | c | c | c | c | c | c | c |}
 \hline
 \multirow{3}{*}{process} &  $E_T^{miss}$ &  $E_T^{miss}$ &  $E_T^{miss}$ &  $E_T^{miss}$ &  $E_T^{miss}$ &  $E_T^{miss}$ &  $E_T^{miss}$ &  $E_T^{miss}$ &  $E_T^{miss}$ &  $E_T^{miss}$ &  $E_T^{miss}$ &  $E_T^{miss}$  \\
@@ -293,11 +294,11 @@ Table~\ref{tab:monojet_yields_1} gives the background prediction for the various
 \hline
 \end{tabular}
 \end{subtable}
-\vspace*{.7cm}
+\vspace*{.5cm}
 % \caption{Pre-fit and post-fit background predictions in the signal region and observed yield. The predictions and uncertainties are obtained from the background-only simultaneous fit in the signal and control regions.}
 % \label{tab:monojet_yields_2}
 \begin{subtable}{}
-\renewcommand{\arraystretch}{1.3}
+\renewcommand{\arraystretch}{1.2}
 \begin{tabular}{| l | c | c | c | c | c | c | c | c | c | c |}
 \hline
 \multirow{3}{*}{process} &  $E_T^{miss}$ &  $E_T^{miss}$ &  $E_T^{miss}$ &  $E_T^{miss}$ &  $E_T^{miss}$ &  $E_T^{miss}$ &  $E_T^{miss}$ &  $E_T^{miss}$ &  $E_T^{miss}$ &  $E_T^{miss}$  \\
@@ -332,7 +333,7 @@ Table~\ref{tab:monojet_yields_1} gives the background prediction for the various
  \label{fig:results}
 \end{figure}
 
-\section{Improvements going from the 2015 to 2016 analysis}
+\section{Improvements going from the 2015 to the 2016 analysis}
 \label{sec:improvement}
 
 Several iterations of the monojet analysis were performed during Run 2 in 2015 and 2016, improving the achieved sensitivity with the increase in available data and additional developments to the analysis strategy, and adding new interpretations. In 2015, a first analysis with data at a centre-of-mass energy of \SI{13}{TeV} was carried out~\cite{CMS:2015jdt}, using data corresponding to an integrated luminosity of $2.1\ \mathrm{fb}^{-1}$. In this first iteration of the search, the NLO k-factors applied to correct the \ac{LO} samples used for the estimation of the background from $Z$ and $W$ bosons are derived from inclusive \ac{NLO} samples, which are not binned in boson $p_T$. These k-factors are shown in Figure~\ref{fig:kfactors_15}, and can be compared to the k-factors obtained from $p_T$-binned samples used in the following iterations of the analysis and shown in Figure~\ref{fig:kfactors}.
@@ -352,12 +353,12 @@ A substantial difference in the next iteration of the 2016 analysis~\cite{Siruny
 
 \begin{figure}[p]
   \centering
- \includegraphics[width=.4\textwidth]{EXO-16-013_dimuon.png} \hspace{.35cm}
- \includegraphics[width=.4\textwidth]{EXO-16-037_dimuon.png} \\
- \includegraphics[width=.4\textwidth]{EXO-16-013_dielectron.png} \hspace{.35cm}
- \includegraphics[width=.4\textwidth]{EXO-16-037_dielectron.png} \\
- \includegraphics[width=.4\textwidth]{EXO-16-013_gamma.png}  \hspace{.35cm}
- \includegraphics[width=.4\textwidth]{EXO-16-037_gamma.png} 
+ \includegraphics[width=.38\textwidth]{EXO-16-013_dimuon.png} \hspace{.35cm}
+ \includegraphics[width=.38\textwidth]{EXO-16-037_dimuon.png} \\
+ \includegraphics[width=.38\textwidth]{EXO-16-013_dielectron.png} \hspace{.35cm}
+ \includegraphics[width=.38\textwidth]{EXO-16-037_dielectron.png} \\
+ \includegraphics[width=.38\textwidth]{EXO-16-013_gamma.png}  \hspace{.35cm}
+ \includegraphics[width=.38\textwidth]{EXO-16-037_gamma.png} 
  \caption{Comparison of the hadronic recoil $p_T$ distribution between the data and MC simulation in the dimuon (top), dielectron (middle), and photon + jets (bottom) control regions, showing the reduction in overall post-fit uncertainty (grey band) going from the early 2016 analysis (left) to the analysis using data from the first half of 2016 (right). The fit was performed simultaneously over all the control and signal regions, assuming the absence of any signal. The last bin includes all events with hadronic recoil $p_T > \SI{1160}{GeV}$. Figures taken from~\cite{CMS:2016tns} and~\cite{Sirunyan:2017hci}.}
  \label{fig:comparison}
 \end{figure}
@@ -439,7 +440,7 @@ The obtained limits can also be translated into 90\% CL upper limits on the dark
  \label{fig:DDlimits_2}
 \end{figure}
 
-For the vector and scalar mediator cases, the derived 90\% CL upper limits on the spin-independent cross section are compared to the results from the CDMSLite~\cite{Agnese:2015nto}, LUX~\cite{Akerib:2015rjg}, CRESST-II~\cite{Angloher:2015ewa}, and PandaX-II~\cite{Tan:2016zwf} experiments. This shows that the monojet limits are complementary to the results from the direct detection experiments at low dark matter masses. The 90\% CL upper limits on the spin-dependent cross section for the axial-vector mediator are compared to the PICO-2L~\cite{Amole:2016pye}, PICO-60~\cite{Amole:2015pla}, IceCube~\cite{Aartsen:2016exj}, and Super Kamiokande experiments~\cite{Choi:2015ara}. In the case of the pseudoscalar mediator, the obtained limits are compared to the indirect detection results from the Fermi-LAT experiment~\cite{Ackermann:2011wa,Abdo:2010ex}. In the considered scenario the dark matter annihilates into $b$ quark pairs in the centre of the galaxy, producing gamma rays.
+For the vector and scalar mediator cases, the derived 90\% CL upper limits on the spin-independent cross section are compared to the results from the CDMSLite~\cite{Agnese:2015nto}, LUX~\cite{Akerib:2015rjg}, CRESST-II~\cite{Angloher:2015ewa}, and PandaX-II~\cite{Tan:2016zwf} experiments. This shows that the monojet limits are complementary to the results from the direct detection experiments at low dark matter masses. The 90\% CL upper limits on the spin-dependent cross section for the axial-vector mediator are compared to the PICO-2L~\cite{Amole:2016pye}, PICO-60~\cite{Amole:2015pla}, Super Kamiokande~\cite{Choi:2015ara}, and IceCube~\cite{Aartsen:2016exj} experiments. In the case of the pseudoscalar mediator, the obtained limits are compared to the indirect detection results from the Fermi-LAT experiment~\cite{Ackermann:2011wa,Abdo:2010ex}. In the considered scenario the dark matter annihilates into $b$ quark pairs in the centre of the galaxy, producing gamma rays.
 
 \section{Summary}
 

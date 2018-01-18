@@ -21,7 +21,7 @@
 %\usepackage[sectionbib,numbers,sort&compress]{natbib}  %for citations a la 'Vermeulen et al.' instead of [1]
 %\usepackage{tocbibind} % automatically add bibliography, list of figures, ... to table of contents
 % \usepackage[a5paper,verbose, asymmetric, centering, top=2.2cm, bottom=1.5cm]{geometry}  % better control over margins
-\usepackage[a4paper,verbose, asymmetric, centering, top=3cm, bottom=2.5cm]{geometry}  % better control over margins
+\usepackage[a4paper,verbose, asymmetric, centering]{geometry}  % better control over margins
 %\usepackage[hang]{caption}     %better control over captions (sideways, font, ...)  hang -> 2nd line of caption is indented (caption2 is deprecated and beta)
 \usepackage[labelfont=bf]{caption}     %better control over captions (sideways, font, ...)  
 \captionsetup[figure]{font=normal}
@@ -113,11 +113,11 @@
 % 
 % % Header
  \noindent
- \begin{minipage}{7cm}%
+ \begin{minipage}{6cm}%
 %    \includegraphics*[width=6cm]{/home/isa/cernbox/DOCTORAAT/info/logos/VUBlogo}
-   \includegraphics*[width=7cm]{/home/isa/cernbox/DOCTORAAT/info/logos/VUBlogo}
+   \includegraphics*[width=6cm]{/home/isa/cernbox/DOCTORAAT/info/logos/VUBlogo}
  \end{minipage}\hfill
- \begin{minipage}{6cm}
+ \begin{minipage}{5cm}
  \raggedleft
  \textsf{Vrije Universiteit Brussel\\ \vspace{.15cm}
  Faculteit Wetenschappen en\\
@@ -128,28 +128,27 @@
 % % Title
 \begin{center}
 % \vspace{1.3cm}
-\vspace{4.5cm}
+\vspace{2.5cm}
 \bigskip
  \hrulefill \vspace{.2cm}
  \onehalfspacing
      \LARGE \noindent \textsf{Search for Dark Matter in the Monojet\\ and Trackless Jets Final States with \\the CMS Detector at the LHC}\\ 
  \hrulefill 
-% \vspace{.5cm}
-\vspace{1cm}
+\vspace{.5cm}
+% \vspace{1cm}
  \bigskip
    \Large\noindent \textsf{Isabelle De Bruyn} \\
  \bigskip
  \large
-% \vspace{1.8cm}
-\vspace{2.5cm}
+\vspace{1.8cm}
+% \vspace{2.5cm}
 \textsf{Promotor\\ \vspace{.1cm}
 Prof. Dr. Steven Lowette}
  \normalsize
 % % Footer
  \vfill
  \textsf{Proefschrift ingediend met het oog op het behalen van de\\ academische graad van Doctor in de Wetenschappen\\ \vspace{.3cm}
- December 2017}\
- 
+ Januari 2018}
  \end{center}
  
  
@@ -183,7 +182,7 @@ Prof. Dr. Fabio Maltoni (UCL)\\
 % 
 \vfill
  \noindent
-\textcopyright\ 2017 Isabelle De Bruyn\\
+\textcopyright\ 2018 Isabelle De Bruyn\\
 
  \noindent
 All rights reserved. No parts of this book may be reproduced or transmitted in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior written permission of the author.
@@ -225,6 +224,8 @@ All rights reserved. No parts of this book may be reproduced or transmitted in a
 \clearpage{\pagestyle{empty}\cleardoublepage}
 
 \selectlanguage{english}
+\renewcommand\evenpagerightmark{{\scshape\small Summary}}
+\renewcommand\oddpageleftmark{{\scshape\small Summary}}
 \addcontentsline{toc}{chapter}{Summary}
 \include{summary_english}
 
@@ -233,6 +234,8 @@ All rights reserved. No parts of this book may be reproduced or transmitted in a
 % 	%% SUMMARY IN DUTCH       %%
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \selectlanguage{dutch}
+\renewcommand\evenpagerightmark{{\scshape\small Samenvatting}}
+\renewcommand\oddpageleftmark{{\scshape\small Samenvatting}}
 \addcontentsline{toc}{chapter}{Samenvatting}
 \include{summary_dutch}
 
